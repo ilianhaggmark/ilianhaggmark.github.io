@@ -19,14 +19,23 @@
 </head>
 
 <body>
+  
+<h1>Under construction</h1>
+  
+<h2>Research</h2>
+  
+<h2>Short CV</h2>
 
 <h2>Publications</h2>
-
-K. Shaker, I. Häggmark, J. Reichmann et al., Commun Phys **4**, 259 (2021). <a href="https://doi.org/10.1038/s42005-021-00760-8"> 10.1038/s42005-021-00760-8</a>
-- I. Häggmark, K. Shaker, H.M. Hertz, IEEE TMI **40**, 539 (2021). <a href="https://doi.org/10.1109/TMI.2020.3031318">10.1109/TMI.2020.3031318</a>
-- I. Häggmark, W. Vågberg, H.M. Hertz et al., Opt. Express **25**, 33543 (2017). <a href="https://doi.org/10.1364/OE.25.033543">10.1364/OE.25.033543</a>
+<ul>
+<li>K. Shaker, I. Häggmark, J. Reichmann et al., Commun Phys **4**, 259 (2021). <a href="https://doi.org/10.1038/s42005-021-00760-8"> 10.1038/s42005-021-00760-8</a></li>
+<li>I. Häggmark, K. Shaker, H.M. Hertz, IEEE TMI **40**, 539 (2021). <a href="https://doi.org/10.1109/TMI.2020.3031318">10.1109/TMI.2020.3031318</a></li>
+<li>I. Häggmark, W. Vågberg, H.M. Hertz et al., Opt. Express **25**, 33543 (2017). <a href="https://doi.org/10.1364/OE.25.033543">10.1364/OE.25.033543</a></li>
+</ul>
   
+ <h2>Links</h2>
   
+ <a href="https://scholar.google.com/citations?user=6Eimw3AAAAAJ&hl=sv">Google Scholar</a> 
   
 </body>
 </html>
