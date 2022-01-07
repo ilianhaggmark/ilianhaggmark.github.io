@@ -54,9 +54,17 @@ dt{float: left;
     margin-right: 0px;}
 dd{margin-left: 50px;}
   
-  #hiddenCV{
-  display: none;
-  }
+#hiddenCV{
+display: none;
+}
+
+#cvButtonShow{
+display: block;
+}
+
+#cvButtonHide{
+display: none;
+}
 
 
 </style>
@@ -79,7 +87,9 @@ I'm a researcher at The University of Tokyo working with X-ray imaging. My work 
 Currently I'm doing research under a JSPS Fellowship in the research group of <a href="https://www.um.u-tokyo.ac.jp/people/faculty_sasaki.html">Prof. Tekenori Sasaki</a> at The University of Tokyo University Museum (東京大学総合研究博物館).
 </div>
 <br>
-<h2 onclick="cvToggle()">Short CV</h2>
+<h2>Short CV</h2>
+<div id="cvButtonShow"><p onclick="cvToggle()" style="color: #ad2230; font-size:10pt;">click to show</p></div>
+<div id="cvButtonHide"><p onclick="cvToggle()" style="color: #ad2230; font-size:10pt;">click to hide</p></div>
 <br>
 
 
@@ -147,10 +157,16 @@ Currently I'm doing research under a JSPS Fellowship in the research group of <a
 <script>
 function cvToggle() {
   var x = document.getElementById("hiddenCV");
+  var y = document.getElementById("cvButtonShow");
+  var z = document.getElementById("cvButtonHide");
   if (x.style.display === "none") {
     x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "block";
   } else {
     x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";
   }
 }
 </script>
