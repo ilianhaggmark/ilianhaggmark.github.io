@@ -109,10 +109,14 @@ cursor: pointer;
 
 .topHeader-desk {display: none;}
 .topHeader-m {display: block;}
+.links-desk {display: none;}
+.links-m {display: block;}  
   
 @media only screen and (min-width: 600px){
   .topHeader-desk {display: flex;}
   .topHeader-m {display: none;}
+  .links-desk {display: block;}
+  .links-m {display: none;}  
 }
   
 </style>
@@ -267,8 +271,7 @@ Currently I'm doing research under a JSPS Fellowship in the research group of <a
 
 <a href="https://www.researchgate.net/profile/Ilian-Haeggmark">
   <div class="linkDiv">
-    <div style="position: relative; top: 0; left: 0;" class="rsquare" width="30" >
-      </div>
+    <div style="position: relative; top: 0; left: 0;" class="rsquare" width="30" ></div>
     <div style="position: absolute; top: -3px;left: -2px;">
       <img src="svg/researchgate-square.svg" width="37"/> 
   </div>
@@ -278,7 +281,8 @@ Currently I'm doing research under a JSPS Fellowship in the research group of <a
   
 <a id="lank" href="https://www.researchgate.net/profile/Ilian-Haeggmark">
   <div class="linkDiv">
-    <div style="position: relative; top: 0; left: 0;" id="bar"></div>
+    <div class="links-desk" style="position: relative; top: 0; left: 0;" id="bar"></div>
+    <div class="links-m" style="position: relative; top: 0; left: 0;" class="rsquare" width="30" ></div>
     <div style="position: absolute; top: -4px;left: 0px;">
       <img src="svg/researchgate-square.svg" width="37"/> 
   </div>
