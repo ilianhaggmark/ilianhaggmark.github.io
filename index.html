@@ -6,6 +6,11 @@
   <title>Ilian Häggmark, PhD</title>
   <meta name="description" content="Personal research home page.">
   <meta name="author" content="Ilian Haggmark">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    $(document).ready(function() {
+    $('.bar').addClass('open');
+    });
+  </script>
   
 <style>
 
@@ -47,6 +52,27 @@ img {
   float:left; 
   margin: 10px;
  }
+  
+#bar0 {
+  /*background: green;*/
+  width: 50px;
+  height: 50px;
+  /*opacity: 0.5;*/
+
+}
+
+#bar {
+  background: red;
+  border-radius: 10px;
+  width: 32px;
+  height: 0px;
+
+}
+
+#lank:hover #bar {
+  height: 32px;
+  transition: 0.5s height;
+}
 
 /*ul {
    list-style-position: outside;
@@ -257,9 +283,19 @@ Currently I'm doing research under a JSPS Fellowship in the research group of <a
 </a>
   
   
-</div>
-
+<a id="lank" href="https://www.researchgate.net/profile/Ilian-Haeggmark">
+  <div class="linkDiv">
+    <div style="position: relative; top: 0; left: 0;" id="bar"></div>
+    <div style="position: absolute; top: -3px;left: -2px;">
+      <img src="svg/researchgate-square.svg" width="37"/> 
+  </div>
+  </div><br><p style="margin-top: -3px;">Research Gate</p>
+</a>  
   
+  
+</div>
+ 
+
   
   
 
