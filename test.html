@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+  $(document).ready(function() {
+  $('.bar').addClass('open');
+});
+  </script>
+  <style>
+    
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    padding: 20px;
+  }
+
+    body {
+  background-color: #232323;
+  margin: auto;
+  max-width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+    
+    
+    
+    
+    
+    
+#bar0 {
+  background: green;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+
+}
+
+#bar {
+  background: red;
+  width: 0px;
+  height: 50px;
+
+}
+
+#lank:hover #bar {
+  width: 50px;
+}
+
+.linkDiv {
+
+  position: relative;
+  left: 0;
+  top: 0;
+  float: left;
+  margin: 10px;
+}
+    
+    </style>
+</head>
+
+<body>
+  
+  
+  
+  
+  
+  
+<a id="lank" href="http://haeggmark.com">
+ <div class="linkDiv">
+    <div style="position: relative; top: 0; left: 0;" id="bar"></div>
+    <div style="position: absolute; top: 0; left: 0;" id="bar0" ></div>
+  </div>
+ </a>
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+</html>
