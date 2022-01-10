@@ -32,10 +32,10 @@ img {
   max-width: 100%;
 }
 
-ul {
+/*ul {
    list-style-position: outside;
    margin-left:20px;
-}
+}*/
 
 h2, h1 {
   color: #ad2230;
@@ -50,10 +50,13 @@ dl {
   margin-bottom: 10px;
 }
 
-dt{float: left;
-    clear: left;
-    margin-right: 0px;}
+dt{
+  float: left;
+  clear: left;
+  margin-right: 0px;
+}
 dd{margin-left: 50px;}
+dd:not(:last-child) {margin-bottom: 5px;}
   
 #hiddenCV{
 display: none;
@@ -83,10 +86,12 @@ cursor: pointer;
 <body>
   
 <div class="topHeader-desk" >
-<img  src="haggmark.jpg" style="float:left; margin-right:10px;" alt="Ilian Häggmark" width="100">  
-<h1>Ilian Häggmark, PhD</h1><h3>ヘッグマルク　イリアン</h3>
+<img  src="haggmark.jpg" style="float:left; margin-right:30px;" alt="Ilian Häggmark" width="100">  
+<br>
+<h1>Ilian Häggmark, PhD</h1>
+<h3>ヘッグマルク　イリアン</h3>
 <h3>Researcher in X-ray imaging</h3>
-<br><br><br><br>
+<br><br><br>
 </div>
 
 
@@ -106,44 +111,9 @@ I'm a researcher at The University of Tokyo working with X-ray imaging. My work 
 Currently I'm doing research under a JSPS Fellowship in the research group of <a href="https://www.um.u-tokyo.ac.jp/people/faculty_sasaki.html">Prof. Tekenori Sasaki</a> at The University of Tokyo University Museum (東京大学総合研究博物館).
 </div>
 <br>
-<h2>Short CV</h2>
-<div id="cvButtonShow"><p onclick="cvToggle()" style="color: #ad2230; font-size:10pt;">click to show</p></div>
-<div id="cvButtonHide"><p onclick="cvToggle()" style="color: #ad2230; font-size:10pt;">click to hide</p></div>
-<br>
-
-
-<div id="hiddenCV"> <!--END OF CV-->
-
-<div style="margin-left:20px;">
-<h3>Career</h3>
-<dl>
-<dt>2021-present</dt><dd style="margin-left: 100px;">Researcher, The University of Tokyo, Tokyo, Japan</dd>
-<dt>2019</dt><dd style="margin-left: 100px;">Visiting researcher, SPring-8, Hyogo, Japan</dd>
-<dt>2016-2021</dt><dd style="margin-left: 100px;">Doctoral researcher, KTH Royal Institute of Technology, Stockholm Sweden</dd>
-</dl>
-<br>
-
-<h3>Degrees</h3>
-<dl>
-<dt>2021</dt><dd>PhD in Physics, KTH Royal Institute of Technology, Stockholm Sweden</dd>
-<dt>2016</dt><dd>MSc in Engieering Physics, KTH Royal Institute of Technology, Stockholm Sweden</dd>
-<dt>2014</dt><dd>BSc in Engieering Physics, KTH Royal Institute of Technology, Stockholm Sweden</dd>
-
-
-</dl>
-<br>
-<h3>Awards and Scholarships</h3>
-<dl>
-<dt>2021</dt><dd>JSPS Postdoctoral Fellowship (Standard)</dd>
-<dt>2019</dt><dd>JSPS Summer program Scholarship</dd>
-<dt>2018</dt><dd>Applied Physics Post award, KTH</dd>
-<dt>2017</dt><dd>EXCITE Post award</dd>
-<dt>2014</dt><dd>Sweden-Japan Foundation scholarship</dd>
-</dl>
-<br>
-</div>
-</div>  <!--END OF CV-->
-
+  
+  
+  
 
 <h2>Publications</h2>
 <br>
@@ -163,7 +133,49 @@ Currently I'm doing research under a JSPS Fellowship in the research group of <a
 </dl>
 </div>
 <br>
- <h2>Links</h2>
+ 
+  
+  
+  
+  
+<h2>Short CV</h2>
+<div id="cvButtonShow"><p onclick="cvToggle()" style="color: #ad2230; font-size:10pt;">click to show</p></div>
+<div id="cvButtonHide"><p onclick="cvToggle()" style="color: #ad2230; font-size:10pt;">click to hide</p></div>
+<br>
+  
+<div id="hiddenCV"> <!--START OF CV-->
+<div style="margin-left:20px;">
+<h3>Career</h3>
+<dl>
+<dt>2021-present</dt><dd style="margin-left: 100px;">Researcher, The University of Tokyo, Tokyo, Japan</dd>
+<dt>2019</dt><dd style="margin-left: 100px;">Visiting researcher, SPring-8, Hyogo, Japan</dd>
+<dt>2016-2021</dt><dd style="margin-left: 100px;">Doctoral researcher, KTH Royal Institute of Technology, Stockholm Sweden</dd>
+</dl>
+<br>
+
+<h3>Degrees</h3>
+<dl>
+<dt>2021</dt><dd>PhD in Physics, KTH Royal Institute of Technology, Stockholm Sweden</dd>
+<dt>2016</dt><dd>MSc in Engieering Physics, KTH Royal Institute of Technology, Stockholm Sweden</dd>
+<dt>2014</dt><dd>BSc in Engieering Physics, KTH Royal Institute of Technology, Stockholm Sweden</dd>
+</dl>
+<br>
+  
+<h3>Awards and Scholarships</h3>
+<dl>
+<dt>2021</dt><dd>JSPS Postdoctoral Fellowship (Standard)</dd>
+<dt>2019</dt><dd>JSPS Summer program Scholarship</dd>
+<dt>2018</dt><dd>Applied Physics Post award, KTH</dd>
+<dt>2017</dt><dd>EXCITE Post award</dd>
+<dt>2014</dt><dd>Sweden-Japan Foundation scholarship</dd>
+</dl>
+<br>
+</div>
+</div>  <!--END OF CV-->
+
+
+  
+<h2>Links</h2>
  <br>
 <div style="margin-left:20px;">
  <a href="https://scholar.google.com/citations?user=6Eimw3AAAAAJ&hl=en">Google Scholar</a>
@@ -173,7 +185,9 @@ Currently I'm doing research under a JSPS Fellowship in the research group of <a
  <a href="https://www.researchgate.net/profile/Ilian-Haeggmark">ResearchGate</a>
 </div>
 <br>
-
+  
+  
+  
 
 <script>
 document.getElementById("hiddenCV").style.display = "none";
