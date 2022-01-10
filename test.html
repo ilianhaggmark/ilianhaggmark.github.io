@@ -34,7 +34,7 @@
     
     
 #bar0 {
-  background: green;
+  /*background: green;*/
   width: 50px;
   height: 50px;
   opacity: 0.5;
@@ -43,13 +43,14 @@
 
 #bar {
   background: red;
-  width: 0px;
-  height: 50px;
+  width: 50px;
+  height: 0px;
 
 }
 
 #lank:hover #bar {
-  width: 50px;
+  height: 50px;
+  transition: 1s height;
 }
 
 .linkDiv {
@@ -74,7 +75,7 @@
 <a id="lank" href="http://haeggmark.com">
  <div class="linkDiv">
     <div style="position: relative; top: 0; left: 0;" id="bar"></div>
-    <div style="position: absolute; top: 0; left: 0;" id="bar0" ></div>
+    <div style="position: absolute; top: 0; left: 0;" id="bar0" ><img src="academicons-1.9.1/svg/researchgate-square.svg" width="50px;"/></div>
   </div>
  </a>
   
