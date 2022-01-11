@@ -156,14 +156,21 @@ dd:not(:last-child) {margin-bottom: 5px;}
   box-shadow: 2px 2px 3px #111111;
   text-decoration-line: none;
   font-size: 12px;
+  cursor: pointer;
+  padding-top:17px;
+  color: white;
 }
 .contrast-mode .float{
   background-color: black;
 }
 
-.my-float{
-  margin-top:17px;
-  color: white;
+.non-selectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
   
   
@@ -210,9 +217,7 @@ cursor: pointer;
 
 <body>
   
-<a href="#" class="float">
-<p class="my-float" onclick="myFunction()">Toggle <br> contrast <br> mode</p>
-</a>
+<p class="float non-selectable" onclick="changeContrastMode()">Toggle <br> contrast <br> mode</p>
   
 <div class="topHeader-desk" style="align-items:center; margin-bottom: 30px">
 <img  src="haggmark.jpg" style="margin-right:30px;" alt="Ilian Häggmark" width="100">  
@@ -425,6 +430,14 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+  
+  
+function changeContrastMode() {
+   var element = document.body;
+   element.classList.toggle("contrast-mode");
+}
+  
+  
 </script>
 
 
