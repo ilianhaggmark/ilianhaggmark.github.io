@@ -146,20 +146,31 @@ dd:not(:last-child) {margin-bottom: 5px;}
   
 .float{
   position:fixed;
-  width:80px;
-  height:80px;
-  bottom:70px;
-  right:70px;
+  width:60px;
+  height:60px;
+  bottom:10px;
+  right:10px;
   background-color: #ad2230;
   border-radius:50px;
   text-align:center;
   box-shadow: 2px 2px 3px #111111;
   text-decoration-line: none;
-  font-size: 12px;
+  font-size: 11px;
   cursor: pointer;
-  padding-top:17px;
+  padding-top:9px;
   color: white;
 }
+@media only screen and (min-width: 600px){
+.float{
+  width:80px;
+  height:80px;  
+  bottom:70px;
+  right:70px;
+  padding-top:17px;
+  font-size: 12px;  
+  }
+}  
+  
 .contrast-mode .float{
   background-color: black;
 }
