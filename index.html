@@ -7,10 +7,7 @@
   <meta name="description" content="Personal research homepage.">
   <meta name="author" content="Ilian Haggmark">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
-    $(document).ready(function() {
-    $('.bar').addClass('open');
-    });</script>
+
 <style>
 
   * {
@@ -60,18 +57,18 @@ img {
  }
 
 
-#bar {
+.bar {
   background: #ad2230;
   border-radius: 24px;
   width: 31px;
   height: 0px;
 
 }
-.contrast-mode #bar{
+.contrast-mode .bar{
   background: white;
 }
 
-.lank:hover #bar {
+.lank:hover .bar {
   height: 29px;
   transition: 0.5s height;
 }
@@ -390,7 +387,7 @@ Currently I'm doing research under a JSPS Fellowship in the research group of <a
   
 <a class="lank" href="https://scholar.google.com/citations?user=6Eimw3AAAAAJ&hl=en">
   <div class="linkDiv">
-    <div class="links-desk" style="position: relative; top: 0; left: 0;" id="bar"></div>
+    <div class="links-desk bar" style="position: relative; top: 0; left: 0;"></div>
     <div class="links-m rsquare" style="position: relative; top: 0; left: 0;"></div>
     <div style="position: absolute; top: -4px;left: 0px;">
       <img src="svg/google-scholar-square.svg" alt="Google Scholar" width="37"/> 
@@ -401,7 +398,7 @@ Currently I'm doing research under a JSPS Fellowship in the research group of <a
 
 <a class="lank" href="https://orcid.org/0000-0002-8853-1441">
   <div class="linkDiv">
-    <div class="links-desk" style="position: relative; top: 0; left: 0;" id="bar"></div>
+    <div class="links-desk bar" style="position: relative; top: 0; left: 0;"></div>
     <div class="links-m rsquare" style="position: relative; top: 0; left: 0;"></div>
     <div style="position: absolute; top: -4px;left: 0px;">
       <img src="svg/orcid-square.svg" alt="ORID" width="37"/> 
@@ -412,7 +409,7 @@ Currently I'm doing research under a JSPS Fellowship in the research group of <a
   
 <a class="lank" href="https://www.researchgate.net/profile/Ilian-Haeggmark">
   <div class="linkDiv">
-    <div class="links-desk" style="position: relative; top: 0; left: 0;" id="bar"></div>
+    <div class="links-desk bar" style="position: relative; top: 0; left: 0;"></div>
     <div class="links-m rsquare" style="position: relative; top: 0; left: 0;"></div>
     <div style="position: absolute; top: -4px;left: 0px;">
       <img src="svg/researchgate-square.svg" alt="ResearchGate" width="37"/> 
