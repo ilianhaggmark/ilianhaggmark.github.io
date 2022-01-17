@@ -8,7 +8,6 @@
   <meta name="author" content="Ilian Haggmark">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script type="text/javascript" src="externaljs.js"></script>
 </head>
 
 <body>
@@ -238,25 +237,9 @@ function skills() {
     z.style.display = "none";
   }
 }
-    
-    
-//CODE TO SHOW/HIDE CONTENT EPAPERS/PRESENTATIONS 
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
   
 </script>
- 
+<script type="text/javascript" src="externaljs.js"></script>
+  
 </body>
 </html>
