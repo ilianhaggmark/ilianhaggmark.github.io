@@ -3,6 +3,15 @@
 function changeContrastMode() {
    var element = document.body;
    element.classList.toggle("contrast-mode");
+   if(document.body.classList.contains('contrast-mode')){
+       localStorage.setItem('contrastMode','true');
+   } else{
+       localStorage.setItem('contrastMode','false');
+   }
+}
+
+if ( localStorage.getItem('contrastMode') == 'true' ) {  
+  document.body.classList.add('contrast-mode');
 }
 
 //CODE TO SHOW/HIDE (COLLAPSE) CONTENT, E.G. PAPERS/PRESENTATIONS 
