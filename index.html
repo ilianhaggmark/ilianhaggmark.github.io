@@ -8,6 +8,45 @@
   <meta name="author" content="Ilian Haggmark">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="externaljs.js"></script>
+  
+  <script>
+  
+<!-- CODE TO SHOW/HIDE CV -->  
+document.getElementById("hiddenCV").style.display = "none";
+function cvToggle() {
+  var x = document.getElementById("hiddenCV");
+  var y = document.getElementById("cvButtonShow");
+  var z = document.getElementById("cvButtonHide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "block";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";
+  }
+}
+  
+<!-- CODE TO SHOW/HIDE SKILLS --> 
+document.getElementById("extraSkills").style.display = "none";
+function skills() {
+  var x = document.getElementById("extraSkills");
+  var y = document.getElementById("extraSkillsShow");
+  var z = document.getElementById("extraSkillsHide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "block";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";
+  }
+}
+  
+</script>
 </head>
 
 <body>
@@ -193,73 +232,5 @@ I'm a researcher at The University of Tokyo working with X-ray imaging. My work 
   
 </div>
  
-
-  
-  
-
-<script>
-  
-<!-- CODE TO SHOW/HIDE CV -->  
-document.getElementById("hiddenCV").style.display = "none";
-function cvToggle() {
-  var x = document.getElementById("hiddenCV");
-  var y = document.getElementById("cvButtonShow");
-  var z = document.getElementById("cvButtonHide");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    y.style.display = "none";
-    z.style.display = "block";
-  } else {
-    x.style.display = "none";
-    y.style.display = "block";
-    z.style.display = "none";
-  }
-}
-  
-
-document.getElementById("extraSkills").style.display = "none";
-function skills() {
-  var x = document.getElementById("extraSkills");
-  var y = document.getElementById("extraSkillsShow");
-  var z = document.getElementById("extraSkillsHide");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    y.style.display = "none";
-    z.style.display = "block";
-  } else {
-    x.style.display = "none";
-    y.style.display = "block";
-    z.style.display = "none";
-  }
-}
-  
-  
-  
- <!-- CODE TO SHOW/HIDE PAPERS/PRESENTATIONS --> 
- var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-  
-  
-function changeContrastMode() {
-   var element = document.body;
-   element.classList.toggle("contrast-mode");
-}
-  
-  
-</script>
-
-
 </body>
 </html>
