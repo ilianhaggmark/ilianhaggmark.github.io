@@ -211,11 +211,9 @@ dd:not(:last-child) {
 .topHeader-desk {display: none;}
 .topHeader-m {display: block;}
 .links-desk {display: none;}
-.links-m {display: block;}  
   
 @media only screen and (min-width: 600px){
   .topHeader-desk {display: flex;}
   .topHeader-m {display: none;}
   .links-desk {display: block;}
-  .links-m {display: none;}  
 }
