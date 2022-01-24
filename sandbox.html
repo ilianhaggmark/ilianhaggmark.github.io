@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ilian Häggmark, Sandbox</title>
+  <meta name="description" content="Sandbox">
+  <meta name="author" content="Ilian Haggmark">
+  <link rel="shortcut icon" type="image/png" href="/img/favicon.png" /> 
+  <meta name="googlebot" content="index,follow">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  
+</head>
+
+<body>
+
+<p class="float unselectable" onclick="changeContrastMode()">Toggle <br> contrast <br> mode</p>
+
+<h1 style="margin-bottom: 30px">Ilian Häggmark's sandbox</h1>
+
+<p style="margin-bottom: 20px;">
+    This is a simple sandbox for small projects in HTML/CSS/JS/SVG.
+</p>
+
+
+
+<script>
+if ( localStorage.getItem('contrastMode') == 'true' ) {  
+  document.body.classList.add('contrast-mode');
+}
+</script>
+<script type="text/javascript" src="/externaljs.js"></script>
+</body>
+</html>
