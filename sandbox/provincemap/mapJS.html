@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandbox - Provinces of Japan</title>
+  <meta name="description" content="Map of provinces in Japan.">
+  <meta name="author" content="Ilian Haggmark">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png" /> 
+  <meta name="googlebot" content="index,follow">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+<!--<p class="float unselectable" onclick="changeContrastMode()">Toggle <br> contrast <br> mode</p>-->
+
+<object id="svgMap" data="Provinces_of_JapanJS.svg" type="image/svg+xml"></object>    
+<br><br>
+
+<p style="color:red;margin-bottom:20px;">The version uses naive code generation with JS and is slow. Use <a href="map.html">this</a> version insead.</p>
+
+<h2>Provinces of Japan</h2>
+<p style="margin: 10px 10px 10px 10px;">
+This is a map of the old administrative division of Japan into provinces. This division was in effect between the Kamakura period and the end of the Edo period, i.e. from the late 12th century to 1868. Note that Ezo (present Hokkaidō) was not a province, but is included anyway. Some of the islands northeast of Hokkaido have been controlled by Russia since the end of WWII. The provincial division was later superseded but the present 47 prefectures.
+</p>
+
+<h4>Interactive features</h4>
+<p style="margin: 10px 10px 10px 10px;">
+The interactive features of this map are created with svg and javascript.
+<ol style="margin-left: 0; padding-left: 40px; margin-bottom: 10px;">
+  <li>Provinces change color on hover</li>
+  <li>Regions (Gokishichidō) change color when hovering over region names</li>
+  <li>Province info is shown on hover</li>
+  <li>Kanji are highlighted on hover over province and vise versa</li>
+  <li>Kanji kan be hidden (one by one or all at once) to practice the names</li>
+</ol>
+</p>
+
+<h4>Create own selection of provinces.</h4>
+<p style="margin: 10px 10px 10px 10px;">Load a txt-file that only contains a row with comma separated names (no spaces) of provinces in romaji (ō as oo or ou and ū as uu), e.g.</p>
+  <pre style="margin: 10px 10px 10px 30px;">iyo,oosumi,kyouto,kaga</pre>
+  <p style="margin: 10px 10px 10px 10px;">To clear selection, reload the page.</p>
+<input type="file" onchange="loadFile(this.files[0])" style="margin: 10px 10px 10px 10px;">
+<br>
+<pre id="output" style="margin: 10px 10px 10px 10px;"></pre>
+
+<h4>Save image</h4>
+<p style="margin: 10px 10px 10px 10px;">
+To save a static image using FireFox, open console with F12 and type</p>
+<pre style="margin: 10px 10px 10px 30px;">:screenshot --selector "#svgMap" --dpr 4 --filename provincesOfJapan.png</pre>
+<p style="margin: 10px 10px 10px 10px;">This saves a png-file in the downloads folder. The "4" gives a higher resolution than the screen to improve quality, but can be changed depending on preference.
+</p>
+<!-- Alt to get all  :screenshot  --fullpage --dpr 4 --filename proveincesOfJapan.png -->
+<script>
+  //https://stackoverflow.com/questions/2753732/how-to-access-svg-elements-with-javascript
+  var a = document.getElementById("svgMap");
+  a.addEventListener("load",function(){
+      
+                  // get the inner DOM of Provinces_of_Japan.svg
+                  var svgDoc = a.contentDocument;
+    
+                  $(document).ready(function () {
+    
+                      // FETCHING DATA FROM JSON FILE
+                      $.getJSON("provinceData.json", 
+                              function (data) {
+  
+                          var horizDist = -13;
+                          var vertDist = 805;
+                          var counter = 0; 
+                          var regionList = [];       
+    
+                          // ITERATING THROUGH OBJECTS
+                          $.each(data, function (key, value) {
+                              if (svgDoc.getElementById(value.Id)==null){
+                                  console.log(value.Id)
+                                  console.log("found null")
+                                  return
+                              }
+                              //CONSTRUCTION OF ROWS HAVING
+                              // DATA FROM JSON OBJECT
+                              var el = svgDoc.getElementById(value.Id);
+                              el.setAttribute("class", value.RegionId + " path")
+                              if (regionList.includes(value.RegionId) == false){
+                                svgDoc.getElementById("mainStyle").innerHTML += "#"+ value.RegionId+ ":hover ~ ." + value.RegionId + " {fill-opacity:1;} \n";
+                              }
+                              var text = '<title>';
+                              text += 'Name:     ' + cFL(value.Name) + '&#xA;';
+                              text += 'Kanji:       ' + value.Kanji + '&#xA;';
+                              text += 'Present:   ' + value.Present + '&#xA;';
+                              text += 'Region:    ' + value.Region + '&#xA;';                            
+                              text += '</title>';
+                              el.innerHTML = text;
+                              el.setAttribute("onmouseover","kanjiSquareOn(this.id)");
+                              el.setAttribute("onmouseout","kanjiSquareOff(this.id)");
+                              counter += 1;
+                              if (counter ==24){
+                                horizDist = -13;
+                                vertDist = 835;
+                              }
+                              if (counter ==47){
+                                horizDist = -13;
+                                vertDist = 865;
+                              }                              
+                              var hd = horizDist -3;
+                              var vd = vertDist - 18;
+                              var hd3 = horizDist +15;
+                              var vd3 = vertDist - 5;
+                              var vd4 = vertDist - 14;
+                              var hd4 = horizDist -1;
+                              
+                              svgDoc.getElementById("pathsGroup").innerHTML = "<text id=\"kanjiLabel"+ String(counter).padStart(2, '0') +"\" onclick=\"toggleKanji(this.id)\" class=\"ans non-selectable\" style=\"cursor: pointer;font-size:11px;\" x=\"" + hd3 + "\" y=\"" + vd3 + "\" dominant-baseline=\"middle\" text-anchor=\"middle\">" + counter + "</text>"  + svgDoc.getElementById("pathsGroup").innerHTML;
+                              svgDoc.getElementById("pathsGroup").innerHTML = svgDoc.getElementById("pathsGroup").innerHTML + "<text id=\"provinceLabel" + String(counter).padStart(2, '0') + "\" onclick=\"toggleKanji(this.id)\" class=\"ans non-selectable\" style=\"cursor: pointer;font-size:11px;\" x=\"" + value.PositionX + "\" y=\"" + value.PositionY + "\" dominant-baseline=\"middle\" text-anchor=\"middle\">" + counter + "</text>";
+                              svgDoc.getElementById("pathsGroup").innerHTML = "<rect id=\"kanjiCoverRect" + String(counter).padStart(2, '0') + "\" onclick=\"toggleKanji(this.id)\" class=\"ans\" style=\"fill:#fcf5e3;\" x=\""+ hd + "\" y=\"" + vd + "\" width=\"34px\" height=\"25px\"></rect>"  + svgDoc.getElementById("pathsGroup").innerHTML;                              
+                              svgDoc.getElementById("pathsGroup").innerHTML = " <text onclick=\"toggleKanji(this.id)\" x=\""+ horizDist + "\" y=\"" + vertDist + "\" class=\"non-selectable\" style=\"font-size:14px;\" id=\"" + value.Id + String(counter).padStart(2, '0') + "\"> " + value.Kanji+ "  </text>" + svgDoc.getElementById("pathsGroup").innerHTML;
+                              svgDoc.getElementById("pathsGroup").innerHTML = "<path id=\"" + value.Id + "Square\" style=\"display:none;stroke:#2d54a1;fill-opacity:0;\" d=\"m " + hd4 + ","+ vd4 + " 30,0 0,18 -30,0 0,-18 z\"/>" + svgDoc.getElementById("pathsGroup").innerHTML;
+                              
+                              var styleText = "#"+ value.Id+ String(counter).padStart(2, '0') + ":hover ~ #" + value.Id + " {fill-opacity:1;} \n";
+                              styleText += "#data:hover ~ #" + value.Id + " {fill: #2d54a1; fill-opacity:"+parseFloat(value.Data)+";}";
+                              svgDoc.getElementById("mainStyle").innerHTML += styleText;
+                              horizDist += 33;
+                          }); //END OF ITERATE JSON
+                      }); //END FETCH JSON   
+                  }); //END ready function
+                  //console.log(svgDoc.getElementById("pathsGroup").innerHTML)
+                  //console.log(svgDoc.getElementById("mainStyle").innerHTML)
+}, false); // END OF addEventListener and getElementById("svgMap")
+  function cFL(string) {
+    /*capitalizeFirstLetter*/
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+
+  async function loadFile(file) {
+    var svgDoc = a.contentDocument;
+        let text = await file.text();
+        document.getElementById('output').textContent = text;
+        var myList = text.split(",");
+        console.log(myList)
+        //for (let i = 0; i < myList.length/2; i++) {
+        for (let i = 0; i < myList.length; i++) {
+            //console.log(myList[i]);
+            var userStyle = "#"+ myList[i]+ " {fill-opacity:1;}";
+            //var userStyle = "#"+ myList[2*i]+ " {fill-opacity:" + myList[2*i+1] + ";}";
+            svgDoc.getElementById("mainStyle").innerHTML += userStyle;
+        }
+      }
+  </script>
+
+<script type="text/javascript" src="/externaljs.js"></script>
+</body>
+</html>
