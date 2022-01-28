@@ -19,6 +19,12 @@
 .ans {
     display:none;
 }
+#hideAll {
+    display:block;
+}
+#showAll {
+    display:none;
+}	
 .grouplabels {
 	font-size:15px;
 }
@@ -193,12 +199,12 @@
    <a xlink:href="http://haeggmark.com" target="_blank"><rect x="20" y="-13" width="80" height="16" rx="3" style="fill-opacity:0"></rect></a>
    <a xlink:href="https://commons.wikimedia.org/wiki/File:Provinces_of_Japan.svg" target="_blank"><rect x="180" y="-13" width="43" height="16" rx="3" style="fill-opacity:0"></rect></a>
 
-   <g onclick="showAll()"> 
-   <circle cx="700" cy="600" r="20" style="fill:black;fill-opacity:0.1;"/>
-   <text x="700" y="594" style="font-size:10px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">Show</text>
-   <text x="700" y="606" style="font-size:10px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">Kanji</text>
+   <g onclick="showAll()" id="showAll"> 
+   <circle cx="700" cy="650" r="20" style="fill:black;fill-opacity:0.1;"/>
+   <text x="700" y="644" style="font-size:10px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">Show</text>
+   <text x="700" y="656" style="font-size:10px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">Kanji</text>
    </g>
-   <g onclick="hideAll()"> 
+   <g onclick="hideAll()" id="hideAll"> 
    <circle cx="700" cy="650" r="20" style="fill:black;fill-opacity:0.1;"/>
    <text x="700" y="644" style="font-size:10px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">Hide</text>
    <text x="700" y="656" style="font-size:10px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">Kanji</text>
@@ -698,6 +704,8 @@
             for(var i = 0; i < el.length; i++){
                 el[i].style.display = "none";
             }
+	    document.getElementById("hideAll").style.display = "block";
+	    document.getElementById("showAll").style.display = "none";
         }
         // Hide kanji => rectangles and kanji numbers are shown on top
         function hideAll() {
@@ -705,6 +713,8 @@
             for(var i = 0; i < el.length; i++){
                 el[i].style.display = "block";
             }
+	    document.getElementById("hideAll").style.display = "none";
+	    document.getElementById("showAll").style.display = "block";
         }  
 
         function toggleKanji(clicked_id) {
