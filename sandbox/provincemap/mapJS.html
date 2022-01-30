@@ -15,7 +15,7 @@
 <body>
 <!--<p class="float unselectable" onclick="changeContrastMode()">Toggle <br> contrast <br> mode</p>-->
 
-<object id="svgMap" data="Provinces_of_JapanJS.svg" type="image/svg+xml"></object>    
+<object id="svgMap" data="provinces-japan-js.svg" type="image/svg+xml"></object>    
 <br><br>
 
 <p style="color:red;margin-bottom:20px;">The version uses naive code generation with JS and is slow. Use <a href="map.html">this</a> version insead.</p>
@@ -63,7 +63,7 @@ To save a static image using FireFox, open console with F12 and type</p>
                   $(document).ready(function () {
     
                       // FETCHING DATA FROM JSON FILE
-                      $.getJSON("provinceData.json", 
+                      $.getJSON("province-data.json", 
                               function (data) {
   
                           var horizDist = -13;
