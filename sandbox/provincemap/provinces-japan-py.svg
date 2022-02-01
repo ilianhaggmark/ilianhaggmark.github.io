@@ -188,8 +188,8 @@
 </style>
 
    <path id="background" style="fill:#fcf5e3;" d="M -40,-30 L -40,890 L 770,890 L 770,-30 L -40,-30"></path>
-   <path id="frame1" style="fill:none;stroke:black;" d="M -25,-15 L -25,875 L 755,875 L 755,-15 L -25,-15"></path>   
-   <path id="frame2" style="fill:none;stroke:black;" d="M -30,-20 L -30,880 L 760,880 L 760,-20 L -30,-20"></path>       
+   <path id="frame1" style="fill:none;stroke:black;stroke-linecap:square;" d="M -25,-15 L -25,875 L 755,875 L 755,-15 L -25,-15"></path>   
+   <path id="frame2" style="fill:none;stroke:black;stroke-linecap:square;" d="M -30,-20 L -30,880 L 760,880 L 760,-20 L -30,-20"></path>       
 
    <text x="40" y="70" style="font-size:30px;font-weight:none;">Provinces of</text>
    <text x="70" y="105" style="font-size:40px;font-weight:none;">Japan</text>
