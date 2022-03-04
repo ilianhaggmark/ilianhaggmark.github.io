@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandbox - X-ray Phase Contrast</title>
+  <meta name="description" content="Comparison of X-ray phase contrast and conventional X-ray imaging.">
+  <meta name="author" content="Ilian Haggmark">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png" /> 
+  <meta name="googlebot" content="index,follow">
+<link rel="stylesheet" type="text/css" href="/style.css">
+
+  <style>
+    .img-comp-container {
+      position: relative;
+      height: 400px; 
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .img-comp-img {
+      position: absolute;
+      width: auto;
+      height: auto;
+      overflow:hidden;
+    }
+    
+    .img-comp-img img {
+      display:block;
+      max-width: none;
+    }
+  
+    .img-comp-slider {
+      position: absolute;
+      z-index:9;
+      cursor: ew-resize;
+      width: 2px; /*20*/
+      height: 400px; /*20*/
+      background-color: #ad2330;
+      opacity: 0.8;
+    }
+    </style>
+
+    <script>
+      /*Code from: W3C, https://www.w3schools.com/howto/howto_js_image_comparison.asp*/
+    function initComparisons() {
+      var x, i;
+      x = document.getElementsByClassName("img-comp-overlay");
+      for (i = 0; i < x.length; i++) {
+        compareImages(x[i]);
+      }
+      function compareImages(img) {
+        var slider, img, clicked = 0, w, h;
+        w = img.offsetWidth;
+        h = img.offsetHeight;
+        img.style.width = (3*w / 4) + "px";
+        slider = document.createElement("DIV");
+        slider.setAttribute("class", "img-comp-slider");
+        img.parentElement.insertBefore(slider, img);
+        slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+        slider.style.left = (3*w / 4) - (slider.offsetWidth / 2) + "px";
+        slider.addEventListener("mousedown", slideReady);
+        window.addEventListener("mouseup", slideFinish);
+        slider.addEventListener("touchstart", slideReady);
+        window.addEventListener("touchend", slideFinish);
+        function slideReady(e) {
+          e.preventDefault();
+          clicked = 1;
+          window.addEventListener("mousemove", slideMove);
+          window.addEventListener("touchmove", slideMove);
+        }
+        function slideFinish() {
+          clicked = 0;
+        }
+        function slideMove(e) {
+          var pos;
+          if (clicked == 0) return false;
+          pos = getCursorPos(e)
+          if (pos < 0) pos = 0;
+          if (pos > w) pos = w;
+          slide(pos);
+        }
+        function getCursorPos(e) {
+          var a, x = 0;
+          e = (e.changedTouches) ? e.changedTouches[0] : e;
+          a = img.getBoundingClientRect();
+          x = e.pageX - a.left;
+          x = x - window.pageXOffset;
+          return x;
+        }
+        function slide(x) {
+          img.style.width = x + "px";
+          slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+        }
+      }
+    }
+    </script>
+
+</head>
+
+<body>
+<p class="float unselectable" onclick="changeContrastMode()">Toggle <br> contrast <br> mode</p>
+
+<br><br>
+<h2>X-ray phase contrast</h2>
+<p style="margin: 10px 10px 10px 10px;">
+X-ray phase contrast is a set of techniques used in research and industry to improve quality in X-ray images. For a quick visualization of the advantages of these techniques, see the image below. (For an introduction to X-ray phase contrast, see the reference section.)
+</p>
+
+<div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="wasp2.png" width="400" height="400">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="wasp1.png" width="400" height="400">
+  </div>
+  
+</div>
+
+<p style="margin: 10px 10px 10px 10px;">  
+The two images are taken of the same object, a leg joint of a wasp. Drag the red line left/right to compare.
+<br><br>
+The right image is taken with a technique called Propagation-based phase-contrast X-ray imaging (PBI). One can clearly see how weakly absorbing features like hairs are much more visible in PBI. The right image also shows another characteristic feature of PBI, <em>edge enhancement</em>. Bright and dark fringes make small features stand out more clearly.  
+<br><br>
+<u>Note</u>: both images are taken with the same dose, exposure time, and detector resolution. The comparison should in other words be quite fair.
+</p>
+<h3>Reference</h3>
+<p style="margin: 10px 10px 10px 10px;"> 
+  The images are from I. Häggmark, "Phase-Contrast X-ray Imaging of Complex Objects", doctoral thesis, KTH Royal Institute of Technology, Stockholm (2021). <a href="http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Akth%3Adiva-293917">link to full-text</a> 
+</p>
+<br><br><br><br><br><br><br><br><br><br>
+<script>
+initComparisons();
+</script>
+
+<script type="text/javascript" src="/externaljs.js"></script>
+</body>
+</html>
