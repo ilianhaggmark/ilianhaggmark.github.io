@@ -78,9 +78,9 @@
 #sagami15:hover ~ #sagami {fill-opacity:1;}
 #data:hover ~ #musashi {fill: #2d54a1; fill-opacity:1;}
 #musashi16:hover ~ #musashi {fill-opacity:1;}
-#data:hover ~ #awa2 {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #awa2 {fill: #2d54a1; fill-opacity:1;}
 #awa217:hover ~ #awa2 {fill-opacity:1;}
-#data:hover ~ #kazusa {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #kazusa {fill: #2d54a1; fill-opacity:1;}
 #kazusa18:hover ~ #kazusa {fill-opacity:1;}
 #data:hover ~ #shimousa {fill: #2d54a1; fill-opacity:1;}
 #shimousa19:hover ~ #shimousa {fill-opacity:1;}
