@@ -310,7 +310,7 @@ listOfPrefectures = [
 Data = [
         1,
         1,
-        0.5,
+        1,
         0.5,
         1,        
         0.1,

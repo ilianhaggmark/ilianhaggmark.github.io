@@ -11,7 +11,7 @@
 #yamashiro01:hover ~ #yamashiro {fill-opacity:1;}
 #data:hover ~ #yamato {fill: #2d54a1; fill-opacity:1;}
 #yamato02:hover ~ #yamato {fill-opacity:1;}
-#data:hover ~ #kawachi {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #kawachi {fill: #2d54a1; fill-opacity:1}
 #kawachi03:hover ~ #kawachi {fill-opacity:1;}
 #data:hover ~ #izumi {fill: #2d54a1; fill-opacity:0.5;}
 #izumi04:hover ~ #izumi {fill-opacity:1;}

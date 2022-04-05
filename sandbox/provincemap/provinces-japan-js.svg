@@ -68,7 +68,7 @@
    <text style="font-size:20px;" x="270" y="160">五畿七道</text>
     
    <text id="kinai" class="grouplabels" x="85" y="180">Kinai</text> 
-   <text id="kinai" class="grouplabels" x="296" y="180">機内</text>
+   <text id="kinai" class="grouplabels" x="296" y="180">畿内</text>
 
    <text id="toukaidou" class="grouplabels" x="85" y="200">Tōkaidō</text>
    <text id="toukaidou" class="grouplabels" x="289" y="200">東海道</text>
