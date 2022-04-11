@@ -6,11 +6,12 @@
 }
 
 html {
-    padding: 20px;
-    overflow-y: scroll;
+  /*padding: 20px;*/
+  overflow-y: scroll;
 }
 
 body {
+  padding: 20px;
   background-color: #232323;
   margin: auto;
   max-width: 800px;
@@ -20,6 +21,25 @@ body {
 .contrast-mode {
   background-color: white;
   color: black;
+}
+
+#footer-page-container {
+  position: relative;
+  min-height: calc(100vh - 50px);
+  
+}
+
+#footer-allOther-content-wrap {
+  padding-bottom: 12px;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align:center;
+  height: 12px;            /* Footer height */
 }
 
 img {
@@ -147,8 +167,8 @@ dd:not(:last-child) {
 .float{
   width:80px;
   height:80px;  
-  bottom:70px;
-  right:70px;
+  bottom:30px;
+  right:30px;
   padding-top:17px;
   font-size: 12px;  
   }
