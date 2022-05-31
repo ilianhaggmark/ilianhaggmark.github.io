@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="379.90045mm"
+   height="299.83276mm"
+   viewBox="0 0 379.90045 299.83276"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="hongo-olddivisionS3.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.92578716"
+     inkscape:cx="874.93112"
+     inkscape:cy="528.73924"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer6" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="park"
+     style="display:inline"
+     transform="translate(-27.029009,-5.6539463)"
+     sodipodi:insensitive="true">
+    <path
+       style="opacity:0.8;fill:#00ff00;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 220.12223,46.707139 18.213,-14.651239 -3.83963,-5.481584 -6.66884,-11.01369 -1.41461,-2.298729 -0.47995,-0.252608 -0.63152,-0.151564 h -0.7073 l -0.60626,0.252607 -0.75782,0.732562 -18.01092,15.787973 z"
+       id="path1033"
+       inkscape:label="rikugien" />
+    <path
+       style="opacity:0.8;fill:#00ff00;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 225.60381,159.14276 1.01043,-3.96594 6.44149,-6.71936 -10.60951,-10.53373 -6.66884,-6.71936 -0.85887,0.95991 -8.84126,-7.50245 0.47995,-1.49038 -6.03732,-4.82481 0.85887,-1.46512 -9.2707,-4.09224 -0.93465,2.14716 -1.16199,1.79351 -1.08622,1.76826 c 0,0 -0.85886,1.26303 -0.85886,1.38934 0,0.1263 -0.88413,1.89456 -0.88413,1.89456 l -0.55573,1.5409 -0.581,1.8693 -0.60626,1.23777 -0.95991,1.84404 2.80394,1.91982 4.82481,3.25863 2.37451,1.2883 2.22295,1.03569 0.58099,0.55574 2.5766,3.91542 1.74299,3.23337 1.94508,3.05656 1.74299,1.64194 1.79352,1.2883 2.67764,1.162 3.63755,1.11147 1.61668,0.55574 1.743,1.69247 5.86049,3.43546 z"
+       id="path1217"
+       inkscape:label="koishikawashokubutsuen" />
+  </g>
+</svg>

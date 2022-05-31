@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandbox - Bunkyo</title>
+  <meta name="description" content="Map of Bunkyo-ku.">
+  <meta name="author" content="Ilian Haggmark">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png" /> 
+  <meta name="googlebot" content="index,follow">
+<link rel="stylesheet" type="text/css" href="/style/style.css"><!---->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="footer-page-container">
+        <div id="footer-allOther-content-wrap">  
+            <p class="float unselectable" onclick="changeContrastMode()">Toggle <br> contrast <br> mode</p>  
+
+<div style="display: grid; grid-template-columns: 1ft; grid-template-rows: 1ft 1ft 1ft 1ft 1ft 1ft 1ft 1ft; width: 800px;">                   
+    <div style="grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS6.svg" style="width: 800px;"></object></div>
+    <div id="Div_5" class="divs" style="display: block; grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS5.svg" style="width: 800px;"></object></div>
+    <div id="Div_4" class="divs" style="display: block; grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS4.svg" style="width: 800px;"></object></div>
+    <div id="Div_3" class="divs" style="display: none; grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS3.svg" style="width: 800px;"></object></div>
+    <div id="Div_2" class="divs" style="display: none; grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS2.svg" style="width: 800px;"></object></div>
+    <div id="Div_1" class="divs" style="display: block; grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS1.svg" style="width: 800px;"></object></div>
+    <p style="display: block; grid-column-start: 1; grid-row-start: 1; grid-row-end: 1; margin-left: 5px;"><input type="checkbox" id="Radio_Div_1" class="radio_btns" onclick="Show_Div('Div_1')">&nbsp;Layer Main streets</p>    
+    <p style="display: block; grid-column-start: 1; grid-row-start: 2; grid-row-end: 2; margin-left: 5px;"><input type="checkbox" id="Radio_Div_2" class="radio_btns" onclick="Show_Div('Div_2')">&nbsp;Layer Streets</p>
+    <p style="display: block; grid-column-start: 1; grid-row-start: 3; grid-row-end: 3; margin-left: 5px;"><input type="checkbox" id="Radio_Div_3" class="radio_btns" onclick="Show_Div('Div_3')">&nbsp;Layer Parks</p>        
+    <p style="display: block; grid-column-start: 1; grid-row-start: 4; grid-row-end: 4; margin-left: 5px;"><input type="checkbox" id="Radio_Div_4" class="radio_btns" onclick="Show_Div('Div_4')">&nbsp;Layer Old districts</p>        
+    <p style="display: block; grid-column-start: 1; grid-row-start: 5; grid-row-end: 5; margin-left: 5px;"><input type="checkbox" id="Radio_Div_5" class="radio_btns" onclick="Show_Div('Div_5')">&nbsp;Layer New districts</p>            
+</div>
+<br>
+
+<h2>Administrative division of Bunkyo-ku (page under construction)</h2>
+
+<p style="color:red;margin: 10px 10px 20px 10px;">Disclaimer: This is a free-hand drawn map and is not 100% reliable. The aim is however to make it as accurate as possible so any discovered errors are gratefully accepted. Please use <a href="/contactform.html">this contact form.</a> For more reliable sources, see the section "sources" below.</p> 
+
+<h3>About map features</h3>
+
+<p style="margin: 10px 10px 10px 10px;">This map contains several layers which can be shown/hidden with checkboxes. Only the top layer is sensitive to hover to display the name of streets, districts etc.</p>
+
+<h3>About Bunkyo-ku division</h3>
+
+<p style="margin: 10px 10px 10px 10px;">Bunkyo or Bunkyo-ku is one of the 23 special wards (特別区) in Tokyo. It was created in 1947 when to two (of the then 35) wards, Hongo-ku and Ishikawa-ku, was merged [1]. Hongo-ku and Ishikawa-ku was in turn formed in the beginning of the meiji era. They were initially 2 of 15 wards in 1889. Today Bunkyo-ku consists of 19 districts (地区, chiku or 町丁, chōchō or 町域, chōiki), 8 roughly make up old Hongo-ku and the remaining 11 Koishikawa-ku. Each district is divided into 2 to 7 sub-districts, chōme (丁目). Hongo-ku has 30 such sub-districts and Ishikawa 38. The districts of Bunkyo-ku are listed below. The digit after the name indicated the number of sub-districts. The districts are divided depending on if they belong to former Hongo-ku or Ishikawa-ku, but formally no such division is done today.</p> 
+
+<h3 style="margin-bottom: 10px;">New districts (in old Hongō)</h3>
+<ol style="margin-left: 0; padding-left: 40px; margin-bottom: 10px;">
+    <li>Hongō (本郷) 7</li>
+    <li>Yushima (湯島) 4</li>
+    <li>Yayoi (弥生) 2</li>
+    <li>Nishikata (西片) 2</li>
+    <li>Nezu (根津) 2</li>
+    <li>Mukōgaoka (向丘) 2</li>
+    <li>Sendagi (千駄木) 5</li>
+    <li>Honkomagome (本駒込) 6</li>
+</ol>
+
+  <h3 style="margin-bottom: 10px;">New districts (in old Koishikawa)</h3>
+  <ol start="9" style="padding-left: 40px; margin-bottom: 10px;">
+      <li>Kōraku (後楽) 2 </li>
+      <li>Kasuga (春日) 2 </li>
+      <li>Koishikawa (小石川) 5</li>
+      <li>Hakusan (白山) 4</li>
+      <li>Sengoku (千石) 4</li>
+      <li>Suidō (水道) 2 </li>
+      <li>Kohinata (小日向) 4</li>
+      <li>Sekiguchi (関口) 3</li>
+      <li>Meijirodai (目白台) 3</li>
+      <li>Otowa (音羽) 3 </li>
+      <li>Ōtsuka (大塚) 6</li>
+    </ol> 
+
+
+
+<h3>Old districts (Hongō-ku)</h3>
+<p style="margin: 10px 10px 10px 10px;">
+Before Hongō-ku and Koishikawa-ku merged the districts were smaller. Hongo had 48 and Ishikawa 61 A list of all old districts are shown below (including a few that disappeared before the map was made). Some have a group name, Kanshō (冠称), e.g., Hongō, Yushima, Komagome, Maruyama, Mukōgaoka, and Nezu. The a large redistricting was done i 1964-1966. Some districts disappeared earlier (Hongō-Higashi-Takechō (本郷東竹町) and Hongō-Nishi-Takechō (本郷西竹町) became part of Hongo in 1933) or lost their kanshō (several in 1911, e.g. Hongo). The map is from pre-war Showa so, some changes happened since Meiji.</p>
+<ol style="margin-left: 0; padding-left: 40px; margin-bottom: 10px;">
+    <li>Hongō (本郷 1-6)</li>
+    <li>Hongō-Kinsukechō (本郷金助町)</li>
+    <li>Hongō-Harukichō (本郷春木町 1-3)</li>
+    <li>Hongō-Motofujichō (本郷本富士町)</li>
+    <li>Hongō-Motomachi (本郷元町 1-2)</li>
+    <li>Hongō-Higashi-Takechō (本郷東竹町)  (diappeared 1933, not on map)</li>
+    <li>Hongō-Nishi-Takechō (本郷西竹町)  (diappeared 1933, not on map)</li>
+    <li>Hongō-Masagochō (本郷真砂町)</li>
+    <li>Hongō-Yumichō (本郷弓町 1-2)</li>
+    <li>Hongō-Kikusakachō (本郷菊坂町)</li>
+    <li>Hongō-Daimachi (本郷台町)</li>
+    <li>Hongō-Tamachi (本郷田町)</li>
+    <li>Hongō-Morikawachō (本郷森川町)</li>
+    <li>Hongō-Tatsuokachō (本郷龍岡町)</li>
+    <li>Yushima (湯島 1-6)</li>
+    <li>Yushima-Shinhanachō (湯島新花町) </li>
+    <li>Yushima-Mikumichō (湯島三組町) </li>
+    <li>Yushima-Tenjinchō (湯島天神町 1-3) </li>
+    <li>Yushima-Umezonomachi (湯島梅園町) </li>
+    <li>Yushima-Tenjinshita-Dōbōchō (湯島天神下同朋町) </li>
+    <li>Yushima-Kiridōshisakamachi (湯島切通坂町) </li>
+    <li>Yushima-Kiridōshichō (湯島切通町) </li>
+    <li>Yushima-Ryōmonchō (湯島両門町) </li>
+    <li>Tsumakoichō (妻恋町) </li>
+    <li>Komagome-Higashi-Katamachi (駒込東片町) </li>
+    <li>Komagome-Nishi-Katamachi (駒込西片町) </li>
+    <li>Komagome-Akebonochō (駒込曙町) </li>
+    <li>Komagome-Asakachō (駒込浅嘉町) </li>
+    <li>Komagome-Oiwakechō (駒込追分町) </li>
+    <li>Komagome-Sakanamachi (駒込肴町) </li>
+    <li>Komagome-Hōraichō (駒込蓬莱町) </li>
+    <li>Komagome-Sendagichō (駒込千駄木町) </li>
+    <li>Komagome-Sendagi-Hayashichō (駒込千駄木林町) </li>
+    <li>Komagome-Sendagi-Sakashitachō (駒込千駄木坂下町) </li>
+    <li>Komagome-Katamachi (駒込片町) </li>
+    <li>Komagome-Kisshōjichō (駒込吉祥寺町) </li>
+    <li>Komagome-Fujimaechō (駒込富士前町)</li>
+    <li>Komagome-Kami-Fujimaechō (駒込上富士前町) </li>
+    <li>Maruyama-Fukuyamachō (丸山福山町) </li>
+    <li>Maruyama-Shimmachi (丸山新町) </li>
+    <li>Nezu-Miyanagachō (根津宮永町) </li>
+    <li>Nezu-Yaegakichō (根津八重垣町) </li>
+    <li>Nezu-Sugachō (根津須賀町) </li>
+    <li>Nezu-Nishi-Sugachō (根津西須賀町) </li>
+    <li>Nezu-Katamachi (根津片町) </li>
+    <li>Nezu-Aizomechō (根津藍染町)  </li>
+    <li>Nezu-Shimizuchō (根津清水町)</li>
+    <li>Mukōgaoka-Yayoichō (向ヶ丘弥生町) </li>
+    <li>Komagome-Shimmeichō (駒込神明町) </li>
+    <li>Komagome-Dōzakachō (駒込動坂町) </li>
+</ol> 
+
+<h3>Old districts (Koishikawa-ku)</h3>
+<p style="margin: 10px 10px 10px 10px;">
+    Four kanshō were used in Koishikawa-ku: Koishikawa, Kobinata, Sekiguchi, and Takada. Like Hongo-ku, most districts changed in 1964-1966. kanshō was also removed in 1911 in most cases. In 1940, the five districts 18-22 became  Koishikawa-Tomisakachō (1-2) on the map. 25 disappeared in 1925. Note that 62 and 63 are fragmented areas, not continuous.
+    
+    <br><br>
+
+    TODO: 27 in two parts on MAP</p>
+
+<ol style="margin-left: 0; padding-left: 40px; margin-bottom: 10px;">
+    <li>Koishikawa-Takehayachō (小石川竹早町)</li>
+    <li>Koishikawa-Ōtsuka-Kubomachi (小石川大塚窪町) </li>
+    <li>Koishikawa-Ōtsukamachi (小石川大塚町)  </li>
+    <li>Koishikawa-Ōtsuka-Sakashitamachi (小石川大塚坂下町) </li>
+    <li>Koishikawa-Ōtsuka-Nakamachi (小石川大塚仲町)</li>
+    <li>Koishikawa-Ōtsuka-Kamimachi (小石川大塚上町) </li>
+    <li>Koishikawa-Ōtsuka-Tsujimachi (小石川大塚辻町) </li>
+    <li>Koishikawa-Kasugachō (小石川春日町 1-3)  </li>
+    <li>Koishikawa-Suwachō (小石川諏訪町) </li>
+    <li>Koishikawa-Shin-Suwachō (小石川新諏訪町)</li>
+    <li>Koishikawa-Ichibee-Gashi (小石川市兵衛河岸) </li>
+    <li>Koishikawa-Edogawachō (小石川江戸川町) </li>
+    <li>Koishikawa-Yamatochō (小石川大和町) </li>
+    <li>Koishikawa-Suidōchō (小石川水道町) </li>
+    <li>Koishikawa-Daimonchō (小石川大門町)</li>
+    <li>Koishikawa-Omotechō (小石川表町) </li>
+    <li>Koishikawa-Nakamachi (小石川仲町)</li>
+    <li>Koishikawa-Kami-Tomisakachō (小石川上富坂町) </li>
+    <li>Koishikawa-Naka-Tomisakachō (小石川中富坂町) </li>
+    <li>Koishikawa-Shimo-Tomisakachō (小石川下富坂町) </li>
+    <li>Koishikawa-Nishi-Tomisakachō (小石川西富坂町) </li>
+    <li>Koishikawa-Esashichō (小石川餌差町) </li>
+    <li>Koishikawa-Hatsunechō (小石川初音町) </li>
+    <li>Koishikawa-Yanagichō (小石川柳町)</li>
+    <li>Koishikawa-Sōjichō (小石川掃除町) </li>
+    <li>Koishikawa-Sasugayachō (小石川指ヶ谷町) </li>
+    <li>Koishikawa-Hakusammaechō (小石川白山前町) </li>
+    <li>Hakusan-Gotemmachi (白山御殿町) </li>
+    <li>Koishikawa-Hikawashitamachi (小石川氷川下町) </li>
+    <li>Koishikawa-Tosakichō (小石川戸崎町) 1</li>
+    <li>Koishikawa-Kanatomichō (小石川金富町) </li>
+    <li>Koishikawa-Dōshinchō (小石川同心町) </li>
+    <li>Koishikawa-Hisakatachō (小石川久堅町) </li>
+    <li>Koishikawa-Haramachi (小石川原町) </li>
+    <li>Koishikawa-Hayashichō (小石川林町) </li>
+    <li>Koishikawa-Ōharachō (小石川大原町) </li>
+    <li>Koishikawa-Maruyamachō (小石川丸山町) </li>
+    <li>Koishikawa-Miyashitachō (小石川宮下町) </li>
+    <li>Koishikawa-Kagomachi (小石川駕籠町) </li>
+    <li>Koishikawa-Nishimaruchō (小石川西丸町) </li>
+    <li>Koishikawa-Nishiharamachi (小石川西原町 1-2) </li>
+    <li>Koishikawachō (小石川 1-2) </li>
+    <li>Nishi-Edogawachō (西江戸川町) </li>
+    <li>Kobinata-Takeshimachō (小日向武島町) </li>
+    <li>Kobinata-Dairokutemmachi (小日向第六天町) </li>
+    <li>Kobinata-Suidōbata (小日向水道端 1-2) </li>
+    <li>Kobinata-Myōgadanichō (小日向茗荷谷町) </li>
+    <li>Kobinata-Shimizudanimachi (小日向清水谷町) </li>
+    <li>Kobinata-Daimachi (小日向台町 1-3)  </li>
+    <li>Kobinata-Suidōchō (小日向水道町) </li>
+    <li>Kobinata-Sankenchō (小日向三軒町) </li>
+    <li>Kobinata-Higashi-Furukawachō (小日向東古川町)</li>
+    <li>Kobinata-Nishi-Furukawachō (小日向西古川町) </li>
+    <li>Kobinata-Matsugaechō (小日向松ヶ枝町) </li>
+    <li>Kobinatachō (小日向町)  </li>
+    <li>Sakuragichō (桜木町)  </li>
+    <li>Otowachō (音羽町 1-9) </li>
+    <li>Higashi-Aoyagimachi (東青柳町) </li>
+    <li>Nishi-Aoyagimachi (西青柳町) </li>
+    <li>Sekiguchi-Suidōchō (関口水道町) </li>
+    <li>Sekiguchi-Komaichō (関口駒井町) </li>
+    <li>Sekiguchi-Daimachi (関口台町)  (area split in two parts)</li>
+    <li>Sekiguchimachi (関口町)  (area split in five parts)</li>
+    <li>Takada-Oimatsuchō (高田老松町)  </li>
+    <li>Takada-Toyokawachō (高田豊川町)  </li>
+    <li>Zōshigayachō (雑司ヶ谷町)  </li>
+</ol> 
+
+
+
+<h3>Sources</h3>
+<ol style="margin-left: 0; padding-left: 40px; margin-bottom: 10px;">
+    <li>ぶんきょうの町名由来 - 文京ふるさと歴史館 (Origins of town names in Bunkyo, Published by Bunkyo Musuem, 9th ed. 2021)</li>
+    <li>角川日本地名大辞典 - 13 東京都 (Kadokawa Dictionary of place names in Japan, vol 13. Tokyo, Published by Kadokawa, Tokyo 1978)</li>
+</ol> 
+
+<!--
+-->
+</div>
+<footer id="footer">&copy; Ilian Häggmark</footer>
+</div>    
+</body>
+
+<script type="text/javascript" src="/script/externaljs.js"></script>
+<script>
+
+$(".radio_btns").prop( "checked", false );
+$( "#Radio_Div_5").prop( "checked", true );
+$( "#Radio_Div_4").prop( "checked", true );
+$( "#Radio_Div_1").prop( "checked", true );
+
+
+	function Show_Div(Div_id) {
+      //$(".radio_btns").prop( "checked", false );
+ 	  //$(".divs").hide(250);
+      console.log("00")
+	  if (!$("#"+Div_id).is(':visible')) {
+	    $("#"+Div_id).show(250);
+	    $( "#Radio_"+Div_id).prop( "checked", true );
+        console.log("11")
+	  } else {
+	    $("#"+Div_id).hide(250);
+	    $( "#Radio_"+Div_id).prop( "checked", false );
+        console.log("22")
+	  }
+	}
+
+</script>
+</html>    
