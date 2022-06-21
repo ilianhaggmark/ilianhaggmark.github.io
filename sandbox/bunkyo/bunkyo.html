@@ -17,32 +17,33 @@
         <div id="footer-allOther-content-wrap">  
             <p class="float unselectable" onclick="changeContrastMode()">Toggle <br> contrast <br> mode</p>  
 
-<div style="display: grid; grid-template-columns: 1ft; grid-template-rows: 1ft 1ft 1ft 1ft 1ft 1ft 1ft 1ft; width: 800px;">                   
+<!-- Grid is used to set position of check boxes and avoid overlap. Set " background-color: red;" in style section of a "cell" to visually confirm position-->
+<div style="display: grid; grid-template-columns: 160px 640px; grid-template-rows: 1ft 1ft 1ft 1ft 1ft 1ft 1ft 1ft; width: 800px;">                   
     <div style="grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS6.svg" style="width: 800px;"></object></div>
-    <div id="Div_5" class="divs" style="display: block; grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS5.svg" style="width: 800px;"></object></div>
-    <div id="Div_4" class="divs" style="display: block; grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS4.svg" style="width: 800px;"></object></div>
-    <div id="Div_3" class="divs" style="display: none; grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS3.svg" style="width: 800px;"></object></div>
-    <div id="Div_2" class="divs" style="display: none; grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS2.svg" style="width: 800px;"></object></div>
-    <div id="Div_1" class="divs" style="display: block; grid-column-start: 1; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS1.svg" style="width: 800px;"></object></div>
-    <p style="display: block; grid-column-start: 1; grid-row-start: 1; grid-row-end: 1; margin-left: 5px;"><input type="checkbox" id="Radio_Div_1" class="radio_btns" onclick="Show_Div('Div_1')">&nbsp;Layer Main streets</p>    
-    <p style="display: block; grid-column-start: 1; grid-row-start: 2; grid-row-end: 2; margin-left: 5px;"><input type="checkbox" id="Radio_Div_2" class="radio_btns" onclick="Show_Div('Div_2')">&nbsp;Layer Streets</p>
-    <p style="display: block; grid-column-start: 1; grid-row-start: 3; grid-row-end: 3; margin-left: 5px;"><input type="checkbox" id="Radio_Div_3" class="radio_btns" onclick="Show_Div('Div_3')">&nbsp;Layer Parks</p>        
-    <p style="display: block; grid-column-start: 1; grid-row-start: 4; grid-row-end: 4; margin-left: 5px;"><input type="checkbox" id="Radio_Div_4" class="radio_btns" onclick="Show_Div('Div_4')">&nbsp;Layer Old districts</p>        
-    <p style="display: block; grid-column-start: 1; grid-row-start: 5; grid-row-end: 5; margin-left: 5px;"><input type="checkbox" id="Radio_Div_5" class="radio_btns" onclick="Show_Div('Div_5')">&nbsp;Layer New districts</p>            
+    <div id="Div_5" class="divs" style="display: block; grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS5.svg" style="width: 800px;"></object></div>
+    <div id="Div_4" class="divs" style="display: block; grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS4.svg" style="width: 800px;"></object></div>
+    <div id="Div_3" class="divs" style="display: none;  grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS3.svg" style="width: 800px;"></object></div>
+    <div id="Div_2" class="divs" style="display: none;  grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS2.svg" style="width: 800px;"></object></div>
+    <div id="Div_1" class="divs" style="display: block; grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 8;"><object type="image/svg+xml" data="bunkyoMapS1.svg" style="width: 800px;"></object></div>
+    <p style="display: block; grid-column-start: 1; grid-column-end: 1; grid-row-start: 1; grid-row-end: 1; margin-left: 5px;"><input type="checkbox" id="Radio_Div_1" class="radio_btns" onclick="Show_Div('Div_1')">&nbsp;Layer Main streets</p>    
+    <p style="display: block; grid-column-start: 1; grid-column-end: 1; grid-row-start: 2; grid-row-end: 2; margin-left: 5px;"><input type="checkbox" id="Radio_Div_2" class="radio_btns" onclick="Show_Div('Div_2')">&nbsp;Layer Streets</p>
+    <p style="display: block; grid-column-start: 1; grid-column-end: 1; grid-row-start: 3; grid-row-end: 3; margin-left: 5px;"><input type="checkbox" id="Radio_Div_3" class="radio_btns" onclick="Show_Div('Div_3')">&nbsp;Layer Parks</p>        
+    <p style="display: block; grid-column-start: 1; grid-column-end: 1; grid-row-start: 4; grid-row-end: 4; margin-left: 5px;"><input type="checkbox" id="Radio_Div_4" class="radio_btns" onclick="Show_Div('Div_4')">&nbsp;Layer Old districts</p>        
+    <p style="display: block; grid-column-start: 1; grid-column-end: 1; grid-row-start: 5; grid-row-end: 5; margin-left: 5px;"><input type="checkbox" id="Radio_Div_5" class="radio_btns" onclick="Show_Div('Div_5')">&nbsp;Layer New districts</p>            
 </div>
 <br>
 
-<h2>Administrative division of Bunkyo-ku (page under construction)</h2>
+<h2>Administrative division of Bunkyō-ku (page under construction)</h2>
 
-<p style="color:red;margin: 10px 10px 20px 10px;">Disclaimer: This is a free-hand drawn map and is not 100% reliable. The aim is however to make it as accurate as possible so any discovered errors are gratefully accepted. Please use <a href="/contactform.html">this contact form.</a> For more reliable sources, see the section "sources" below.</p> 
+<p style="margin: 10px 10px 20px 10px;">Disclaimer: This is a hand drawn map and is not 100% reliable. The aim is, however, to make it as accurate as possible so any discovered errors are gratefully accepted. Please use <a href="/contactform.html">this contact form.</a> For more reliable sources, see the section "sources" below.</p> 
 
 <h3>About map features</h3>
 
-<p style="margin: 10px 10px 10px 10px;">This map contains several layers which can be shown/hidden with checkboxes. Only the top layer is sensitive to hover to display the name of streets, districts etc.</p>
+<p style="margin: 10px 10px 10px 10px;">This map contains several layers which can be shown/hidden with checkboxes. Only the <u>top layer</u> is sensitive to hover to display the name of streets, districts etc.</p>
 
 <h3>About Bunkyo-ku division</h3>
 
-<p style="margin: 10px 10px 10px 10px;">Bunkyo or Bunkyo-ku is one of the 23 special wards (特別区) in Tokyo. It was created in 1947 when to two (of the then 35) wards, Hongo-ku and Ishikawa-ku, was merged [1]. Hongo-ku and Ishikawa-ku was in turn formed in the beginning of the meiji era. They were initially 2 of 15 wards in 1889. Today Bunkyo-ku consists of 19 districts (地区, chiku or 町丁, chōchō or 町域, chōiki), 8 roughly make up old Hongo-ku and the remaining 11 Koishikawa-ku. Each district is divided into 2 to 7 sub-districts, chōme (丁目). Hongo-ku has 30 such sub-districts and Ishikawa 38. The districts of Bunkyo-ku are listed below. The digit after the name indicated the number of sub-districts. The districts are divided depending on if they belong to former Hongo-ku or Ishikawa-ku, but formally no such division is done today.</p> 
+<p style="margin: 10px 10px 10px 10px;">Bunkyo or Bunkyō-ku is one of the 23 special wards (特別区) in Tokyo. It was created in 1947 when two (of the then 35) wards, Hongō-ku and Ishikawa-ku, were merged [1]. Hongō-ku and Ishikawa-ku were in turn formed in the beginning of the Meiji era. They were initially two of 15 wards in 1889. Today Bunkyō-ku consists of 19 districts (地区, chiku or 町丁, chōchō or 町域, chōiki), 8 roughly make up old Hongō-ku and the remaining 11 Koishikawa-ku. Each district is divided into 2 to 7 sub-districts, chōme (丁目). Hongō-ku has 30 such sub-districts and Ishikawa 38. The districts of Bunkyō-ku are listed below. The digit after the name indicated the number of sub-districts. Here the districts are divided depending on if they belong to former Hongō-ku or Ishikawa-ku, but formally no such division is done today. A clear feature of the landscape in Bunkyo is the difference in elevation. Five plateaus (台地, daichi) exist in the ward, from west to east: Sekiguchi(関口), Kohinata (小日向), Koishikawa (小石川), Hakusan (白山), and Hongō (本郷). This can be seen in the old names where four old districts called daimachi (台町).</p> 
 
 <h3 style="margin-bottom: 10px;">New districts (in old Hongō)</h3>
 <ol style="margin-left: 0; padding-left: 40px; margin-bottom: 10px;">
@@ -131,11 +132,7 @@ Before Hongō-ku and Koishikawa-ku merged the districts were smaller. Hongo had 
 
 <h3>Old districts (Koishikawa-ku)</h3>
 <p style="margin: 10px 10px 10px 10px;">
-    Four kanshō were used in Koishikawa-ku: Koishikawa, Kobinata, Sekiguchi, and Takada. Like Hongo-ku, most districts changed in 1964-1966. kanshō was also removed in 1911 in most cases. In 1940, the five districts 18-22 became  Koishikawa-Tomisakachō (1-2) on the map. 25 disappeared in 1925. Note that 62 and 63 are fragmented areas, not continuous.
-    
-    <br><br>
-
-    TODO: 27 in two parts on MAP</p>
+    Four kanshō were used in Koishikawa-ku: Koishikawa, Kobinata, Sekiguchi, and Takada. Like Hongō-ku, most districts changed in 1964-1966. kanshō was also removed in 1911 in most cases. In 1940, the five districts No. 18-22 became Koishikawa-Tomisakachō (1-2) on the map. Note that No. 62 and No. 63 are fragmented areas, not continuous.</p>
 
 <ol style="margin-left: 0; padding-left: 40px; margin-bottom: 10px;">
     <li>Koishikawa-Takehayachō (小石川竹早町)</li>
@@ -162,12 +159,12 @@ Before Hongō-ku and Koishikawa-ku merged the districts were smaller. Hongo had 
     <li>Koishikawa-Esashichō (小石川餌差町) </li>
     <li>Koishikawa-Hatsunechō (小石川初音町) </li>
     <li>Koishikawa-Yanagichō (小石川柳町)</li>
-    <li>Koishikawa-Sōjichō (小石川掃除町) </li>
+    <li>Koishikawa-Sōjichō (小石川掃除町) (changed name to Yachiyochō (八千代町) in 1925)</li>
     <li>Koishikawa-Sasugayachō (小石川指ヶ谷町) </li>
     <li>Koishikawa-Hakusammaechō (小石川白山前町) </li>
     <li>Hakusan-Gotemmachi (白山御殿町) </li>
     <li>Koishikawa-Hikawashitamachi (小石川氷川下町) </li>
-    <li>Koishikawa-Tosakichō (小石川戸崎町) 1</li>
+    <li>Koishikawa-Tosakichō (小石川戸崎町)</li>
     <li>Koishikawa-Kanatomichō (小石川金富町) </li>
     <li>Koishikawa-Dōshinchō (小石川同心町) </li>
     <li>Koishikawa-Hisakatachō (小石川久堅町) </li>
@@ -212,6 +209,9 @@ Before Hongō-ku and Koishikawa-ku merged the districts were smaller. Hongo had 
 <ol style="margin-left: 0; padding-left: 40px; margin-bottom: 10px;">
     <li>ぶんきょうの町名由来 - 文京ふるさと歴史館 (Origins of town names in Bunkyo, Published by Bunkyo Musuem, 9th ed. 2021)</li>
     <li>角川日本地名大辞典 - 13 東京都 (Kadokawa Dictionary of place names in Japan, vol 13. Tokyo, Published by Kadokawa, Tokyo 1978)</li>
+    <li>人文社編集部 - 古地図・現代図で歩く 昭和東京散歩 (Showa Tokyo stroll with old and present maps, Published by Jinbunsha, Tokyo 2004) </li>
+    <li>江戸町巡り https://edo.amebaownd.com/posts/3375722 </li>
+    <li>江戸町巡り https://edo.amebaownd.com/posts/3375720</li>
 </ol> 
 
 <!--
