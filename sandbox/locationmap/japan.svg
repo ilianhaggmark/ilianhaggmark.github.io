@@ -6623,7 +6623,7 @@ Equirectangular projection. Geographic limits of the map:
 <circle r='1' cx='438.0427791612674' cy='83.3941255582397' stroke="black" stroke-width="0" fill="red"><title>Abashiri</title></circle>
 <circle r='1' cx='245.87648771670854' cy='300.24821999402184' stroke="black" stroke-width="0" fill="red"><title>Aioi</title></circle>
 <circle r='1' cx='368.8362977971657' cy='158.59794648792524' stroke="black" stroke-width="0" fill="red"><title>Aomori</title></circle>
-<circle r='1' cx='246.52408119610286' cy='315.85688668345875' stroke="black" stroke-width="0" fill="red"><title>Bandou</title></circle>
+<circle r='1' cx='246.52408119610286' cy='315.85688668345875' stroke="black" stroke-width="0" fill="red"><title>Bandō</title></circle>
 <circle r='1' cx='229.02039696970687' cy='300.9300573435744' stroke="black" stroke-width="0" fill="red"><title>Bitchuu-Takahashi</title></circle>
 <circle r='1' cx='224.01654713639508' cy='307.9963774843633' stroke="black" stroke-width="0" fill="red"><title>Fukuyama</title></circle>
 <circle r='1' cx='333.5161202817044' cy='288.88124175830006' stroke="black" stroke-width="0" fill="red"><title>Gotemba</title></circle>
@@ -6634,16 +6634,19 @@ Equirectangular projection. Geographic limits of the map:
 <circle r='1' cx='206.18085014454408' cy='310.20200852563806' stroke="black" stroke-width="0" fill="red"><title>Hiroshima</title></circle>
 <circle r='1' cx='422.3033524859751' cy='109.29222754069116' stroke="black" stroke-width="0" fill="red"><title>Ikeda</title></circle>
 <circle r='1' cx='289.78510818398064' cy='307.82152231985424' stroke="black" stroke-width="0" fill="red"><title>Ise</title></circle>
+<circle r='1' cx='336.602607077865' cy='296.55715766311084' stroke="black" stroke-width="0" fill="red"><title>Ito</title></circle>
 <circle r='1' cx='201.6917253283676' cy='315.45666426317985' stroke="black" stroke-width="0" fill="red"><title>Iwakuni</title></circle>
 <circle r='1' cx='212.13625190654446' cy='287.45809658771554' stroke="black" stroke-width="0" fill="red"><title>Izumo</title></circle>
 <circle r='1' cx='169.03163832950247' cy='376.0339739786068' stroke="black" stroke-width="0" fill="red"><title>Kagoshima</title></circle>
 <circle r='1' cx='345.620609204951' cy='288.43476410742306' stroke="black" stroke-width="0" fill="red"><title>Kamakura</title></circle>
 <circle r='1' cx='288.5954260044495' cy='258.7677631970753' stroke="black" stroke-width="0" fill="red"><title>Kanazawa</title></circle>
+<circle r='1' cx='366.7497511822485' cy='273.09460218361784' stroke="black" stroke-width="0" fill="red"><title>Kashima</title></circle>
+<circle r='1' cx='364.90842643973394' cy='274.80395162517783' stroke="black" stroke-width="0" fill="red"><title>Katori</title></circle>
 <circle r='1' cx='344.2911497766749' cy='274.5852543100872' stroke="black" stroke-width="0" fill="red"><title>Kawagoe</title></circle>
 <circle r='1' cx='252.55203960113528' cy='281.2611747983028' stroke="black" stroke-width="0" fill="red"><title>Kinosakionsen</title></circle>
-<circle r='1' cx='323.73625499592833' cy='274.29839037260916' stroke="black" stroke-width="0" fill="red"><title>Kiyosata</title></circle>
-<circle r='1' cx='259.7143818465683' cy='303.51019928368225' stroke="black" stroke-width="0" fill="red"><title>Kobe</title></circle>
-<circle r='1' cx='227.59815418950328' cy='329.71999250203305' stroke="black" stroke-width="0" fill="red"><title>Kochi</title></circle>
+<circle r='1' cx='323.73625499592833' cy='274.29839037260916' stroke="black" stroke-width="0" fill="red"><title>Kiyosato</title></circle>
+<circle r='1' cx='259.7143818465683' cy='303.51019928368225' stroke="black" stroke-width="0" fill="red"><title>Kōbe</title></circle>
+<circle r='1' cx='227.59815418950328' cy='329.71999250203305' stroke="black" stroke-width="0" fill="red"><title>Kōchi</title></circle>
 <circle r='1' cx='231.96260441757647' cy='305.33881030014044' stroke="black" stroke-width="0" fill="red"><title>Kurashiki</title></circle>
 <circle r='1' cx='208.22280558563756' cy='313.75628483733743' stroke="black" stroke-width="0" fill="red"><title>Kure</title></circle>
 <circle r='1' cx='440.5622190424454' cy='107.67859933708388' stroke="black" stroke-width="0" fill="red"><title>Kushiro</title></circle>
@@ -6665,7 +6668,7 @@ Equirectangular projection. Geographic limits of the map:
 <circle r='1' cx='220.71225285503945' cy='309.9809173422657' stroke="black" stroke-width="0" fill="red"><title>Onomichi</title></circle>
 <circle r='1' cx='265.9554531055204' cy='302.957187990043' stroke="black" stroke-width="0" fill="red"><title>Osaka</title></circle>
 <circle r='1' cx='373.97974487203936' cy='102.79088021502685' stroke="black" stroke-width="0" fill="red"><title>Otaru</title></circle>
-<circle r='1' cx='273.2007333563663' cy='295.8780430459714' stroke="black" stroke-width="0" fill="red"><title>Otsu</title></circle>
+<circle r='1' cx='273.2007333563663' cy='295.8780430459714' stroke="black" stroke-width="0" fill="red"><title>Ōtsu</title></circle>
 <circle r='1' cx='456.4845855590563' cy='83.46433759468994' stroke="black" stroke-width="0" fill="red"><title>Rausu</title></circle>
 <circle r='1' cx='380.9946836649556' cy='105.83055133358272' stroke="black" stroke-width="0" fill="red"><title>Sapporo</title></circle>
 <circle r='1' cx='352.0139555471645' cy='278.11460664865155' stroke="black" stroke-width="0" fill="red"><title>Shibamata</title></circle>
@@ -6689,12 +6692,13 @@ Equirectangular projection. Geographic limits of the map:
 <circle r='1' cx='268.99615802262474' cy='303.72890302262067' stroke="black" stroke-width="0" fill="blue"><title>Hiraoka Jinja</title></circle>
 <circle r='1' cx='262.89512500057526' cy='301.78790146939764' stroke="black" stroke-width="0" fill="blue"><title>Hirota Jinja</title></circle>
 <circle r='1' cx='291.35056228607374' cy='307.52355508680785' stroke="black" stroke-width="0" fill="blue"><title>Meoto Iwa</title></circle>
-<circle r='1' cx='268.11184078834464' cy='314.26594842223136' stroke="black" stroke-width="0" fill="blue"><title>Oku no In (Koyasan)</title></circle>
-<circle r='1' cx='265.2663162214956' cy='306.87596310469763' stroke="black" stroke-width="0" fill="blue"><title>Otori Taisha</title></circle>
-<circle r='1' cx='350.93318462190473' cy='258.3378062693985' stroke="black" stroke-width="0" fill="blue"><title>Ouya Kannon</title></circle>
+<circle r='1' cx='268.11184078834464' cy='314.26594842223136' stroke="black" stroke-width="0" fill="blue"><title>Oku no In (Kōyasan)</title></circle>
+<circle r='1' cx='265.2663162214956' cy='306.87596310469763' stroke="black" stroke-width="0" fill="blue"><title>Ōtori Taisha</title></circle>
+<circle r='1' cx='350.93318462190473' cy='258.3378062693985' stroke="black" stroke-width="0" fill="blue"><title>Ōya Kannon</title></circle>
 <circle r='1' cx='361.53934190169326' cy='287.0971532413452' stroke="black" stroke-width="0" fill="blue"><title>Tamasaki Jinja (Kazusa-Ichinomiya)</title></circle>
 <circle r='1' cx='434.8396484571524' cy='97.2268322609711' stroke="black" stroke-width="0" fill="green"><title>Akanko</title></circle>
 <circle r='1' cx='116.3184424469449' cy='491.3084822455002' stroke="black" stroke-width="0" fill="green"><title>Bise-fukugi</title></circle>
+<circle r='1' cx='371.51927956764683' cy='279.28139393230043' stroke="black" stroke-width="0" fill="green"><title>Inubōsaki Lighthouse (Chōshi)</title></circle>
 <circle r='1' cx='203.29839648572704' cy='313.1130157053408' stroke="black" stroke-width="0" fill="green"><title>Itsukushima</title></circle>
 <circle r='1' cx='209.6254110366817' cy='285.61202884414155' stroke="black" stroke-width="0" fill="green"><title>Izumo Hinomisaki Lighthouse</title></circle>
 <circle r='1' cx='439.76758852452974' cy='94.14610854277475' stroke="black" stroke-width="0" fill="green"><title>Kussharoko</title></circle>
@@ -6704,7 +6708,7 @@ Equirectangular projection. Geographic limits of the map:
 <circle r='1' cx='378.56413761149173' cy='54.587560521828664' stroke="black" stroke-width="0" fill="green"><title>Rishiri</title></circle>
 <circle r='1' cx='170.77319674887448' cy='376.3172016230241' stroke="black" stroke-width="0" fill="green"><title>Sakurajima</title></circle>
 <circle r='1' cx='454.2225672601713' cy='80.98335115822437' stroke="black" stroke-width="0" fill="green"><title>Shiretoko</title></circle>
-<circle r='1' cx='392.5049296354975' cy='48.00093330268578' stroke="black" stroke-width="0" fill="green"><title>Soya Misaki</title></circle>
+<circle r='1' cx='392.5049296354975' cy='48.00093330268578' stroke="black" stroke-width="0" fill="green"><title>Sōya Misaki</title></circle>
 <circle r='1' cx='244.94391446053191' cy='297.25930612380824' stroke="black" stroke-width="0" fill="green"><title>SPring-8</title></circle>
 	</g>
 </g>
