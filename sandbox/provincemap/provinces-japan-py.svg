@@ -52,7 +52,7 @@
 #yamato02:hover ~ #yamato {fill-opacity:1;}
 #data:hover ~ #kawachi {fill: #2d54a1; fill-opacity:1;}
 #kawachi03:hover ~ #kawachi {fill-opacity:1;}
-#data:hover ~ #izumi {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #izumi {fill: #2d54a1; fill-opacity:1;}
 #izumi04:hover ~ #izumi {fill-opacity:1;}
 #data:hover ~ #settsu {fill: #2d54a1; fill-opacity:1;}
 #settsu05:hover ~ #settsu {fill-opacity:1;}
@@ -70,7 +70,7 @@
 #toutoumi11:hover ~ #toutoumi {fill-opacity:1;}
 #data:hover ~ #suruga {fill: #2d54a1; fill-opacity:1;}
 #suruga12:hover ~ #suruga {fill-opacity:1;}
-#data:hover ~ #izu {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #izu {fill: #2d54a1; fill-opacity:1;}
 #izu13:hover ~ #izu {fill-opacity:1;}
 #data:hover ~ #kai {fill: #2d54a1; fill-opacity:1;}
 #kai14:hover ~ #kai {fill-opacity:1;}
@@ -98,13 +98,13 @@
 #kouzuke25:hover ~ #kouzuke {fill-opacity:1;}
 #data:hover ~ #shimotsuke {fill: #2d54a1; fill-opacity:1;}
 #shimotsuke26:hover ~ #shimotsuke {fill-opacity:1;}
-#data:hover ~ #dewa {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #dewa {fill: #2d54a1; fill-opacity:1;}
 #dewa27:hover ~ #dewa {fill-opacity:1;}
 #data:hover ~ #mutsu {fill: #2d54a1; fill-opacity:1;}
 #mutsu28:hover ~ #mutsu {fill-opacity:1;}
-#data:hover ~ #wakasa {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #wakasa {fill: #2d54a1; fill-opacity:1;}
 #wakasa29:hover ~ #wakasa {fill-opacity:1;}
-#data:hover ~ #echizen {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #echizen {fill: #2d54a1; fill-opacity:1;}
 #echizen30:hover ~ #echizen {fill-opacity:1;}
 #data:hover ~ #kaga {fill: #2d54a1; fill-opacity:1;}
 #kaga31:hover ~ #kaga {fill-opacity:1;}
@@ -116,9 +116,9 @@
 #echigo34:hover ~ #echigo {fill-opacity:1;}
 #data:hover ~ #sado {fill: #2d54a1; fill-opacity:0.1;}
 #sado35:hover ~ #sado {fill-opacity:1;}
-#data:hover ~ #tanba {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #tanba {fill: #2d54a1; fill-opacity:0.5;}
 #tanba36:hover ~ #tanba {fill-opacity:1;}
-#data:hover ~ #tango {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #tango {fill: #2d54a1; fill-opacity:1;}
 #tango37:hover ~ #tango {fill-opacity:1;}
 #data:hover ~ #tajima {fill: #2d54a1; fill-opacity:1;}
 #tajima38:hover ~ #tajima {fill-opacity:1;}
@@ -150,7 +150,7 @@
 #nagato51:hover ~ #nagato {fill-opacity:1;}
 #data:hover ~ #kii {fill: #2d54a1; fill-opacity:1;}
 #kii52:hover ~ #kii {fill-opacity:1;}
-#data:hover ~ #awaji {fill: #2d54a1; fill-opacity:1;}
+#data:hover ~ #awaji {fill: #2d54a1; fill-opacity:0.5;}
 #awaji53:hover ~ #awaji {fill-opacity:1;}
 #data:hover ~ #awa1 {fill: #2d54a1; fill-opacity:1;}
 #awa154:hover ~ #awa1 {fill-opacity:1;}
