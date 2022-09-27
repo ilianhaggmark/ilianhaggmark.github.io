@@ -26,7 +26,7 @@
 {"Id":"kouzuke","Name":"kōzuke","Kanji":"上野","RegionId":"tousandou","Region":"Tōsandō","Present":"Gunma","Data":"1","PositionX":"446","PositionY":"467"},
 {"Id":"shimotsuke","Name":"shimotsuke","Kanji":"下野","RegionId":"tousandou","Region":"Tōsandō","Present":"Tochigi","Data":"1","PositionX":"480","PositionY":"457"},
 {"Id":"dewa","Name":"dewa","Kanji":"出羽","RegionId":"tousandou","Region":"Tōsandō","Present":"Yamagata and Akita","Data":"0.1","PositionX":"490","PositionY":"350"},
-{"Id":"mutsu","Name":"mutsu","Kanji":"陸奥","RegionId":"tousandou","Region":"Tōsandō","Present":"Fukushima, Miyagi, Iwate, and Aomori","Data":"1","PositionX":"540","PositionY":"300"},
+{"Id":"mutsu","Name":"mutsu","Kanji":"陸奥","RegionId":"tousandou","Region":"Tōsandō","Present":"Fukushima, Miyagi, Iwate, Akita, and Aomori","Data":"1","PositionX":"540","PositionY":"300"},
 {"Id":"wakasa","Name":"wakasa","Kanji":"若狭","RegionId":"hokurikudou","Region":"Hokurikudō","Present":"Fukui","Data":"0.1","PositionX":"311","PositionY":"515"},
 {"Id":"echizen","Name":"echizen","Kanji":"越前","RegionId":"hokurikudou","Region":"Hokurikudō","Present":"Fukui","Data":"0.5","PositionX":"336","PositionY":"492"},
 {"Id":"kaga","Name":"kaga","Kanji":"加賀","RegionId":"hokurikudou","Region":"Hokurikudō","Present":"Ishikawa","Data":"1","PositionX":"348","PositionY":"473"},

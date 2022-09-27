@@ -263,7 +263,7 @@ listOfPrefectures = [
         'Gunma',
         'Tochigi',
         'Yamagata and Akita',
-        'Fukushima, Miyagi, Iwate, and Aomori',
+        'Fukushima, Miyagi, Iwate, Akita, and Aomori',
         'Fukui',
         'Fukui',
         'Ishikawa',
