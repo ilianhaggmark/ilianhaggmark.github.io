@@ -93,6 +93,13 @@ a {
   color: #0000EE;
 }
 
+.hide {
+  color: #232323;
+}
+.contrast-mode .hide{
+  color: white;
+}
+
 dl {
   margin-top: 10px;
   margin-bottom: 20px;
