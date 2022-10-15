@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandbox - X-ray calculator</title>
+  <meta name="description" content="Simple HTML form for calculating X-ray parameters.">
+  <meta name="author" content="Ilian Haggmark">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png" /> 
+  <meta name="googlebot" content="index,follow">
+  <link rel="stylesheet" type="text/css" href="/style/style.css">
+  <script src="jquery-3.6.0.min.js"></script>
+<style>
+
+  .greyedOut {
+    color:rgb(101, 101, 101)
+  }
+
+  .grid-container {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 150px 61px 180px 100px;
+    gap: 0px;
+    background-color: rgba(106, 158, 78, 0.69);
+    padding: 2px;
+  }
+
+  .grid-container > div {
+    background-color: rgba(106, 158, 78, 0.69);
+    /*border: 2px solid black;
+    text-align: center;
+    font-size: 30px;*/
+    padding: 10px 0;
+    color: black;
+  }
+
+  .item {
+    grid-area: 1 / 3 / 6 / 4;
+  } 
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+</style>
+</head>
+<body>
+  <div id="footer-page-container">
+  <div id="footer-allOther-content-wrap"> 
+
+  <div class="grid-container">
+    <div class="item">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 40 40" id="svg">
+        <style>
+        .path {
+          stroke: rgb(183, 39, 39);
+          stroke-width: 0.5;
+          fill: none;
+        }
+        </style>
+        <defs>
+          <marker id="arrowhead" markerWidth="5" markerHeight="3.5" 
+          refX="0" refY="1.75" orient="auto">
+            <polygon fill="rgb(183, 39, 39)" points="0 0, 5 1.75, 0 3.5" />
+          </marker>
+        </defs>
+        <!--Five horizontal arrows-->
+        <path class="path" id ="arrow1" d="M 25 2 L 40 2" marker-end="url(#arrowhead)"></path>
+        <path class="path" id ="arrow2" d="M 25 11 L 40 11" marker-end="url(#arrowhead)"></path>
+        <path class="path" id ="arrow3" d="M 25 20 L 40 20" marker-end="url(#arrowhead)"></path>
+        <path class="path" id ="arrow4" d="M 25 29 L 40 29"  marker-end="url(#arrowhead)"></path>
+        <path class="path" id ="arrow5" d="M 25 38 L 40 38" marker-end="url(#arrowhead)"></path>
+        <!--vertical line-->
+        <path class="path" id ="vertical" d="M 25 2 L 25 38"  stroke-linecap="square"></path>
+        <!--changing horizontal line-->
+        <path class="path" id ="start" d="M 12 2 L 25 2"></path>
+      </svg>
+
+    </div>
+      <div ><input type="radio" id="rA" class="prop" onchange="hideA(this)" name="property" checked="checked"><label id="AA" onclick="changeStateA()"> Energy [keV]  </label></div>
+      <div ><input type="number" id="A"  step="any" style="width: 4em;" value="0" class="field"/></div>
+      <div ><span id="resA"></span></div>
+      <div ><input type="radio" id="rJ" class="prop" onchange="hideJ(this)" name="property"><label id="JJ"  onclick="changeStateJ()"> Energy [J] </label></div>
+      <div ><input type="number" id="J" step="any" value="0" style="width: 4em;" class="field" disabled = "true"/></div>  
+      <div ><span id="resJ"></span></div>
+      <div ><input type="radio" id="rB" class="prop" onchange="hideB(this)" name="property"><label id="BB"  onclick="changeStateB()"> Wavelength [m] </label></div>
+    <div ><input type="number" id="B" step="any" value="0" style="width: 4em;" class="field" disabled = "true"/></div>
+    <div ><span id="resB"></span></div>
+    <div ><input type="radio" id="rC" class="prop" onchange="hideC(this)" name="property"><label id="CC"  onclick="changeStateC()"> Wavelength [nm] </label></div>
+    <div ><input type="number" id="C" step="any" style="width: 4em;" value="0" class="field" disabled = "true"/></div>
+    <div ><span id="resC"></span></div>
+    <div ><input type="radio" id="rAng" class="prop" onchange="hideAng(this)" name="property" checked="checked"><label id="AAng"  onclick="changeStateAng()"> Wavelength [Å]  </label></div>
+    <div ><input type="number" id="Ang" step="any" style="width: 4em;" value="0" class="field" disabled = "true"/></div>
+    <div ><span id="resAng"></span></div>
+    </div> 
+
+
+  </div>
+  <footer id="footer">&copy; Ilian Häggmark</footer>
+  </div>
+<script>
+
+// On refresh, check which radiobutton is check to make sure the right elements are greyed out!
+let active = document.querySelector('input[name="property"]:checked').id;
+//console.log(active);
+
+if (active=="rA"){
+  hideA(document.getElementById("rA")); 
+} else if (active=="rB") {
+    hideB(document.getElementById("rB"));
+} else if (active=="rC") {
+    hideC(document.getElementById("rC"));
+} else if (active=="rJ"){
+    hideJ(document.getElementById("rJ"));
+} else {
+    hideAng(document.getElementById("rAng"));
+}
+
+calculateTotal(); // force calc of values on page reload
+
+function changeStateA() {
+  document.getElementById("rA").checked = true; 
+  hideA(document.getElementById("rA")); 
+  calculateTotal();
+}
+function changeStateJ() {
+  document.getElementById("rJ").checked = true; 
+  hideJ(document.getElementById("rJ")); 
+  calculateTotal();
+}
+function changeStateB() {
+  document.getElementById("rB").checked = true; 
+  hideB(document.getElementById("rB")); 
+  calculateTotal();
+}
+function changeStateC() {
+  document.getElementById("rC").checked = true; 
+  hideC(document.getElementById("rC")); 
+  calculateTotal();
+}
+function changeStateAng() {
+  document.getElementById("rAng").checked = true; 
+  hideAng(document.getElementById("rAng")); 
+  calculateTotal();
+}
+
+function hideA(x) {
+   if (x.checked) {
+     document.getElementById("A").disabled = false ;
+     document.getElementById("AA").classList.remove('greyedOut');
+     document.getElementById("J").disabled = true ;
+     document.getElementById("JJ").classList.add('greyedOut');
+     document.getElementById("B").disabled = true ;
+     document.getElementById("BB").classList.add('greyedOut');
+     document.getElementById("C").disabled = true ;
+     document.getElementById("CC").classList.add('greyedOut');
+     document.getElementById("Ang").disabled = true ;
+     document.getElementById("AAng").classList.add('greyedOut');           
+     document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 2 L 25 2"); 
+
+   }
+ }
+
+ function hideJ(x) {
+   if (x.checked) {
+     
+     document.getElementById("A").disabled = true ;
+     document.getElementById("AA").classList.add('greyedOut');
+     document.getElementById("J").disabled = false ;
+     document.getElementById("JJ").classList.remove('greyedOut');     
+     document.getElementById("B").disabled = true ;
+     document.getElementById("BB").classList.add('greyedOut');
+     document.getElementById("C").disabled = true ;
+     document.getElementById("CC").classList.add('greyedOut');
+     document.getElementById("Ang").disabled = true ;
+     document.getElementById("AAng").classList.add('greyedOut');           
+     document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 11 L 25 11");
+
+   }
+ }
+
+ function hideB(x) {
+   if (x.checked) {
+    
+    document.getElementById("A").disabled = true ; 
+    document.getElementById("AA").classList.add('greyedOut');
+    document.getElementById("J").disabled = true ;
+    document.getElementById("JJ").classList.add('greyedOut');
+    document.getElementById("B").disabled = false ;
+    document.getElementById("BB").classList.remove('greyedOut');
+    document.getElementById("C").disabled = true ;
+    document.getElementById("CC").classList.add('greyedOut');
+    document.getElementById("Ang").disabled = true ;
+    document.getElementById("AAng").classList.add('greyedOut');          
+    document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 20 L 25 20");   
+ }
+}
+
+ function hideC(x) {
+   if (x.checked) {
+    
+     document.getElementById("A").disabled = true ;
+     document.getElementById("AA").classList.add('greyedOut');
+     document.getElementById("J").disabled = true ;
+     document.getElementById("JJ").classList.add('greyedOut');
+     document.getElementById("B").disabled = true ;
+     document.getElementById("BB").classList.add('greyedOut');
+     document.getElementById("C").disabled = false ;
+     document.getElementById("CC").classList.remove('greyedOut');
+     document.getElementById("Ang").disabled = true ;
+     document.getElementById("AAng").classList.add('greyedOut');      
+     document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 29 L 25 29");
+
+   }
+ }
+
+ function hideAng(x) {
+   if (x.checked) {
+     
+     document.getElementById("A").disabled = true ;
+     document.getElementById("AA").classList.add('greyedOut');
+     document.getElementById("J").disabled = true ;
+     document.getElementById("JJ").classList.add('greyedOut');
+     document.getElementById("B").disabled = true ;
+     document.getElementById("BB").classList.add('greyedOut');
+     document.getElementById("C").disabled = true ;
+     document.getElementById("CC").classList.add('greyedOut');
+     document.getElementById("Ang").disabled = false ;
+     document.getElementById("AAng").classList.remove('greyedOut');   
+     document.getElementById('svg').getElementById("start").setAttribute("d", "M 12 38 L 25 38");
+
+   }
+ } 
+
+function dispNumber(x){
+  if(x<100 && x>=1){
+    return x.toFixed(2);
+  } else if(x<1 && x>=0.01) {
+    return x.toFixed(3);
+  } else {
+    return x.toExponential(2)
+  }
+}
+
+function displayResult(energy,energyJoule,wavelengthNano,wavelengthMeter,wavelengthAngstrom){
+  $("#resA").text(dispNumber(energy) + ' keV') ;
+  $("#resJ").text(dispNumber(energyJoule) + ' J') ;
+  $("#resB").text(dispNumber(wavelengthMeter) + ' m') ;
+  $("#resC").text(dispNumber(wavelengthNano) + " nm") ;
+  $("#resAng").text(dispNumber(wavelengthAngstrom) + " Å") ;
+}
+
+function displayNothing(){
+  $("#resA").text("") ;
+  $("#resJ").text("") ;
+  $("#resB").text("") ;
+  $("#resC").text("") ;
+  $("#resAng").text("") ;
+}
+
+            function calculateTotal()
+            {
+              let physical_property={
+                E: 0,
+                J: 0,
+                L: 0,
+                NM: 0,
+                Ang: 0
+              }
+               
+              physical_property.E = parseFloat(document.getElementById('A').value); 
+              physical_property.J = parseFloat(document.getElementById('J').value); 
+              physical_property.L = parseFloat(document.getElementById('B').value);               
+              physical_property.NM = parseFloat(document.getElementById('C').value);
+              physical_property.Ang = parseFloat(document.getElementById('Ang').value);
+
+            if (!(physical_property.E == NaN) && document.getElementById("A").disabled == false) {
+              if (physical_property.E == 0){
+                displayNothing();
+              } else{    
+              let energyJoule = physical_property.E*1000*1.602e-19          
+              let wavelengthNano = 1.240/physical_property.E
+              let wavelengthMeter = 1.240/physical_property.E/1e9
+              let wavelengthAngstrom = wavelengthNano*10
+              displayResult(physical_property.E,energyJoule,wavelengthNano,wavelengthMeter,wavelengthAngstrom);
+              }
+            } 
+
+            if (!(physical_property.J == NaN) && document.getElementById("J").disabled == false) {
+              if (physical_property.J == 0){
+                displayNothing();
+              } else{    
+              let energy = physical_property.J/1000/1.602e-19          
+              let wavelengthNano = 1.240/energy
+              let wavelengthMeter = 1.240/energy/1e9
+              let wavelengthAngstrom = wavelengthNano*10
+              displayResult(energy,physical_property.J,wavelengthNano,wavelengthMeter,wavelengthAngstrom);
+              }
+            }             
+              
+            if (!(physical_property.L == NaN) && document.getElementById("B").disabled == false) {
+              if (physical_property.L == 0){
+                displayNothing();
+              } else{
+              let energy = 1.240/physical_property.L/1e9   
+              let energyJoule = 1.240/physical_property.L/1e9*1000*1.602e-19
+              let wavelengthNano = physical_property.L*1e9 
+              let wavelengthAngstrom = physical_property.L*1e10                     
+              displayResult(energy,energyJoule,wavelengthNano,physical_property.L,wavelengthAngstrom);
+              }
+            } 
+
+            if (!(physical_property.NM == NaN) && document.getElementById("C").disabled == false) {
+              if (physical_property.NM == 0){
+                displayNothing();
+              } else{              
+              let energy = 1.240/physical_property.NM
+              let energyJoule = 1.240/physical_property.NM*1000*1.602e-19              
+              let wavelengthMeter = physical_property.NM/1e9
+              let wavelengthAngstrom = physical_property.NM*10 
+              displayResult(energy,energyJoule,physical_property.NM,wavelengthMeter,wavelengthAngstrom);
+              }
+            }       
+            
+            if (!(physical_property.Ang == NaN) && document.getElementById("Ang").disabled == false) {
+              if (physical_property.Ang == 0){
+                displayNothing();
+              } else{              
+              let energy = 1.240/physical_property.Ang*10
+              let energyJoule = 1.240/physical_property.Ang*10*1000*1.602e-19              
+              let wavelengthMeter = physical_property.Ang/1e10
+              let wavelengthNano = physical_property.Ang/10 
+              displayResult(energy,energyJoule,wavelengthNano,wavelengthMeter,physical_property.Ang);
+              }
+            }                 
+              
+            }
+            
+            $(function()
+             {
+                $(".field").on("change keyup",calculateTotal) // update res if field input change
+                $(".prop").on("change keyup",calculateTotal) // update res if radio button change
+                
+            })
+</script>
+</body> 
+</html>
