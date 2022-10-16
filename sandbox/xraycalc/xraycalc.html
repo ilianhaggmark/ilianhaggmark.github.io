@@ -13,21 +13,23 @@
 <style>
 
   .greyedOut {
-    color:rgb(101, 101, 101)
+    color:rgb(133, 133, 133)
   }
 
   .grid-container {
     display: grid;
     width: fit-content;
-    grid-template-columns: 150px 61px 180px 100px;
-    gap: 0px;
-    background-color: rgba(106, 158, 78, 0.69);
+    grid-template-columns: 145px 57px 100px 105px;
+    gap: 0px 0px;
+    background-color: #eccd7f;  /*rgba(106, 158, 78, 0.69);*/
     padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .grid-container > div {
-    background-color: rgba(106, 158, 78, 0.69);
-    /*border: 2px solid black;
+    /*background-color: rgba(106, 158, 78, 0.69);
+    border: 2px solid black;
     text-align: center;
     font-size: 30px;*/
     padding: 10px 0;
@@ -59,7 +61,7 @@
   <div class="grid-container">
     <div class="item">
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 40 40" id="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 34 58" id="svg">
         <style>
         .path {
           stroke: rgb(183, 39, 39);
@@ -74,15 +76,15 @@
           </marker>
         </defs>
         <!--Five horizontal arrows-->
-        <path class="path" id ="arrow1" d="M 25 2 L 40 2" marker-end="url(#arrowhead)"></path>
-        <path class="path" id ="arrow2" d="M 25 11 L 40 11" marker-end="url(#arrowhead)"></path>
-        <path class="path" id ="arrow3" d="M 25 20 L 40 20" marker-end="url(#arrowhead)"></path>
-        <path class="path" id ="arrow4" d="M 25 29 L 40 29"  marker-end="url(#arrowhead)"></path>
-        <path class="path" id ="arrow5" d="M 25 38 L 40 38" marker-end="url(#arrowhead)"></path>
+        <path class="path" id ="arrow1" d="M 25 3 L 40 3" marker-end="url(#arrowhead)"></path>
+        <path class="path" id ="arrow2" d="M 25 16.5 L 40 16.5" marker-end="url(#arrowhead)"></path>
+        <path class="path" id ="arrow3" d="M 25 30 L 40 30" marker-end="url(#arrowhead)"></path>
+        <path class="path" id ="arrow4" d="M 25 43.5 L 40 43.5"  marker-end="url(#arrowhead)"></path>
+        <path class="path" id ="arrow5" d="M 25 57 L 40 57" marker-end="url(#arrowhead)"></path>
         <!--vertical line-->
-        <path class="path" id ="vertical" d="M 25 2 L 25 38"  stroke-linecap="square"></path>
+        <path class="path" id ="vertical" d="M 25 3 L 25 57"  stroke-linecap="square"></path>
         <!--changing horizontal line-->
-        <path class="path" id ="start" d="M 12 2 L 25 2"></path>
+        <path class="path" id ="start" d="M 12 3 L 25 3"></path>
       </svg>
 
     </div>
@@ -165,7 +167,7 @@ function hideA(x) {
      document.getElementById("CC").classList.add('greyedOut');
      document.getElementById("Ang").disabled = true ;
      document.getElementById("AAng").classList.add('greyedOut');           
-     document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 2 L 25 2"); 
+     document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 3 L 25 3"); 
 
    }
  }
@@ -183,7 +185,7 @@ function hideA(x) {
      document.getElementById("CC").classList.add('greyedOut');
      document.getElementById("Ang").disabled = true ;
      document.getElementById("AAng").classList.add('greyedOut');           
-     document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 11 L 25 11");
+     document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 16.5 L 25 16.5");
 
    }
  }
@@ -201,7 +203,7 @@ function hideA(x) {
     document.getElementById("CC").classList.add('greyedOut');
     document.getElementById("Ang").disabled = true ;
     document.getElementById("AAng").classList.add('greyedOut');          
-    document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 20 L 25 20");   
+    document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 30 L 25 30");   
  }
 }
 
@@ -218,7 +220,7 @@ function hideA(x) {
      document.getElementById("CC").classList.remove('greyedOut');
      document.getElementById("Ang").disabled = true ;
      document.getElementById("AAng").classList.add('greyedOut');      
-     document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 29 L 25 29");
+     document.getElementById("svg").getElementById("start").setAttribute("d", "M 12 43.5 L 25 43.5");
 
    }
  }
@@ -236,7 +238,7 @@ function hideA(x) {
      document.getElementById("CC").classList.add('greyedOut');
      document.getElementById("Ang").disabled = false ;
      document.getElementById("AAng").classList.remove('greyedOut');   
-     document.getElementById('svg').getElementById("start").setAttribute("d", "M 12 38 L 25 38");
+     document.getElementById('svg').getElementById("start").setAttribute("d", "M 12 57 L 25 57");
 
    }
  } 
