@@ -6687,7 +6687,7 @@ Equirectangular projection. Geographic limits of the map:
    </g>               
 
 <circle id='loc0' class='city y2019 t1' r='1' cx='438.0427791612674' cy='83.3941255582397'><title>Abashiri</title></circle>
-<circle id='loc1' class='city y2019 t2' r='1' cx='245.87648771670854' cy='300.24821999402184'><title>Aioi</title></circle>
+<circle id='loc1' class='city y2019 y2022 t2' r='1' cx='245.87648771670854' cy='300.24821999402184'><title>Aioi</title></circle>
 <circle id='loc2' class='city y2022 t1' r='1' cx='356.99992416773745' cy='184.81333854827932'><title>Akita</title></circle>
 <circle id='loc3' class='city y2015 t1' r='1' cx='368.8362977971657' cy='158.59794648792524'><title>Aomori</title></circle>
 <circle id='loc4' class='city y2019 t1' r='1' cx='246.52408119610286' cy='315.85688668345875'><title>Bandō</title></circle>
@@ -6708,7 +6708,7 @@ Equirectangular projection. Geographic limits of the map:
 <circle id='loc19' class='city y2019 t1' r='1' cx='212.13625190654446' cy='287.45809658771554'><title>Izumo</title></circle>
 <circle id='loc20' class='city y2017 t1' r='1' cx='169.03163832950247' cy='376.0339739786068'><title>Kagoshima</title></circle>
 <circle id='loc21' class='city y2022 t1' r='1' cx='365.66870927671033' cy='187.76412239455863'><title>Kakunodate</title></circle>
-<circle id='loc22' class='city y2015 t3' r='1' cx='345.620609204951' cy='288.43476410742306'><title>Kamakura</title></circle>
+<circle id='loc22' class='city y2015 y2019 t2' r='1' cx='345.620609204951' cy='288.43476410742306'><title>Kamakura</title></circle>
 <circle id='loc23' class='city y2017 t1' r='1' cx='288.5954260044495' cy='258.7677631970753'><title>Kanazawa</title></circle>
 <circle id='loc24' class='city y2022 t1' r='1' cx='366.7497511822485' cy='273.09460218361784'><title>Kashima</title></circle>
 <circle id='loc25' class='city y2022 t1' r='1' cx='364.90842643973394' cy='274.80395162517783'><title>Katori</title></circle>
@@ -6719,8 +6719,8 @@ Equirectangular projection. Geographic limits of the map:
 <circle id='loc30' class='city y2019 t1' r='1' cx='227.59815418950328' cy='329.71999250203305'><title>Kōchi</title></circle>
 <circle id='loc31' class='city y2012 t1' r='1' cx='231.96260441757647' cy='305.33881030014044'><title>Kurashiki</title></circle>
 <circle id='loc32' class='city y2019 t1' r='1' cx='208.22280558563756' cy='313.75628483733743'><title>Kure</title></circle>
-<circle id='loc33' class='city y2017 t2' r='1' cx='440.5622190424454' cy='107.67859933708388'><title>Kushiro</title></circle>
-<circle id='loc34' class='city y2012 t5' r='1' cx='271.1227528444725' cy='296.28845255560833'><title>Kyoto</title></circle>
+<circle id='loc33' class='city y2017 y2019 t2' r='1' cx='440.5622190424454' cy='107.67859933708388'><title>Kushiro</title></circle>
+<circle id='loc34' class='city y2012 y2015 y2017 y2019 y2022 t5' r='1' cx='271.1227528444725' cy='296.28845255560833'><title>Kyoto</title></circle>
 <circle id='loc35' class='city y2019 t1' r='1' cx='218.17257834686586' cy='285.02132363656693'><title>Matsue</title></circle>
 <circle id='loc36' class='city y2022 t1' r='1' cx='375.3641465046613' cy='216.55833490200405'><title>Matsushima</title></circle>
 <circle id='loc37' class='city y2019 t1' r='1' cx='212.02947305424047' cy='323.28206243474654'><title>Matsuyama</title></circle>
@@ -6728,76 +6728,77 @@ Equirectangular projection. Geographic limits of the map:
 <circle id='loc39' class='city y2017 t1' r='1' cx='169.19433776153235' cy='403.5843198793335'><title>Miyanoura (Yakushima)</title></circle>
 <circle id='loc40' class='city y2022 t1' r='1' cx='376.785111537674' cy='185.17850540348167'><title>Morioka</title></circle>
 <circle id='loc41' class='city y2017 t1' r='1' cx='155.3756229871953' cy='348.9318795667294'><title>Nagasaki</title></circle>
-<circle id='loc42' class='city y2015 t2' r='1' cx='293.1817478394736' cy='291.93115696981056'><title>Nagoya</title></circle>
+<circle id='loc42' class='city y2015 y2017 t2' r='1' cx='293.1817478394736' cy='291.93115696981056'><title>Nagoya</title></circle>
 <circle id='loc43' class='city y2022 t1' r='1' cx='113.04044212432281' cy='502.8910634401238'><title>Naha</title></circle>
-<circle id='loc44' class='city y2015 t2' r='1' cx='272.4709341712577' cy='303.39639626108675'><title>Nara</title></circle>
+<circle id='loc44' class='city y2015 y2017 t2' r='1' cx='272.4709341712577' cy='303.39639626108675'><title>Nara</title></circle>
 <circle id='loc45' class='city y2019 t1' r='1' cx='360.62541208638703' cy='277.62777253312504'><title>Narita</title></circle>
 <circle id='loc46' class='city y2019 t1' r='1' cx='464.0832881854256' cy='99.44854295731761'><title>Nemuro</title></circle>
 <circle id='loc47' class='city y2015 t1' r='1' cx='347.02799453147355' cy='254.77954998692707'><title>Nikko</title></circle>
 <circle id='loc48' class='city y2017 t1' r='1' cx='177.42177468278095' cy='396.5254003253524'><title>Nishinoomote (Tanegashima)</title></circle>
 <circle id='loc49' class='city y2022 t1' r='1' cx='270.84887122456644' cy='284.37197432722013'><title>Obama</title></circle>
 <circle id='loc50' class='city y2019 t1' r='1' cx='417.3695686753199' cy='109.37751618395055'><title>Obihiro</title></circle>
-<circle id='loc51' class='city y2012 t2' r='1' cx='234.949593224768' cy='303.8218127984565'><title>Okayama</title></circle>
+<circle id='loc51' class='city y2012 y2019 t2' r='1' cx='234.949593224768' cy='303.8218127984565'><title>Okayama</title></circle>
 <circle id='loc52' class='city y2019 t1' r='1' cx='220.71225285503945' cy='309.9809173422657'><title>Onomichi</title></circle>
-<circle id='loc53' class='city y2015 t2' r='1' cx='265.9554531055204' cy='302.957187990043'><title>Osaka</title></circle>
+<circle id='loc53' class='city y2015 y2022 t2' r='1' cx='265.9554531055204' cy='302.957187990043'><title>Osaka</title></circle>
 <circle id='loc54' class='city y2015 t1' r='1' cx='373.97974487203936' cy='102.79088021502685'><title>Otaru</title></circle>
 <circle id='loc55' class='city y2019 t1' r='1' cx='273.2007333563663' cy='295.8780430459714'><title>Ōtsu</title></circle>
 <circle id='loc56' class='city y2019 t1' r='1' cx='456.4845855590563' cy='83.46433759468994'><title>Rausu</title></circle>
-<circle id='loc57' class='city y2015 t2' r='1' cx='380.9946836649556' cy='105.83055133358272'><title>Sapporo</title></circle>
+<circle id='loc57' class='city y2015 y2017 t2' r='1' cx='380.9946836649556' cy='105.83055133358272'><title>Sapporo</title></circle>
 <circle id='loc58' class='city y2022 t1' r='1' cx='371.78687242958443' cy='219.14041435632328'><title>Sendai</title></circle>
 <circle id='loc59' class='city y2022 t1' r='1' cx='352.0139555471645' cy='278.11460664865155'><title>Shibamata</title></circle>
 <circle id='loc60' class='city y2022 t1' r='1' cx='275.7434790856601' cy='326.0026589512049'><title>Shingu</title></circle>
 <circle id='loc61' class='city y2019 t1' r='1' cx='237.48682594085787' cy='311.25763307466417'><title>Takamatsu</title></circle>
 <circle id='loc62' class='city y2022 t1' r='1' cx='340.3400622762791' cy='280.81208800071136'><title>Takao (Hachioji)</title></circle>
 <circle id='loc63' class='city y2019 t1' r='1' cx='252.9892906118827' cy='288.9089106254483'><title>Takeda</title></circle>
-<circle id='loc64' class='city y2022 t2' r='1' cx='351.7407954272594' cy='296.0576523257501'><title>Tateyama</title></circle>
+<circle id='loc64' class='city y2022 t1' r='1' cx='351.7407954272594' cy='296.0576523257501'><title>Tateyama</title></circle>
 <circle id='loc65' class='city y2019 t1' r='1' cx='247.39839393750177' cy='317.76696947180176'><title>Tokushima</title></circle>
-<circle id='loc66' class='city y2015 t4' r='1' cx='349.8789149564855' cy='279.891487789919'><title>Tokyo</title></circle>
+<circle id='loc66' class='city y2015 y2017 y2019 y2022 t4' r='1' cx='349.8789149564855' cy='279.891487789919'><title>Tokyo</title></circle>
 <circle id='loc67' class='city y2019 t1' r='1' cx='332.68888197147885' cy='266.2205880063267'><title>Tomioka</title></circle>
 <circle id='loc68' class='city y2019 t1' r='1' cx='241.00278063956313' cy='284.31297695809974'><title>Tottori</title></circle>
-<circle id='loc69' class='city y2017 t2' r='1' cx='442.81749311019877' cy='103.876237802383'><title>Tōro</title></circle>
+<circle id='loc69' class='city y2017 y2019 t2' r='1' cx='442.81749311019877' cy='103.876237802383'><title>Tōro</title></circle>
 <circle id='loc70' class='city y2019 t1' r='1' cx='356.64909097187956' cy='270.45216790595117'><title>Tsukuba</title></circle>
 <circle id='loc71' class='city y2022 t1' r='1' cx='277.35004860516733' cy='280.76705554323854'><title>Tsuruga</title></circle>
 <circle id='loc72' class='city y2022 t1' r='1' cx='351.2210654932981' cy='207.83035864856816'><title>Tsuruoka</title></circle>
 <circle id='loc73' class='city y2015 t1' r='1' cx='272.05816234185585' cy='298.48313018232585'><title>Uji</title></circle>
 <circle id='loc74' class='city y2022 t1' r='1' cx='352.4590899450726' cy='259.223620139677'><title>Utsunomiya</title></circle>
-<circle id='loc75' class='city y2019 t2' r='1' cx='347.02920048208983' cy='284.9762650947365'><title>Yokohama</title></circle>
+<circle id='loc75' class='city y2019 y2022 t2' r='1' cx='347.02920048208983' cy='284.9762650947365'><title>Yokohama</title></circle>
 <circle id='loc76' class='city y2022 t1' r='1' cx='371.15252008145217' cy='248.6711737965145'><title>Yumoto</title></circle>
 <circle id='loc77' class='city y2017 t1' r='1' cx='387.4074616323152' cy='50.481342334597'><title>Wakkanai</title></circle>
-<circle id='loc78' class='temple y2017 t1' r='1' cx='168.48029179393941' cy='330.8036594017456'><title>Dazaifu Tenmangu</title></circle>
-<circle id='loc79' class='temple y2022 t1' r='1' cx='349.70270274250873' cy='296.7102639901653'><title>Awa Sunosaki Jinja</title></circle>
-<circle id='loc80' class='temple y2022 t1' r='1' cx='354.08791657618355' cy='208.7193311058084'><title>Dewa Jinja (Haguro)</title></circle>
-<circle id='loc81' class='temple y2015 t1' r='1' cx='249.42734079572236' cy='298.49802839987547'><title>Engyōji (Shosha)</title></circle>
-<circle id='loc82' class='temple y2015 t1' r='1' cx='272.7411805364222' cy='294.2734052011745'><title>Enryakuji (Hiei)</title></circle>
-<circle id='loc83' class='temple y2022 t1' r='1' cx='268.99615802262474' cy='303.72890302262067'><title>Hiraoka Jinja</title></circle>
-<circle id='loc84' class='temple y2022 t1' r='1' cx='262.89512500057526' cy='301.78790146939764'><title>Hirota Jinja</title></circle>
-<circle id='loc85' class='temple y2022 t1' r='1' cx='271.41241953029214' cy='323.2846668425076'><title>Kumano Hongu Taisha</title></circle>
-<circle id='loc86' class='temple y2022 t1' r='1' cx='273.6920464219527' cy='327.21772305997877'><title>Kumano Nachi Taisha</title></circle>
-<circle id='loc87' class='temple y2017 t1' r='1' cx='291.35056228607374' cy='307.52355508680785'><title>Meoto Iwa</title></circle>
-<circle id='loc88' class='temple y2015 t1' r='1' cx='268.11184078834464' cy='314.26594842223136'><title>Oku no In (Kōyasan)</title></circle>
-<circle id='loc89' class='temple y2022 t1' r='1' cx='265.2663162214956' cy='306.87596310469763'><title>Ōtori Taisha</title></circle>
-<circle id='loc90' class='temple y2022 t1' r='1' cx='350.93318462190473' cy='258.3378062693985'><title>Ōya Kannon</title></circle>
-<circle id='loc91' class='temple y2022 t1' r='1' cx='362.993611972107' cy='217.8912384967797'><title>Risshaku-ji (Yamadera)</title></circle>
-<circle id='loc92' class='temple y2022 t1' r='1' cx='374.3506335992549' cy='217.75842589021715'><title>Shiogama Jinja</title></circle>
-<circle id='loc93' class='temple y2022 t1' r='1' cx='361.53934190169326' cy='287.0971532413452'><title>Tamasaki Jinja (Kazusa-Ichinomiya)</title></circle>
-<circle id='loc94' class='temple y2022 t1' r='1' cx='358.7822033981945' cy='272.8061601708771'><title>Ushiku daibutsu</title></circle>
-<circle id='loc95' class='other y2019 t1' r='1' cx='434.8396484571524' cy='97.2268322609711'><title>Akanko</title></circle>
-<circle id='loc96' class='other y2022 t1' r='1' cx='259.9795090221759' cy='282.50077665859254'><title>Amanohashidate</title></circle>
-<circle id='loc97' class='other y2022 t1' r='1' cx='116.3184424469449' cy='491.3084822455002'><title>Bise-fukugi</title></circle>
-<circle id='loc98' class='other y2022 t1' r='1' cx='334.158427026265' cy='252.80795651589096'><title>Doai station</title></circle>
-<circle id='loc99' class='other y2019 t1' r='1' cx='371.51927956764683' cy='279.28139393230043'><title>Inubōsaki Lighthouse (Chōshi)</title></circle>
-<circle id='loc100' class='other y2017 t1' r='1' cx='203.29839648572704' cy='313.1130157053408'><title>Itsukushima</title></circle>
-<circle id='loc101' class='other y2019 t1' r='1' cx='209.6254110366817' cy='285.61202884414155'><title>Izumo Hinomisaki Lighthouse</title></circle>
-<circle id='loc102' class='other y2019 t1' r='1' cx='439.76758852452974' cy='94.14610854277475'><title>Kussharoko</title></circle>
-<circle id='loc103' class='other y2015 t1' r='1' cx='295.2905203191222' cy='287.9347326120319'><title>Mejimura</title></circle>
-<circle id='loc104' class='other y2022 t1' r='1' cx='346.8619906333984' cy='292.16740550897873'><title>Misaki Marine Biological Station</title></circle>
-<circle id='loc105' class='other y2022 t1' r='1' cx='354.5121501935158' cy='290.60799084238204'><title>Koito river (Kimitsu)</title></circle>
-<circle id='loc106' class='other y2019 t1' r='1' cx='249.17802584969817' cy='313.96018887022285'><title>Naruto bridge</title></circle>
-<circle id='loc107' class='other y2017 t1' r='1' cx='378.56413761149173' cy='54.587560521828664'><title>Rishiri</title></circle>
-<circle id='loc108' class='other y2017 t1' r='1' cx='170.77319674887448' cy='376.3172016230241'><title>Sakurajima</title></circle>
-<circle id='loc109' class='other y2019 t1' r='1' cx='454.2225672601713' cy='80.98335115822437'><title>Shiretoko</title></circle>
-<circle id='loc110' class='other y2017 t1' r='1' cx='392.5049296354975' cy='48.00093330268578'><title>Sōya Misaki</title></circle>
-<circle id='loc111' class='other y2019 t2' r='1' cx='244.94391446053191' cy='297.25930612380824'><title>SPring-8</title></circle>
+<circle id='loc78' class='city y2019 y2022 t2' r='1' cx='346.2580101545622' cy='289.0815779116108'><title>Zushi</title></circle>
+<circle id='loc79' class='temple y2017 t1' r='1' cx='168.48029179393941' cy='330.8036594017456'><title>Dazaifu Tenmangu</title></circle>
+<circle id='loc80' class='temple y2022 t1' r='1' cx='349.70270274250873' cy='296.7102639901653'><title>Awa Sunosaki Jinja</title></circle>
+<circle id='loc81' class='temple y2022 t1' r='1' cx='354.08791657618355' cy='208.7193311058084'><title>Dewa Jinja (Haguro)</title></circle>
+<circle id='loc82' class='temple y2015 t1' r='1' cx='249.42734079572236' cy='298.49802839987547'><title>Engyōji (Shosha)</title></circle>
+<circle id='loc83' class='temple y2015 t1' r='1' cx='272.7411805364222' cy='294.2734052011745'><title>Enryakuji (Hiei)</title></circle>
+<circle id='loc84' class='temple y2022 t1' r='1' cx='268.99615802262474' cy='303.72890302262067'><title>Hiraoka Jinja</title></circle>
+<circle id='loc85' class='temple y2022 t1' r='1' cx='262.89512500057526' cy='301.78790146939764'><title>Hirota Jinja</title></circle>
+<circle id='loc86' class='temple y2022 t1' r='1' cx='271.41241953029214' cy='323.2846668425076'><title>Kumano Hongu Taisha</title></circle>
+<circle id='loc87' class='temple y2022 t1' r='1' cx='273.6920464219527' cy='327.21772305997877'><title>Kumano Nachi Taisha</title></circle>
+<circle id='loc88' class='temple y2017 t1' r='1' cx='291.35056228607374' cy='307.52355508680785'><title>Meoto Iwa</title></circle>
+<circle id='loc89' class='temple y2015 t1' r='1' cx='268.11184078834464' cy='314.26594842223136'><title>Oku no In (Kōyasan)</title></circle>
+<circle id='loc90' class='temple y2022 t1' r='1' cx='265.2663162214956' cy='306.87596310469763'><title>Ōtori Taisha</title></circle>
+<circle id='loc91' class='temple y2022 t1' r='1' cx='350.93318462190473' cy='258.3378062693985'><title>Ōya Kannon</title></circle>
+<circle id='loc92' class='temple y2022 t1' r='1' cx='362.993611972107' cy='217.8912384967797'><title>Risshaku-ji (Yamadera)</title></circle>
+<circle id='loc93' class='temple y2022 t1' r='1' cx='374.3506335992549' cy='217.75842589021715'><title>Shiogama Jinja</title></circle>
+<circle id='loc94' class='temple y2022 t1' r='1' cx='361.53934190169326' cy='287.0971532413452'><title>Tamasaki Jinja (Kazusa-Ichinomiya)</title></circle>
+<circle id='loc95' class='temple y2022 t1' r='1' cx='358.7822033981945' cy='272.8061601708771'><title>Ushiku daibutsu</title></circle>
+<circle id='loc96' class='other y2019 t1' r='1' cx='434.8396484571524' cy='97.2268322609711'><title>Akanko</title></circle>
+<circle id='loc97' class='other y2022 t1' r='1' cx='259.9795090221759' cy='282.50077665859254'><title>Amanohashidate</title></circle>
+<circle id='loc98' class='other y2022 t1' r='1' cx='116.3184424469449' cy='491.3084822455002'><title>Bise-fukugi</title></circle>
+<circle id='loc99' class='other y2022 t1' r='1' cx='334.158427026265' cy='252.80795651589096'><title>Doai station</title></circle>
+<circle id='loc100' class='other y2019 t1' r='1' cx='371.51927956764683' cy='279.28139393230043'><title>Inubōsaki Lighthouse (Chōshi)</title></circle>
+<circle id='loc101' class='other y2017 t1' r='1' cx='203.29839648572704' cy='313.1130157053408'><title>Itsukushima</title></circle>
+<circle id='loc102' class='other y2019 t1' r='1' cx='209.6254110366817' cy='285.61202884414155'><title>Izumo Hinomisaki Lighthouse</title></circle>
+<circle id='loc103' class='other y2019 t1' r='1' cx='439.76758852452974' cy='94.14610854277475'><title>Kussharoko</title></circle>
+<circle id='loc104' class='other y2015 t1' r='1' cx='295.2905203191222' cy='287.9347326120319'><title>Mejimura</title></circle>
+<circle id='loc105' class='other y2022 t1' r='1' cx='346.8619906333984' cy='292.16740550897873'><title>Misaki Marine Biological Station</title></circle>
+<circle id='loc106' class='other y2022 t1' r='1' cx='354.5121501935158' cy='290.60799084238204'><title>Koito river (Kimitsu)</title></circle>
+<circle id='loc107' class='other y2019 t1' r='1' cx='249.17802584969817' cy='313.96018887022285'><title>Naruto bridge</title></circle>
+<circle id='loc108' class='other y2017 t1' r='1' cx='378.56413761149173' cy='54.587560521828664'><title>Rishiri</title></circle>
+<circle id='loc109' class='other y2017 t1' r='1' cx='170.77319674887448' cy='376.3172016230241'><title>Sakurajima</title></circle>
+<circle id='loc110' class='other y2019 t1' r='1' cx='454.2225672601713' cy='80.98335115822437'><title>Shiretoko</title></circle>
+<circle id='loc111' class='other y2017 t1' r='1' cx='392.5049296354975' cy='48.00093330268578'><title>Sōya Misaki</title></circle>
+<circle id='loc112' class='other y2019 y2022 t2' r='1' cx='244.94391446053191' cy='297.25930612380824'><title>SPring-8</title></circle>
 
 
 	</g>
@@ -6830,27 +6831,26 @@ Equirectangular projection. Geographic limits of the map:
         }
         // Hide kanji => rectangles and kanji numbers are shown on top
         function showYear() {
-            var el = document.getElementsByClassName("y2012")
+            var el = document.getElementsByClassName("y2022")
             for(var i = 0; i < el.length; i++){
-                //el[i].style.display = "block";
-				el[i].style.fill = "red";
-            }
-            var el = document.getElementsByClassName("y2015")
+				el[i].style.fill = "orange";
+            }	           
+            var el = document.getElementsByClassName("y2019")
             for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "blue";
+				el[i].style.fill = "violet";
             }
             var el = document.getElementsByClassName("y2017")
             for(var i = 0; i < el.length; i++){
 				el[i].style.fill = "green";
-            }	
-            var el = document.getElementsByClassName("y2019")
+            }					
+		    var el = document.getElementsByClassName("y2015")
             for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "violet";
-            }							
-            var el = document.getElementsByClassName("y2022")
+				el[i].style.fill = "blue";
+            }										
+            var el = document.getElementsByClassName("y2012")
             for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "orange";
-            }											
+				el[i].style.fill = "red";
+            }			
 	    document.getElementById("type").style.setProperty("fill-opacity",0.1);
 		document.getElementById("year").style.setProperty("fill-opacity",0.5);
 		document.getElementById("times").style.setProperty("fill-opacity",0.1);
@@ -6976,15 +6976,15 @@ Equirectangular projection. Geographic limits of the map:
             var el = document.getElementsByClassName("y2017")
             for(var i = 0; i < el.length; i++){
 				el[i].style.display = "none";
-            }	
-            var el = document.getElementsByClassName("y2015")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
             }							
             var el = document.getElementsByClassName("y2012")
             for(var i = 0; i < el.length; i++){
 				el[i].style.display = "none";
-            }											
+            }	
+            var el = document.getElementsByClassName("y2015")
+            for(var i = 0; i < el.length; i++){
+				el[i].style.display = "block";
+            }														
 	    document.getElementById("yearX").style.setProperty("fill-opacity",0.1);
 		document.getElementById("year1").style.setProperty("fill-opacity",0.1);
 		document.getElementById("year2").style.setProperty("fill-opacity",0.5);
@@ -7007,10 +7007,6 @@ Equirectangular projection. Geographic limits of the map:
             var el = document.getElementsByClassName("y2019")
             for(var i = 0; i < el.length; i++){
 				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2017")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
             }	
             var el = document.getElementsByClassName("y2015")
             for(var i = 0; i < el.length; i++){
@@ -7019,7 +7015,11 @@ Equirectangular projection. Geographic limits of the map:
             var el = document.getElementsByClassName("y2012")
             for(var i = 0; i < el.length; i++){
 				el[i].style.display = "none";
-            }											
+            }
+            var el = document.getElementsByClassName("y2017")
+            for(var i = 0; i < el.length; i++){
+				el[i].style.display = "block";
+            }														
 	    document.getElementById("yearX").style.setProperty("fill-opacity",0.1);
 		document.getElementById("year1").style.setProperty("fill-opacity",0.1);
 		document.getElementById("year2").style.setProperty("fill-opacity",0.1);
@@ -7039,10 +7039,6 @@ Equirectangular projection. Geographic limits of the map:
             for(var i = 0; i < el.length; i++){
 				el[i].style.display = "none";
             }
-            var el = document.getElementsByClassName("y2019")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }
             var el = document.getElementsByClassName("y2017")
             for(var i = 0; i < el.length; i++){
 				el[i].style.display = "none";
@@ -7055,6 +7051,10 @@ Equirectangular projection. Geographic limits of the map:
             for(var i = 0; i < el.length; i++){
 				el[i].style.display = "none";
             }											
+            var el = document.getElementsByClassName("y2019")
+            for(var i = 0; i < el.length; i++){
+				el[i].style.display = "block";
+            }			
 	    document.getElementById("yearX").style.setProperty("fill-opacity",0.1);
 		document.getElementById("year1").style.setProperty("fill-opacity",0.1);
 		document.getElementById("year2").style.setProperty("fill-opacity",0.1);
@@ -7070,10 +7070,6 @@ Equirectangular projection. Geographic limits of the map:
         } 
         // Year 5
         function showY5() {
-            var el = document.getElementsByClassName("y2022")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }
             var el = document.getElementsByClassName("y2019")
             for(var i = 0; i < el.length; i++){
 				el[i].style.display = "none";
@@ -7089,7 +7085,11 @@ Equirectangular projection. Geographic limits of the map:
             var el = document.getElementsByClassName("y2012")
             for(var i = 0; i < el.length; i++){
 				el[i].style.display = "none";
-            }											
+            }
+            var el = document.getElementsByClassName("y2022")
+            for(var i = 0; i < el.length; i++){
+				el[i].style.display = "block";
+            }														
 	    document.getElementById("yearX").style.setProperty("fill-opacity",0.1);
 		document.getElementById("year1").style.setProperty("fill-opacity",0.1);
 		document.getElementById("year2").style.setProperty("fill-opacity",0.1);
