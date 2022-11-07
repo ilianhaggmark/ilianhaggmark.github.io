@@ -146,7 +146,7 @@
 #aki49:hover ~ #aki {fill-opacity:1;}
 #data:hover ~ #suou {fill: #2d54a1; fill-opacity:1;}
 #suou50:hover ~ #suou {fill-opacity:1;}
-#data:hover ~ #nagato {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #nagato {fill: #2d54a1; fill-opacity:1;}
 #nagato51:hover ~ #nagato {fill-opacity:1;}
 #data:hover ~ #kii {fill: #2d54a1; fill-opacity:1;}
 #kii52:hover ~ #kii {fill-opacity:1;}
@@ -160,19 +160,19 @@
 #iyo56:hover ~ #iyo {fill-opacity:1;}
 #data:hover ~ #tosa {fill: #2d54a1; fill-opacity:1;}
 #tosa57:hover ~ #tosa {fill-opacity:1;}
-#data:hover ~ #buzen {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #buzen {fill: #2d54a1; fill-opacity:1;}
 #buzen58:hover ~ #buzen {fill-opacity:1;}
-#data:hover ~ #bungo {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #bungo {fill: #2d54a1; fill-opacity:1;}
 #bungo59:hover ~ #bungo {fill-opacity:1;}
 #data:hover ~ #chikuzen {fill: #2d54a1; fill-opacity:1;}
 #chikuzen60:hover ~ #chikuzen {fill-opacity:1;}
-#data:hover ~ #chikugo {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #chikugo {fill: #2d54a1; fill-opacity:1;}
 #chikugo61:hover ~ #chikugo {fill-opacity:1;}
 #data:hover ~ #hizen {fill: #2d54a1; fill-opacity:1;}
 #hizen62:hover ~ #hizen {fill-opacity:1;}
-#data:hover ~ #higo {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #higo {fill: #2d54a1; fill-opacity:1;}
 #higo63:hover ~ #higo {fill-opacity:1;}
-#data:hover ~ #hyuuga {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #hyuuga {fill: #2d54a1; fill-opacity:1;}
 #hyuuga64:hover ~ #hyuuga {fill-opacity:1;}
 #data:hover ~ #oosumi {fill: #2d54a1; fill-opacity:1;}
 #oosumi65:hover ~ #oosumi {fill-opacity:1;}
