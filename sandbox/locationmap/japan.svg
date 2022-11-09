@@ -6802,17 +6802,18 @@ Equirectangular projection. Geographic limits of the map:
 <circle id='loc113' class='other y2022 t1' r='1' cx='371.51927956764683' cy='279.28139393230043'><title>Inubōsaki Lighthouse (Chōshi)</title></circle>
 <circle id='loc114' class='other y2017 t1' r='1' cx='203.29839648572704' cy='313.1130157053408'><title>Itsukushima</title></circle>
 <circle id='loc115' class='other y2019 t1' r='1' cx='209.6254110366817' cy='285.61202884414155'><title>Izumo Hinomisaki Lighthouse</title></circle>
-<circle id='loc116' class='other y2019 t1' r='1' cx='439.76758852452974' cy='94.14610854277475'><title>Kussharoko</title></circle>
-<circle id='loc117' class='other y2015 t1' r='1' cx='295.2905203191222' cy='287.9347326120319'><title>Mejimura</title></circle>
-<circle id='loc118' class='other y2022 t1' r='1' cx='346.8619906333984' cy='292.16740550897873'><title>Misaki Marine Biological Station</title></circle>
-<circle id='loc119' class='other y2022 t1' r='1' cx='354.5121501935158' cy='290.60799084238204'><title>Koito river (Kimitsu)</title></circle>
-<circle id='loc120' class='other y2019 t1' r='1' cx='249.17802584969817' cy='313.96018887022285'><title>Naruto bridge</title></circle>
-<circle id='loc121' class='other y2017 t1' r='1' cx='378.56413761149173' cy='54.587560521828664'><title>Rishiri</title></circle>
-<circle id='loc122' class='other y2017 t1' r='1' cx='170.77319674887448' cy='376.3172016230241'><title>Sakurajima</title></circle>
-<circle id='loc123' class='other y2019 t1' r='1' cx='454.2225672601713' cy='80.98335115822437'><title>Shiretoko</title></circle>
-<circle id='loc124' class='other y2017 t1' r='1' cx='392.5049296354975' cy='48.00093330268578'><title>Sōya Misaki</title></circle>
-<circle id='loc125' class='other y2019 y2022 t2' r='1' cx='244.94391446053191' cy='297.25930612380824'><title>SPring-8</title></circle>
-<circle id='loc126' class='other y2022 t1' r='1' cx='165.61037229085002' cy='335.45640516457155'><title>Yoshinogari Kōen</title></circle>
+<circle id='loc116' class='other y2012 t1' r='1' cx='231.89597640405685' cy='302.4306246176723'><title>Ki no jō</title></circle>
+<circle id='loc117' class='other y2019 t1' r='1' cx='439.76758852452974' cy='94.14610854277475'><title>Kussharoko</title></circle>
+<circle id='loc118' class='other y2015 t1' r='1' cx='295.2905203191222' cy='287.9347326120319'><title>Mejimura</title></circle>
+<circle id='loc119' class='other y2022 t1' r='1' cx='346.8619906333984' cy='292.16740550897873'><title>Misaki Marine Biological Station</title></circle>
+<circle id='loc120' class='other y2022 t1' r='1' cx='354.5121501935158' cy='290.60799084238204'><title>Koito river (Kimitsu)</title></circle>
+<circle id='loc121' class='other y2019 t1' r='1' cx='249.17802584969817' cy='313.96018887022285'><title>Naruto bridge</title></circle>
+<circle id='loc122' class='other y2017 t1' r='1' cx='378.56413761149173' cy='54.587560521828664'><title>Rishiri</title></circle>
+<circle id='loc123' class='other y2017 t1' r='1' cx='170.77319674887448' cy='376.3172016230241'><title>Sakurajima</title></circle>
+<circle id='loc124' class='other y2019 t1' r='1' cx='454.2225672601713' cy='80.98335115822437'><title>Shiretoko</title></circle>
+<circle id='loc125' class='other y2017 t1' r='1' cx='392.5049296354975' cy='48.00093330268578'><title>Sōya Misaki</title></circle>
+<circle id='loc126' class='other y2019 y2022 t2' r='1' cx='244.94391446053191' cy='297.25930612380824'><title>SPring-8</title></circle>
+<circle id='loc127' class='other y2022 t1' r='1' cx='165.61037229085002' cy='335.45640516457155'><title>Yoshinogari Kōen</title></circle>
 
 
 	</g>
