@@ -6713,7 +6713,7 @@ Equirectangular projection. Geographic limits of the map:
 <circle id='loc11' class='loc city y2015 t1' r='1' cx='368.7286437746277' cy='136.3444250744276'><title>Hakodate</title></circle>
 <circle id='loc12' class='loc city y2019 t1' r='1' cx='309.9414367924023' cy='302.9239061949547'><title>Hamamatsu</title></circle>
 <circle id='loc13' class='loc city y2017 t1' r='1' cx='300.44896432471256' cy='269.0677349161737'><title>Hida-Takayama</title></circle>
-<circle id='loc14' class='loc city y2015 t2' r='1' cx='250.13137538683122' cy='300.0381780269405'><title>Himeji</title></circle>
+<circle id='loc14' class='loc city y2015 y2019 t2' r='1' cx='250.13137538683122' cy='300.0381780269405'><title>Himeji</title></circle>
 <circle id='loc15' class='loc city y2022 t1' r='1' cx='376.4134695465472' cy='201.9829015388172'><title>Hiraizumi</title></circle>
 <circle id='loc16' class='loc city y2017 t1' r='1' cx='206.18085014454408' cy='310.20200852563806'><title>Hiroshima</title></circle>
 <circle id='loc17' class='loc city y2019 t1' r='1' cx='422.3033524859751' cy='109.29222754069116'><title>Ikeda</title></circle>
@@ -6796,38 +6796,39 @@ Equirectangular projection. Geographic limits of the map:
 <circle id='loc94' class='loc temple y2022 t1' r='1' cx='271.41241953029214' cy='323.2846668425076'><title>Kumano Hongu Taisha</title></circle>
 <circle id='loc95' class='loc temple y2022 t1' r='1' cx='273.6920464219527' cy='327.21772305997877'><title>Kumano Nachi Taisha</title></circle>
 <circle id='loc96' class='loc temple y2017 t1' r='1' cx='291.35056228607374' cy='307.52355508680785'><title>Meoto Iwa</title></circle>
-<circle id='loc97' class='loc temple y2015 t1' r='1' cx='268.11184078834464' cy='314.26594842223136'><title>Oku no In (Kōyasan)</title></circle>
-<circle id='loc98' class='loc temple y2022 t1' r='1' cx='265.2663162214956' cy='306.87596310469763'><title>Ōtori Taisha</title></circle>
-<circle id='loc99' class='loc temple y2022 t1' r='1' cx='350.93318462190473' cy='258.3378062693985'><title>Ōya Kannon</title></circle>
-<circle id='loc100' class='loc temple y2022 t1' r='1' cx='362.993611972107' cy='217.8912384967797'><title>Risshaku-ji (Yamadera)</title></circle>
-<circle id='loc101' class='loc temple y2022 t1' r='1' cx='374.3506335992549' cy='217.75842589021715'><title>Shiogama Jinja</title></circle>
-<circle id='loc102' class='loc temple y2022 t1' r='1' cx='370.9060023077703' cy='247.97393150445095'><title>Shiramizu Amidadō</title></circle>
-<circle id='loc103' class='loc temple y2022 t1' r='1' cx='361.53934190169326' cy='287.0971532413452'><title>Tamasaki Jinja (Kazusa-Ichinomiya)</title></circle>
-<circle id='loc104' class='loc temple y2022 t1' r='1' cx='186.78979082805458' cy='374.8903582042988'><title>Udo Jingū</title></circle>
-<circle id='loc105' class='loc temple y2022 t1' r='1' cx='185.03170212748452' cy='330.76077867729646'><title>Usa Jingū</title></circle>
-<circle id='loc106' class='loc temple y2022 t1' r='1' cx='358.7822033981945' cy='272.8061601708771'><title>Ushiku daibutsu</title></circle>
-<circle id='loc107' class='loc temple y2022 t1' r='1' cx='160.08971578623388' cy='341.34949880763304'><title>Yūtoku Inari Jinja</title></circle>
-<circle id='loc108' class='loc other y2019 t1' r='1' cx='434.8396484571524' cy='97.2268322609711'><title>Akanko</title></circle>
-<circle id='loc109' class='loc other y2022 t1' r='1' cx='259.9795090221759' cy='282.50077665859254'><title>Amanohashidate</title></circle>
-<circle id='loc110' class='loc other y2022 t1' r='1' cx='116.3184424469449' cy='491.3084822455002'><title>Bise-fukugi</title></circle>
-<circle id='loc111' class='loc other y2022 t1' r='1' cx='176.767115950431' cy='320.34819380995657'><title>Dannoura</title></circle>
-<circle id='loc112' class='loc other y2022 t1' r='1' cx='334.158427026265' cy='252.80795651589096'><title>Doai station</title></circle>
-<circle id='loc113' class='loc other y2022 t1' r='1' cx='189.44032377189743' cy='329.34914420027087'><title>Futago-san (Kunisaki)</title></circle>
-<circle id='loc114' class='loc other y2022 t1' r='1' cx='371.51927956764683' cy='279.28139393230043'><title>Inubōsaki Lighthouse (Chōshi)</title></circle>
-<circle id='loc115' class='loc other y2017 t1' r='1' cx='203.29839648572704' cy='313.1130157053408'><title>Itsukushima</title></circle>
-<circle id='loc116' class='loc other y2019 t1' r='1' cx='209.6254110366817' cy='285.61202884414155'><title>Izumo Hinomisaki Lighthouse</title></circle>
-<circle id='loc117' class='loc other y2012 t1' r='1' cx='231.89597640405685' cy='302.4306246176723'><title>Ki no jō</title></circle>
-<circle id='loc118' class='loc other y2019 t1' r='1' cx='439.76758852452974' cy='94.14610854277475'><title>Kussharoko</title></circle>
-<circle id='loc119' class='loc other y2015 t1' r='1' cx='295.2905203191222' cy='287.9347326120319'><title>Mejimura</title></circle>
-<circle id='loc120' class='loc other y2022 t1' r='1' cx='346.8619906333984' cy='292.16740550897873'><title>Misaki Marine Biological Station</title></circle>
-<circle id='loc121' class='loc other y2022 t1' r='1' cx='354.5121501935158' cy='290.60799084238204'><title>Koito river (Kimitsu)</title></circle>
-<circle id='loc122' class='loc other y2019 t1' r='1' cx='249.17802584969817' cy='313.96018887022285'><title>Naruto bridge</title></circle>
-<circle id='loc123' class='loc other y2017 t1' r='1' cx='378.56413761149173' cy='54.587560521828664'><title>Rishiri</title></circle>
-<circle id='loc124' class='loc other y2017 t1' r='1' cx='170.77319674887448' cy='376.3172016230241'><title>Sakurajima</title></circle>
-<circle id='loc125' class='loc other y2019 t1' r='1' cx='454.2225672601713' cy='80.98335115822437'><title>Shiretoko</title></circle>
-<circle id='loc126' class='loc other y2017 t1' r='1' cx='392.5049296354975' cy='48.00093330268578'><title>Sōya Misaki</title></circle>
-<circle id='loc127' class='loc other y2019 y2022 t2' r='1' cx='244.94391446053191' cy='297.25930612380824'><title>SPring-8</title></circle>
-<circle id='loc128' class='loc other y2022 t1' r='1' cx='165.61037229085002' cy='335.45640516457155'><title>Yoshinogari Kōen</title></circle>
+<circle id='loc97' class='loc temple y2022 t1' r='1' cx='333.43451713583283' cy='274.1584022420301'><title>Mitsumine Jinja</title></circle>
+<circle id='loc98' class='loc temple y2015 t1' r='1' cx='268.11184078834464' cy='314.26594842223136'><title>Oku no In (Kōyasan)</title></circle>
+<circle id='loc99' class='loc temple y2022 t1' r='1' cx='265.2663162214956' cy='306.87596310469763'><title>Ōtori Taisha</title></circle>
+<circle id='loc100' class='loc temple y2022 t1' r='1' cx='350.93318462190473' cy='258.3378062693985'><title>Ōya Kannon</title></circle>
+<circle id='loc101' class='loc temple y2022 t1' r='1' cx='362.993611972107' cy='217.8912384967797'><title>Risshaku-ji (Yamadera)</title></circle>
+<circle id='loc102' class='loc temple y2022 t1' r='1' cx='374.3506335992549' cy='217.75842589021715'><title>Shiogama Jinja</title></circle>
+<circle id='loc103' class='loc temple y2022 t1' r='1' cx='370.9060023077703' cy='247.97393150445095'><title>Shiramizu Amidadō</title></circle>
+<circle id='loc104' class='loc temple y2022 t1' r='1' cx='361.53934190169326' cy='287.0971532413452'><title>Tamasaki Jinja (Kazusa-Ichinomiya)</title></circle>
+<circle id='loc105' class='loc temple y2022 t1' r='1' cx='186.78979082805458' cy='374.8903582042988'><title>Udo Jingū</title></circle>
+<circle id='loc106' class='loc temple y2022 t1' r='1' cx='185.03170212748452' cy='330.76077867729646'><title>Usa Jingū</title></circle>
+<circle id='loc107' class='loc temple y2022 t1' r='1' cx='358.7822033981945' cy='272.8061601708771'><title>Ushiku daibutsu</title></circle>
+<circle id='loc108' class='loc temple y2022 t1' r='1' cx='160.08971578623388' cy='341.34949880763304'><title>Yūtoku Inari Jinja</title></circle>
+<circle id='loc109' class='loc other y2019 t1' r='1' cx='434.8396484571524' cy='97.2268322609711'><title>Akanko</title></circle>
+<circle id='loc110' class='loc other y2022 t1' r='1' cx='259.9795090221759' cy='282.50077665859254'><title>Amanohashidate</title></circle>
+<circle id='loc111' class='loc other y2022 t1' r='1' cx='116.3184424469449' cy='491.3084822455002'><title>Bise-fukugi</title></circle>
+<circle id='loc112' class='loc other y2022 t1' r='1' cx='176.767115950431' cy='320.34819380995657'><title>Dannoura</title></circle>
+<circle id='loc113' class='loc other y2022 t1' r='1' cx='334.158427026265' cy='252.80795651589096'><title>Doai station</title></circle>
+<circle id='loc114' class='loc other y2022 t1' r='1' cx='189.44032377189743' cy='329.34914420027087'><title>Futago-san (Kunisaki)</title></circle>
+<circle id='loc115' class='loc other y2022 t1' r='1' cx='371.51927956764683' cy='279.28139393230043'><title>Inubōsaki Lighthouse (Chōshi)</title></circle>
+<circle id='loc116' class='loc other y2017 t1' r='1' cx='203.29839648572704' cy='313.1130157053408'><title>Itsukushima</title></circle>
+<circle id='loc117' class='loc other y2019 t1' r='1' cx='209.6254110366817' cy='285.61202884414155'><title>Izumo Hinomisaki Lighthouse</title></circle>
+<circle id='loc118' class='loc other y2012 t1' r='1' cx='231.89597640405685' cy='302.4306246176723'><title>Ki no jō</title></circle>
+<circle id='loc119' class='loc other y2019 t1' r='1' cx='439.76758852452974' cy='94.14610854277475'><title>Kussharoko</title></circle>
+<circle id='loc120' class='loc other y2015 t1' r='1' cx='295.2905203191222' cy='287.9347326120319'><title>Mejimura</title></circle>
+<circle id='loc121' class='loc other y2022 t1' r='1' cx='346.8619906333984' cy='292.16740550897873'><title>Misaki Marine Biological Station</title></circle>
+<circle id='loc122' class='loc other y2022 t1' r='1' cx='354.5121501935158' cy='290.60799084238204'><title>Koito river (Kimitsu)</title></circle>
+<circle id='loc123' class='loc other y2019 t1' r='1' cx='249.17802584969817' cy='313.96018887022285'><title>Naruto bridge</title></circle>
+<circle id='loc124' class='loc other y2017 t1' r='1' cx='378.56413761149173' cy='54.587560521828664'><title>Rishiri</title></circle>
+<circle id='loc125' class='loc other y2017 t1' r='1' cx='170.77319674887448' cy='376.3172016230241'><title>Sakurajima</title></circle>
+<circle id='loc126' class='loc other y2019 t1' r='1' cx='454.2225672601713' cy='80.98335115822437'><title>Shiretoko</title></circle>
+<circle id='loc127' class='loc other y2017 t1' r='1' cx='392.5049296354975' cy='48.00093330268578'><title>Sōya Misaki</title></circle>
+<circle id='loc128' class='loc other y2019 y2022 t2' r='1' cx='244.94391446053191' cy='297.25930612380824'><title>SPring-8</title></circle>
+<circle id='loc129' class='loc other y2022 t1' r='1' cx='165.61037229085002' cy='335.45640516457155'><title>Yoshinogari Kōen</title></circle>
 
 
 	</g>
