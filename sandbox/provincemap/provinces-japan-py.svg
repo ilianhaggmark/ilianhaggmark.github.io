@@ -92,7 +92,7 @@
 #mino22:hover ~ #mino {fill-opacity:1;}
 #data:hover ~ #hida {fill: #2d54a1; fill-opacity:1;}
 #hida23:hover ~ #hida {fill-opacity:1;}
-#data:hover ~ #shinano {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #shinano {fill: #2d54a1; fill-opacity:1;}
 #shinano24:hover ~ #shinano {fill-opacity:1;}
 #data:hover ~ #kouzuke {fill: #2d54a1; fill-opacity:1;}
 #kouzuke25:hover ~ #kouzuke {fill-opacity:1;}
@@ -110,11 +110,11 @@
 #kaga31:hover ~ #kaga {fill-opacity:1;}
 #data:hover ~ #noto {fill: #2d54a1; fill-opacity:0.1;}
 #noto32:hover ~ #noto {fill-opacity:1;}
-#data:hover ~ #etchuu {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #etchuu {fill: #2d54a1; fill-opacity:1;}
 #etchuu33:hover ~ #etchuu {fill-opacity:1;}
-#data:hover ~ #echigo {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #echigo {fill: #2d54a1; fill-opacity:1;}
 #echigo34:hover ~ #echigo {fill-opacity:1;}
-#data:hover ~ #sado {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #sado {fill: #2d54a1; fill-opacity:1;}
 #sado35:hover ~ #sado {fill-opacity:1;}
 #data:hover ~ #tanba {fill: #2d54a1; fill-opacity:0.5;}
 #tanba36:hover ~ #tanba {fill-opacity:1;}
