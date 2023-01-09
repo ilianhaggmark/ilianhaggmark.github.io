@@ -56,15 +56,15 @@
 #izumi04:hover ~ #izumi {fill-opacity:1;}
 #data:hover ~ #settsu {fill: #2d54a1; fill-opacity:1;}
 #settsu05:hover ~ #settsu {fill-opacity:1;}
-#data:hover ~ #iga {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #iga {fill: #2d54a1; fill-opacity:1;}
 #iga06:hover ~ #iga {fill-opacity:1;}
 #data:hover ~ #ise {fill: #2d54a1; fill-opacity:1;}
 #ise07:hover ~ #ise {fill-opacity:1;}
-#data:hover ~ #shima {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #shima {fill: #2d54a1; fill-opacity:1;}
 #shima08:hover ~ #shima {fill-opacity:1;}
 #data:hover ~ #owari {fill: #2d54a1; fill-opacity:1;}
 #owari09:hover ~ #owari {fill-opacity:1;}
-#data:hover ~ #mikawa {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #mikawa {fill: #2d54a1; fill-opacity:1;}
 #mikawa10:hover ~ #mikawa {fill-opacity:1;}
 #data:hover ~ #toutoumi {fill: #2d54a1; fill-opacity:1;}
 #toutoumi11:hover ~ #toutoumi {fill-opacity:1;}
@@ -88,7 +88,7 @@
 #hitachi20:hover ~ #hitachi {fill-opacity:1;}
 #data:hover ~ #oumi {fill: #2d54a1; fill-opacity:1;}
 #oumi21:hover ~ #oumi {fill-opacity:1;}
-#data:hover ~ #mino {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #mino {fill: #2d54a1; fill-opacity:1;}
 #mino22:hover ~ #mino {fill-opacity:1;}
 #data:hover ~ #hida {fill: #2d54a1; fill-opacity:1;}
 #hida23:hover ~ #hida {fill-opacity:1;}
