@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandbox - User map</title>
+  <meta name="description" content="User-generated map of Japan.">
+  <meta name="author" content="Ilian Haggmark">
+  <link rel="shortcut icon" type="image/png" href="/img/favicon.png" /> 
+  <meta name="googlebot" content="index,follow">
+  <link rel="stylesheet" type="text/css" href="/style/style.css">  
+  <style>
+    #svgMap{
+      display: none;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="footer-page-container">
+    <div id="footer-allOther-content-wrap">  
+<p class="float unselectable" onclick="changeContrastMode()">Toggle <br> contrast <br> mode</p>
+
+<object id="svgMap" data="japan_blank.svg" type="image/svg+xml"></object>    
+<br><br>
+
+<h2>Map with user-selected locations marked.</h2>
+<p style="margin: 10px 10px 10px 10px;">To create a map of Japan with locations added, load a txt-file that only contains locations (one for each row) as shown below:</p>
+  <pre style="margin: 10px 10px 10px 30px;">35.69,139.75,1.5,black,Tokyo
+31.59,130.66,3,green,Sakurajima
+34.99,135.76,2.0</pre>
+<p style="margin: 10px 10px 10px 10px;">Each row should be on the format</p> 
+<pre style="margin: 10px 10px 10px 30px;">Latitude,Longitude,Marker-size,Marker-color,Marker-name</pre>
+<p style="margin: 10px 10px 10px 10px;">The last two properties can be omitted as shown for the last row (it's Kyoto). To clear selection, reload the page. The blank map can be found <a href="https://commons.wikimedia.org/wiki/File:Japan_location_map.svg">here</a>, and was created by Maximilian Dörrbecker and shared with <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>.</p>
+<input type="file" onchange="loadFile(this.files[0])" style="margin: 10px 10px 10px 10px;">
+<br>
+<pre id="output" style="margin: 10px 10px 10px 10px;"></pre>
+
+
+</div>
+<footer id="footer">&copy; Ilian Häggmark</footer>
+</div>
+<script>
+  var a = document.getElementById("svgMap");
+
+  async function loadFile(file) {
+    var svgDoc = a.contentDocument;
+        let text = await file.text();
+        document.getElementById('output').textContent = text;
+        var myList = text.split("\n");
+        for (let i = 0; i < myList.length; i++) {
+          var myPoint = myList[i].split(",");
+          if (myPoint[3] == "" || myPoint[3] == undefined) {
+            myPoint[3] = 'red'
+          }   
+          //console.log(myPoint[3])
+          if (myPoint[4] == "" || myPoint[4] == undefined) {
+            myPoint[4] = ''
+          }    
+          var userStyle = "<circle style='fill:"+ myPoint[3] +"' r='"+ myPoint[2] +"' cx='"+  coordX(myPoint[1]) +"' cy='"+ coordY(myPoint[0]) +"'><title>"+ myPoint[4] + "</title></circle>";
+          svgDoc.getElementById("Hintergrund").innerHTML += userStyle;
+        }
+
+        a.style.display = "block";
+      }
+
+  function coordX(long){
+    var Rx = 581.981/(151.58-121.96)
+    return Rx*(long - 121.96)
+  }
+  function coordY(lat) {
+    var Ry = 579.907/(47.56-22.95);
+    return 579.907 - Ry*(lat - 22.95) 
+  }
+  </script>
+
+<script type="text/javascript" src="/script/externaljs.js"></script>
+</body>
+</html>
