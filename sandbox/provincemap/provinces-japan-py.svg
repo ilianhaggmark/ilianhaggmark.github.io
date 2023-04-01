@@ -116,7 +116,7 @@
 #echigo34:hover ~ #echigo {fill-opacity:1;}
 #data:hover ~ #sado {fill: #2d54a1; fill-opacity:1;}
 #sado35:hover ~ #sado {fill-opacity:1;}
-#data:hover ~ #tanba {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #tanba {fill: #2d54a1; fill-opacity:1;}
 #tanba36:hover ~ #tanba {fill-opacity:1;}
 #data:hover ~ #tango {fill: #2d54a1; fill-opacity:1;}
 #tango37:hover ~ #tango {fill-opacity:1;}

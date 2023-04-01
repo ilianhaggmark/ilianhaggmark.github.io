@@ -34,7 +34,7 @@
 {"Id":"etchuu","Name":"etchū","Kanji":"越中","RegionId":"hokurikudou","Region":"Hokurikudō","Present":"Toyama","Data":"1","PositionX":"375","PositionY":"461"},
 {"Id":"echigo","Name":"echigo","Kanji":"越後","RegionId":"hokurikudou","Region":"Hokurikudō","Present":"Niigata","Data":"1","PositionX":"440","PositionY":"425"},
 {"Id":"sado","Name":"sado","Kanji":"佐渡","RegionId":"hokurikudou","Region":"Hokurikudō","Present":"Niigata","Data":"1","PositionX":"408","PositionY":"380"},
-{"Id":"tanba","Name":"tanba","Kanji":"丹波","RegionId":"sanindou","Region":"Sanindō","Present":"Hyōgo and Kyōto","Data":"0.5","PositionX":"292","PositionY":"535"},
+{"Id":"tanba","Name":"tanba","Kanji":"丹波","RegionId":"sanindou","Region":"Sanindō","Present":"Hyōgo and Kyōto","Data":"1","PositionX":"292","PositionY":"535"},
 {"Id":"tango","Name":"tango","Kanji":"丹後","RegionId":"sanindou","Region":"Sanindō","Present":"Kyōto","Data":"1","PositionX":"284","PositionY":"511"},
 {"Id":"tajima","Name":"tajima","Kanji":"但馬","RegionId":"sanindou","Region":"Sanindō","Present":"Hyōgo","Data":"1","PositionX":"267","PositionY":"520"},
 {"Id":"inaba","Name":"inaba","Kanji":"因幡","RegionId":"sanindou","Region":"Sanindō","Present":"Tottori","Data":"1","PositionX":"250","PositionY":"520"},

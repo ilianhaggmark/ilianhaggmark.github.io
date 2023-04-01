@@ -17,15 +17,15 @@
 #izumi04:hover ~ #izumi {fill-opacity:1;}
 #data:hover ~ #settsu {fill: #2d54a1; fill-opacity:1;}
 #settsu05:hover ~ #settsu {fill-opacity:1;}
-#data:hover ~ #iga {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #iga {fill: #2d54a1; fill-opacity:1;}
 #iga06:hover ~ #iga {fill-opacity:1;}
 #data:hover ~ #ise {fill: #2d54a1; fill-opacity:1;}
 #ise07:hover ~ #ise {fill-opacity:1;}
-#data:hover ~ #shima {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #shima {fill: #2d54a1; fill-opacity:1;}
 #shima08:hover ~ #shima {fill-opacity:1;}
 #data:hover ~ #owari {fill: #2d54a1; fill-opacity:1;}
 #owari09:hover ~ #owari {fill-opacity:1;}
-#data:hover ~ #mikawa {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #mikawa {fill: #2d54a1; fill-opacity:1;}
 #mikawa10:hover ~ #mikawa {fill-opacity:1;}
 #data:hover ~ #toutoumi {fill: #2d54a1; fill-opacity:1;}
 #toutoumi11:hover ~ #toutoumi {fill-opacity:1;}
@@ -49,11 +49,11 @@
 #hitachi20:hover ~ #hitachi {fill-opacity:1;}
 #data:hover ~ #oumi {fill: #2d54a1; fill-opacity:1;}
 #oumi21:hover ~ #oumi {fill-opacity:1;}
-#data:hover ~ #mino {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #mino {fill: #2d54a1; fill-opacity:1;}
 #mino22:hover ~ #mino {fill-opacity:1;}
 #data:hover ~ #hida {fill: #2d54a1; fill-opacity:1;}
 #hida23:hover ~ #hida {fill-opacity:1;}
-#data:hover ~ #shinano {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #shinano {fill: #2d54a1; fill-opacity:1;}
 #shinano24:hover ~ #shinano {fill-opacity:1;}
 #data:hover ~ #kouzuke {fill: #2d54a1; fill-opacity:1;}
 #kouzuke25:hover ~ #kouzuke {fill-opacity:1;}
@@ -71,13 +71,13 @@
 #kaga31:hover ~ #kaga {fill-opacity:1;}
 #data:hover ~ #noto {fill: #2d54a1; fill-opacity:0.1;}
 #noto32:hover ~ #noto {fill-opacity:1;}
-#data:hover ~ #etchuu {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #etchuu {fill: #2d54a1; fill-opacity:1;}
 #etchuu33:hover ~ #etchuu {fill-opacity:1;}
-#data:hover ~ #echigo {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #echigo {fill: #2d54a1; fill-opacity:1;}
 #echigo34:hover ~ #echigo {fill-opacity:1;}
-#data:hover ~ #sado {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #sado {fill: #2d54a1; fill-opacity:1;}
 #sado35:hover ~ #sado {fill-opacity:1;}
-#data:hover ~ #tanba {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #tanba {fill: #2d54a1; fill-opacity:1;}
 #tanba36:hover ~ #tanba {fill-opacity:1;}
 #data:hover ~ #tango {fill: #2d54a1; fill-opacity:1;}
 #tango37:hover ~ #tango {fill-opacity:1;}
@@ -107,7 +107,7 @@
 #aki49:hover ~ #aki {fill-opacity:1;}
 #data:hover ~ #suou {fill: #2d54a1; fill-opacity:1;}
 #suou50:hover ~ #suou {fill-opacity:1;}
-#data:hover ~ #nagato {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #nagato {fill: #2d54a1; fill-opacity:1;}
 #nagato51:hover ~ #nagato {fill-opacity:1;}
 #data:hover ~ #kii {fill: #2d54a1; fill-opacity:1;}
 #kii52:hover ~ #kii {fill-opacity:1;}
@@ -121,19 +121,19 @@
 #iyo56:hover ~ #iyo {fill-opacity:1;}
 #data:hover ~ #tosa {fill: #2d54a1; fill-opacity:1;}
 #tosa57:hover ~ #tosa {fill-opacity:1;}
-#data:hover ~ #buzen {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #buzen {fill: #2d54a1; fill-opacity:1;}
 #buzen58:hover ~ #buzen {fill-opacity:1;}
-#data:hover ~ #bungo {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #bungo {fill: #2d54a1; fill-opacity:1;}
 #bungo59:hover ~ #bungo {fill-opacity:1;}
 #data:hover ~ #chikuzen {fill: #2d54a1; fill-opacity:1;}
 #chikuzen60:hover ~ #chikuzen {fill-opacity:1;}
-#data:hover ~ #chikugo {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #chikugo {fill: #2d54a1; fill-opacity:1;}
 #chikugo61:hover ~ #chikugo {fill-opacity:1;}
 #data:hover ~ #hizen {fill: #2d54a1; fill-opacity:1;}
 #hizen62:hover ~ #hizen {fill-opacity:1;}
-#data:hover ~ #higo {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #higo {fill: #2d54a1; fill-opacity:1;}
 #higo63:hover ~ #higo {fill-opacity:1;}
-#data:hover ~ #hyuuga {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #hyuuga {fill: #2d54a1; fill-opacity:1;}
 #hyuuga64:hover ~ #hyuuga {fill-opacity:1;}
 #data:hover ~ #oosumi {fill: #2d54a1; fill-opacity:1;}
 #oosumi65:hover ~ #oosumi {fill-opacity:1;}
