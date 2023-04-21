@@ -6,7 +6,7 @@
   <title>Sandbox - X-ray Phase Contrast</title>
   <meta name="description" content="Comparison of X-ray phase contrast and conventional X-ray imaging.">
   <meta name="author" content="Ilian Haggmark">
-  <link rel="shortcut icon" type="image/png" href="/favicon.png" /> 
+  <link rel="shortcut icon" type="image/png" href="/img/favicon.png" /> 
   <meta name="googlebot" content="index,follow">
 <link rel="stylesheet" type="text/css" href="/style/style.css">
 
@@ -24,6 +24,10 @@
       width: auto;
       height: auto;
       overflow:hidden;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+      pointer-events: none;
     }
     
     .img-comp-img img {
@@ -35,10 +39,29 @@
       position: absolute;
       z-index:9;
       cursor: ew-resize;
-      width: 2px; /*20*/
-      height: 400px; /*20*/
+      width: 25px; /*2*/
+      height: 25px; /*400*/
       background-color: #ad2330;
-      opacity: 0.8;
+      opacity: 0.7;
+      border-radius: 50%;
+    }
+    .img-comp-slider:after,
+    .img-comp-slider:before {
+      content:" ";
+      position: absolute;
+      z-index:9;
+      left: 50%;
+      margin-left: -1px;
+      cursor: ew-resize;
+      width: 2px; /*2*/
+      height: 187.5px; /*400*/
+      background-color: #ad2330;
+    }
+    .img-comp-slider:before{
+      top:100%;
+    }
+    .img-comp-slider:after{
+      bottom:100%;
     }
     </style>
 
