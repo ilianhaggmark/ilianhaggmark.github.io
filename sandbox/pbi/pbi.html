@@ -11,12 +11,23 @@
 <link rel="stylesheet" type="text/css" href="/style/style.css">
 
   <style>
+    .package-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width:678px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
     .img-comp-container {
       position: relative;
       height: 400px; 
       width: 400px;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
     
     .img-comp-img {
@@ -63,10 +74,26 @@
     .img-comp-slider:after{
       bottom:100%;
     }
+
+    @media screen and (max-width: 440px) {
+    /* start of phone style */
+    .img-comp-container {
+      height: 320px; 
+      width: 320px;    
+    }
+    .img-comp-img img {
+      max-width: 320px;
+      max-height: 320px;
+    }
+    .img-comp-slider:after,
+    .img-comp-slider:before {
+      height: 147.5px; /*400*/
+    }
+    }
     </style>
 
     <script>
-      /*Code from: W3C, https://www.w3schools.com/howto/howto_js_image_comparison.asp*/
+      /*Code from: W3C, https://www.w3schools.com/howto/howto_js_image_comparison.asp*/ 
     function initComparisons() {
       var x, i;
       x = document.getElementsByClassName("img-comp-overlay");
@@ -126,6 +153,15 @@
   <div id="footer-page-container">
     <div id="footer-allOther-content-wrap">  
 <p class="float unselectable" onclick="changeContrastMode()">Toggle <br> contrast <br> mode</p>
+
+
+<!--<a href="javascript:window.open('http://127.0.0.1:5500/sandbox/pbi/pbi.html', '','width=320,height=480')">Open!</a>-->
+<h2>X-ray imaging</h2>
+<p style="margin: 10px 10px 10px 10px;">
+  The ability of X-rays to pass through opaque objects makes it possible to see the inside of all kinds of samples. The image below is an X-ray image of a paper carton containing three chocolate eggs.
+</p>
+<img src="package150mmwide.jpg" class="package-image">
+
 
 <h2>X-ray phase contrast</h2>
 <p style="margin: 10px 10px 10px 10px;">
