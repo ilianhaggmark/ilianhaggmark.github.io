@@ -12,6 +12,17 @@ function changeContrastMode() {
 
 if ( localStorage.getItem('contrastMode') == 'true' ) {  
   document.body.classList.add('contrast-mode');
+
+  // Used for skolmatriklar
+  var element = document.getElementById('svg');
+  element.classList.add("contrast-mode");
+}
+
+// Used for skolmatriklar
+function changeContrastModeSvg() {
+  console.log('HEJ')
+  var element = document.getElementById('svg');
+  element.classList.toggle("contrast-mode");
 }
 
 //CODE TO SHOW/HIDE (COLLAPSE) CONTENT, E.G. PAPERS/PRESENTATIONS 

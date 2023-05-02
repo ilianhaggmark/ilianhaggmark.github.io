@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandbox - Skolmatriklar</title>
+  <meta name="description" content="Svenska skolmatriklar (lists of students at old schools in Sweden)">
+  <meta name="author" content="Ilian Haggmark">
+  <link rel="shortcut icon" type="image/png" href="/img/favicon.png" /> 
+  <meta name="googlebot" content="index,follow">
+  <link rel="stylesheet" type="text/css" href="/style/style.css">
+  <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div id="footer-page-container">
+    <div id="footer-allOther-content-wrap">  
+<p class="float unselectable" onclick="changeContrastMode();changeContrastModeSvg()">Toggle <br> contrast <br> mode</p>
+
+<!---->
+
+<h2>Svenska skolmatriklar</h2>
+<p style="margin: 10px 10px 10px 10px;">
+Nedan redovisas hur Genealogiska Föreningens projekt att registrera äldre svenska skolmatriklar fortskrider. 
+</p>
+
+
+<svg id="svg" height="500" width="900" viewBox="-200 0 900 500" xmlns="http://www.w3.org/2000/svg" style="display:block;margin-left: auto;margin-right: auto;width:750px;max-width:100%;">
+  <style>
+  .done { fill:rgb(0,180,50); stroke:rgb(0,180,50) }
+  .inprog { fill:rgb(255,180,50); stroke:rgb(255,180,50) }
+  .prep { fill:rgb(255,0,0); stroke:rgb(255,0,0);  }
+  .textStyle { fill:rgb(255,255,255);  } 
+  .contrast-mode .textStyle { fill:rgb(0, 0, 0); }  
+  .lineStyle { stroke:rgb(255,255,255);  } 
+  .contrast-mode .lineStyle { stroke:rgb(0, 0, 0);  } 
+  </style>
+    <line x1="0" y1="0" x2="0" y2="400" class="lineStyle" style="stroke-width:0.5" />
+        <line x1="100" y1="0" x2="100" y2="400" class="lineStyle" style="stroke-width:0.5" />
+          <line x1="200" y1="0" x2="200" y2="400" class="lineStyle" style="stroke-width:0.5" />
+          <line x1="300" y1="0" x2="300" y2="400" class="lineStyle" style="stroke-width:0.5" />
+          <line x1="400" y1="0" x2="400" y2="400" class="lineStyle" style="stroke-width:0.5" />
+          <line x1="500" y1="0" x2="500" y2="400" class="lineStyle" style="stroke-width:0.5" />
+          <line x1="600" y1="0" x2="600" y2="400" class="lineStyle" style="stroke-width:0.5" />
+    <line x1="-50" y1="400" x2="650" y2="400" class="lineStyle" style="stroke-width:2" />
+    <polygon points="649,400 649,396 660,400 649,404 649,400" class="lineStyle textStyle" style="stroke-width:1" />
+    <text x="0" y="415" class="textStyle" dominant-baseline="middle" text-anchor="middle">1600</text>
+      <text x="200" y="415" class="textStyle" dominant-baseline="middle" text-anchor="middle">1700</text>
+      <text x="400" y="415" class="textStyle"dominant-baseline="middle" text-anchor="middle">1800</text>
+      <text x="600" y="415" class="textStyle"dominant-baseline="middle" text-anchor="middle">1900</text>
+      
+      <text x="-200" y="100" class="textStyle" dominant-baseline="middle">Linköping</text>
+      <line x1="-2" y1="100" x2="610" y2="100" class="prep" class="prep" style="stroke-width:10"><title>Linköping (1599-1905)</title></line> 
+  
+    <text x="-200" y="130" class="textStyle" dominant-baseline="middle">Braheskolan (Visingsö)</text>
+      <line x1="72" y1="130" x2="432" y2="130" class="inprog" style="stroke-width:10"><title>Braheskolan (1636-1816)</title></line> 
+      
+      <text x="-200" y="160" class="textStyle" dominant-baseline="middle">Stockholms Trivialskola</text>
+      <line x1="99" y1="160" x2="101" y2="160" class="inprog" style="stroke-width:10"><title>Stockholms Trivialskola (1650,1724-1820)</title></line> <line x1="148" y1="160" x2="440" y2="160" class="inprog" style="stroke-width:10"><title>Stockholms Trivialskola (1650,1724-1820)</title></line>  
+      
+      <text x="-200" y="190" class="textStyle" dominant-baseline="middle">Växjö</text>
+      <line x1="102" y1="190" x2="610" y2="190" class="inprog" style="stroke-width:10"><title>Växjö (1651-1905)</title></line> 
+      
+      <text x="-200" y="220" class="textStyle" dominant-baseline="middle">Mariestad</text>
+      <line x1="160" y1="220" x2="616" y2="220" class="inprog" style="stroke-width:10"><title>Mariestad (1680-1908)</title></line> 
+      
+      
+      <text x="-200" y="250" class="textStyle" dominant-baseline="middle">Stockholms Gymnasium</text>
+      <line x1="442" y1="250" x2="570" y2="250" class="done" style="stroke-width:10"><title>Stockholms Gymnasium (1821-1885)</title>
+      </line> 
+  
+  <circle cx="-180" cy="450" r="5" stroke="none" stroke-width="0" class="prep"/><text x="-170" y="450" class="textStyle" dominant-baseline="middle">Förbereder bilder</text>
+  <circle cx="-180" cy="470" r="5" stroke="none" stroke-width="0" class="inprog"/><text x="-170" y="470" class="textStyle" dominant-baseline="middle">Registrering pågår</text>
+  <circle cx="-180" cy="490" r="5" stroke="none" stroke-width="0" class="done"/><text x="-170" y="490" class="textStyle" dominant-baseline="middle">Avslutad</text>
+  </svg>
+
+<br><br>
+
+<object id="svgMap" data="sweden_location_map.svg" type="image/svg+xml" style="display:block;margin-left: auto;margin-right: auto;width:600px;max-width:100%;"></object>
+
+<p style="display:block;margin-left: auto;margin-right: auto;width:600px;max-width:100%;">
+The blank map was created by NordNordWest (shared with CC-SA at <a href="https://en.wikipedia.org/wiki/Module:Location_map/data/Sweden">Wikipedia</a>)
+</p>
+<br><br>
+
+</div>
+<footer id="footer">&copy; Ilian Häggmark</footer>
+</div>
+<script type="text/javascript" src="/script/externaljs.js"></script>
+</body>
+</html>
