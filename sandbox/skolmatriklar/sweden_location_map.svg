@@ -7629,10 +7629,10 @@ E 24.6
    style="fill:none;stroke:#646464;stroke-width:0.85000002" />
 
 
-<circle id='loc0' class='loc prep y1599 t1' r='5' cx='365.1211293473142' cy='1414.2322321277377'><title>Linköping</title></circle>
-<circle id='loc1' class='loc inprog y1680 t1' r='5' cx='258.66035426397144' cy='1375.8337898338762'><title>Mariestad</title></circle>
-<circle id='loc2' class='loc inprog y1636 t1' r='5' cx='289.82614277981327' cy='1459.6237053030184'><title>Braheskolan (kumlaby, Visingsö)</title></circle>
-<circle id='loc3' class='loc inprog y1650 t1' r='5' cx='510.1567646523393' cy='1297.725597076982'><title>Stockholms Gymnasium, Stockholms Trivialskola</title></circle>
-<circle id='loc4' class='loc inprog y1651 t1' r='5' cx='317.2983233511736' cy='1609.8614178231644'><title>Växjö</title></circle>
+<circle id='loc0' class='loc inprog y1599 t1' r='7' cx='365.1211293473142' cy='1414.2322321277377'><title>Linköping</title></circle>
+<circle id='loc1' class='loc inprog y1680 t1' r='7' cx='258.66035426397144' cy='1375.8337898338762'><title>Mariestad</title></circle>
+<circle id='loc2' class='loc inprog y1636 t1' r='7' cx='289.82614277981327' cy='1459.6237053030184'><title>Braheskolan (kumlaby, Visingsö)</title></circle>
+<circle id='loc3' class='loc inprog y1650 t1' r='7' cx='510.1567646523393' cy='1297.725597076982'><title>Stockholms Gymnasium, Stockholms Trivialskola</title></circle>
+<circle id='loc4' class='loc inprog y1651 t1' r='7' cx='317.2983233511736' cy='1609.8614178231644'><title>Växjö</title></circle>
 </g>
 </svg>
