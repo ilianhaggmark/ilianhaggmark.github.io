@@ -339,7 +339,7 @@ Data = [
         1,
         1,   #30
         1,
-        0.1,  # noto
+        1,  # noto
         1,    # echuu
         1,    # echigo
         1,    # sado
@@ -360,7 +360,7 @@ Data = [
         1,    #50
         1,
         1,
-        0.5,  # awaji
+        1,  # awaji
         1,
         1,   #55
         1,

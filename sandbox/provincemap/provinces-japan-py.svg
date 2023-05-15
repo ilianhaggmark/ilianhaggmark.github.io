@@ -108,7 +108,7 @@
 #echizen30:hover ~ #echizen {fill-opacity:1;}
 #data:hover ~ #kaga {fill: #2d54a1; fill-opacity:1;}
 #kaga31:hover ~ #kaga {fill-opacity:1;}
-#data:hover ~ #noto {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #noto {fill: #2d54a1; fill-opacity:1;}
 #noto32:hover ~ #noto {fill-opacity:1;}
 #data:hover ~ #etchuu {fill: #2d54a1; fill-opacity:1;}
 #etchuu33:hover ~ #etchuu {fill-opacity:1;}
@@ -150,7 +150,7 @@
 #nagato51:hover ~ #nagato {fill-opacity:1;}
 #data:hover ~ #kii {fill: #2d54a1; fill-opacity:1;}
 #kii52:hover ~ #kii {fill-opacity:1;}
-#data:hover ~ #awaji {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #awaji {fill: #2d54a1; fill-opacity:1;}
 #awaji53:hover ~ #awaji {fill-opacity:1;}
 #data:hover ~ #awa1 {fill: #2d54a1; fill-opacity:1;}
 #awa154:hover ~ #awa1 {fill-opacity:1;}
