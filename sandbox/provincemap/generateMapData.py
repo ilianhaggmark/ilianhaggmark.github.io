@@ -347,12 +347,12 @@ Data = [
         1,
         1,
         1,
-        0.5,   #40 hoki
+        1,   #40 hoki
         1,
-        0.1,   # iwami
-        0.1,   # oki
+        1,   # iwami
+        1,   # oki
         1,
-        0.5,   # mimasaka
+        1,   # mimasaka
         1,
         1,
         1,

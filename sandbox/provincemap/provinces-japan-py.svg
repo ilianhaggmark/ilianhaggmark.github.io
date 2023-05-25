@@ -124,17 +124,17 @@
 #tajima38:hover ~ #tajima {fill-opacity:1;}
 #data:hover ~ #inaba {fill: #2d54a1; fill-opacity:1;}
 #inaba39:hover ~ #inaba {fill-opacity:1;}
-#data:hover ~ #houki {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #houki {fill: #2d54a1; fill-opacity:1;}
 #houki40:hover ~ #houki {fill-opacity:1;}
 #data:hover ~ #izumo {fill: #2d54a1; fill-opacity:1;}
 #izumo41:hover ~ #izumo {fill-opacity:1;}
-#data:hover ~ #iwami {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #iwami {fill: #2d54a1; fill-opacity:1;}
 #iwami42:hover ~ #iwami {fill-opacity:1;}
-#data:hover ~ #oki {fill: #2d54a1; fill-opacity:0.1;}
+#data:hover ~ #oki {fill: #2d54a1; fill-opacity:1;}
 #oki43:hover ~ #oki {fill-opacity:1;}
 #data:hover ~ #harima {fill: #2d54a1; fill-opacity:1;}
 #harima44:hover ~ #harima {fill-opacity:1;}
-#data:hover ~ #mimasaka {fill: #2d54a1; fill-opacity:0.5;}
+#data:hover ~ #mimasaka {fill: #2d54a1; fill-opacity:1;}
 #mimasaka45:hover ~ #mimasaka {fill-opacity:1;}
 #data:hover ~ #bizen {fill: #2d54a1; fill-opacity:1;}
 #bizen46:hover ~ #bizen {fill-opacity:1;}
