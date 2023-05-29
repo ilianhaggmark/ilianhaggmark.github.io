@@ -9,9 +9,18 @@ Equirectangular projection. Geographic limits of the map:
 <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="581.981px" height="579.907px" viewBox="0 0 581.981 579.907" enable-background="new 0 0 581.981 579.907"
+	 width="581.981px" height="579.907px" viewBox="0 0 581.981 579.907" id="svg" enable-background="new 0 0 581.981 579.907"
 	 xml:space="preserve">
 <style>
+.loc{
+display: block;
+}
+#slider-knob{
+  display: none;
+}
+#slider-activeArea{
+  display: none;
+}
 .city{
 	fill: red; stroke: black; stroke-width: 0;
 }
@@ -6799,27 +6808,27 @@ Equirectangular projection. Geographic limits of the map:
    <text id="timesLabel" x="545" y="325" style="font-size:7px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">X</text>
    </g>   
 
-   <g onclick="showYX()"> 
-   <rect id="yearX" class="optionBox" x="550" y="300" width="5" height="5" style="fill-opacity:0.5;"/>
-   <text id="yearXLabel" x="552.5" y="303" style="font-size:4px;fill:white;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">Σ</text>
+   <g onclick="showYN(0)"> 
+   <rect id="year0" class="optionBox" x="550" y="300" width="5" height="5" style="fill-opacity:0.5;"/>
+   <text id="year0Label" x="552.5" y="303" style="font-size:4px;fill:white;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">Σ</text>
    </g>   
-   <g onclick="showY1()"> 
+   <g onclick="showYN(1)"> 
    <rect id="year1" class="optionBox" x="550" y="305" width="5" height="5"/>
    <text id="year1Label" x="552.5" y="308" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">1</text>
    </g>   
-   <g onclick="showY2()"> 
+   <g onclick="showYN(2)"> 
    <rect id="year2" class="optionBox" x="550" y="310" width="5" height="5"/>
    <text id="year2Label" x="552.5" y="313" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">2</text>
    </g>  
-   <g onclick="showY3()"> 
+   <g onclick="showYN(3)"> 
    <rect id="year3" class="optionBox" x="550" y="315" width="5" height="5"/>
    <text id="year3Label" x="552.5" y="318" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">3</text>
    </g>   
-   <g onclick="showY4()"> 
+   <g onclick="showYN(4)"> 
    <rect id="year4" class="optionBox" x="550" y="320" width="5" height="5"/>
    <text id="year4Label" x="552.5" y="323" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">4</text>
    </g> 
-   <g onclick="showY5()"> 
+   <g onclick="showYN(5)"> 
    <rect id="year5" class="optionBox" x="550" y="325" width="5" height="5"/>
    <text id="year5Label" x="552.5" y="328" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">5</text>
    </g> 
@@ -6843,9 +6852,81 @@ Equirectangular projection. Geographic limits of the map:
    </g>   
 
    <g onclick="provinceOff()"> 
-   <rect id="provOff" class="optionBox" x="547.5" y="335" width="7.5" height="5"/>
-   <text id="provOffLabel" x="551.25" y="338" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">&#x2715;</text>
+   <rect id="provOff" class="optionBox" x="547.5" y="335" width="7.5" height="5" style="fill-opacity:0.5;"/>
+   <text id="provOffLabel" x="551.25" y="338" style="font-size:4px;fill:white;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">&#x2715;</text>
+   </g>   
+
+   <g onclick="showOrder()"> 
+   <rect id="order" class="optionBox" x="555" y="330" width="10" height="10" />
+   <text id="orderLabel" x="560" y="335" style="font-size:7px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">O</text>
    </g>                      
+
+
+   <g onclick="showM(1)"> 
+   <rect id="m1" class="optionBox" x="555" y="300" width="5" height="5"/>
+   <text id="m1Label" x="557.5" y="303" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">1</text>
+   </g>
+
+   <g onclick="showM(2)"> 
+   <rect id="m2" class="optionBox" x="555" y="305" width="5" height="5"/>
+   <text id="m2Label" x="557.5" y="308" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">2</text>
+   </g>   
+
+   <g onclick="showM(3)"> 
+   <rect id="m3" class="optionBox" x="555" y="310" width="5" height="5"/>
+   <text id="m3Label" x="557.5" y="313" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">3</text>
+   </g>   
+
+   <g onclick="showM(4)"> 
+   <rect id="m4" class="optionBox" x="555" y="315" width="5" height="5"/>
+   <text id="m4Label" x="557.5" y="318" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">4</text>
+   </g> 
+
+   <g onclick="showM(5)"> 
+   <rect id="m5" class="optionBox" x="555" y="320" width="5" height="5"/>
+   <text id="m5Label" x="557.5" y="323" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">5</text>
+   </g>        
+
+   <g onclick="showM(6)"> 
+   <rect id="m6" class="optionBox" x="555" y="325" width="5" height="5"/>
+   <text id="m6Label" x="557.5" y="328" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">6</text>
+   </g>    
+
+   <g onclick="showM(7)"> 
+   <rect id="m7" class="optionBox" x="560" y="300" width="5" height="5"/>
+   <text id="m7Label" x="562.5" y="303" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">7</text>
+   </g> 
+
+   <g onclick="showM(8)"> 
+   <rect id="m8" class="optionBox" x="560" y="305" width="5" height="5"/>
+   <text id="m8Label" x="562.5" y="308" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">8</text>
+   </g> 
+
+   <g onclick="showM(9)"> 
+   <rect id="m9" class="optionBox" x="560" y="310" width="5" height="5"/>
+   <text id="m9Label" x="562.5" y="313" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">9</text>
+   </g> 
+
+   <g onclick="showM(10)"> 
+   <rect id="m10" class="optionBox" x="560" y="315" width="5" height="5"/>
+   <text id="m10Label" x="562.5" y="318" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">10</text>
+   </g> 
+
+   <g onclick="showM(11)"> 
+   <rect id="m11" class="optionBox" x="560" y="320" width="5" height="5"/>
+   <text id="m11Label" x="562.5" y="323" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">11</text>
+   </g> 
+
+   <g onclick="showM(12)"> 
+   <rect id="m12" class="optionBox" x="560" y="325" width="5" height="5"/>
+   <text id="m12Label" x="562.5" y="328" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">12</text>
+   </g>  
+
+
+	<g id="slider-knob" transform="translate(0 0)">
+	<circle cx="10" cy="10" r="1" fill="#000000"/>
+	</g>                  
+<polygon id="slider-activeArea" style="opacity:0;cursor:pointer;" points="2,2 2,575 578,575 578,342 538,342 538,298 578,298 578,2"/>
 
 
 <circle id='loc0' class='loc city y2019 m8 t1' r='1' cx='438.0427791612674' cy='83.3941255582397'><title>Abashiri</title></circle>
@@ -7062,6 +7143,7 @@ Equirectangular projection. Geographic limits of the map:
 
 <!-- JavaScript -->
 <script><![CDATA[
+let orderActive = false
 
 		function markerSizeL() {
 			var el = document.getElementsByClassName("loc")
@@ -7182,255 +7264,202 @@ Equirectangular projection. Geographic limits of the map:
 		document.getElementById("yearLabel").style.setProperty("fill","black");
 		document.getElementById("timesLabel").style.setProperty("fill","white");	
 
-		// CALL showYX since using different year while viewing X makes little sense.
-		showYX()	
         } 
 
 
 
         // Year
-        function showYX() {
-            var el = document.getElementsByClassName("y2023")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }
-            var el = document.getElementsByClassName("y2022")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }
-            var el = document.getElementsByClassName("y2019")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }
-            var el = document.getElementsByClassName("y2017")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }	
-            var el = document.getElementsByClassName("y2015")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }							
-            var el = document.getElementsByClassName("y2012")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }											
-	    document.getElementById("yearX").style.setProperty("fill-opacity",0.5);
-		document.getElementById("year1").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year2").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year3").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year4").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year5").style.setProperty("fill-opacity",0.1);
-		document.getElementById("yearXLabel").style.setProperty("fill","white");
-		document.getElementById("year1Label").style.setProperty("fill","black");
-		document.getElementById("year2Label").style.setProperty("fill","black");
-		document.getElementById("year3Label").style.setProperty("fill","black");				
-		document.getElementById("year4Label").style.setProperty("fill","black");
-		document.getElementById("year5Label").style.setProperty("fill","black");
-        } 
-        // Year 1
-        function showY1() {
-            var el = document.getElementsByClassName("y2023")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2022")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2019")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2017")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }	
-            var el = document.getElementsByClassName("y2015")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }							
-            var el = document.getElementsByClassName("y2012")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }											
-	    document.getElementById("yearX").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year1").style.setProperty("fill-opacity",0.5);
-		document.getElementById("year2").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year3").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year4").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year5").style.setProperty("fill-opacity",0.1);
-		document.getElementById("yearXLabel").style.setProperty("fill","black");
-		document.getElementById("year1Label").style.setProperty("fill","white");
-		document.getElementById("year2Label").style.setProperty("fill","black");	
-		document.getElementById("year3Label").style.setProperty("fill","black");
-		document.getElementById("year4Label").style.setProperty("fill","black");						
-		document.getElementById("year5Label").style.setProperty("fill","black");
-        } 	
-        // Year 2
-        function showY2() {
-            var el = document.getElementsByClassName("y2023")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2022")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2019")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2017")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }							
-            var el = document.getElementsByClassName("y2012")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }	
-            var el = document.getElementsByClassName("y2015")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }														
-	    document.getElementById("yearX").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year1").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year2").style.setProperty("fill-opacity",0.5);
-		document.getElementById("year3").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year4").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year5").style.setProperty("fill-opacity",0.1);
-		document.getElementById("yearXLabel").style.setProperty("fill","black");
-		document.getElementById("year1Label").style.setProperty("fill","black");
-		document.getElementById("year2Label").style.setProperty("fill","white");
-		document.getElementById("year3Label").style.setProperty("fill","black");		
-		document.getElementById("year4Label").style.setProperty("fill","black");
-		document.getElementById("year5Label").style.setProperty("fill","black");
-        } 	
-        // Year 3
-        function showY3() {
-            var el = document.getElementsByClassName("y2023")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2022")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2019")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }	
-            var el = document.getElementsByClassName("y2015")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }							
-            var el = document.getElementsByClassName("y2012")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2017")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }														
-	    document.getElementById("yearX").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year1").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year2").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year3").style.setProperty("fill-opacity",0.5);
-		document.getElementById("year4").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year5").style.setProperty("fill-opacity",0.1);
-		document.getElementById("yearXLabel").style.setProperty("fill","black");
-		document.getElementById("year1Label").style.setProperty("fill","black");
-		document.getElementById("year2Label").style.setProperty("fill","black");		
-		document.getElementById("year3Label").style.setProperty("fill","white");
-		document.getElementById("year4Label").style.setProperty("fill","black");
-		document.getElementById("year5Label").style.setProperty("fill","black");
-        } 	
-        // Year 4
-        function showY4() {
-            var el = document.getElementsByClassName("y2023")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2022")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2017")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }	
-            var el = document.getElementsByClassName("y2015")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }							
-            var el = document.getElementsByClassName("y2012")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }											
-            var el = document.getElementsByClassName("y2019")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }			
-	    document.getElementById("yearX").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year1").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year2").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year3").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year4").style.setProperty("fill-opacity",0.5);
-		document.getElementById("year5").style.setProperty("fill-opacity",0.1);
-		document.getElementById("yearXLabel").style.setProperty("fill","black");
-		document.getElementById("year1Label").style.setProperty("fill","black");
-		document.getElementById("year2Label").style.setProperty("fill","black");		
-		document.getElementById("year3Label").style.setProperty("fill","black");
-		document.getElementById("year4Label").style.setProperty("fill","white");
-		document.getElementById("year5Label").style.setProperty("fill","black");
-        } 
-        // Year 5
-        function showY5() {
-            var el = document.getElementsByClassName("y2019")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2017")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }	
-            var el = document.getElementsByClassName("y2015")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }							
-            var el = document.getElementsByClassName("y2012")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "none";
-            }
-            var el = document.getElementsByClassName("y2022")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }
-            var el = document.getElementsByClassName("y2023")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.display = "block";
-            }																	
-	    document.getElementById("yearX").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year1").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year2").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year3").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year4").style.setProperty("fill-opacity",0.1);			
-		document.getElementById("year5").style.setProperty("fill-opacity",0.5);
-		document.getElementById("yearXLabel").style.setProperty("fill","black");
-		document.getElementById("year1Label").style.setProperty("fill","black");
-		document.getElementById("year2Label").style.setProperty("fill","black");		
-		document.getElementById("year3Label").style.setProperty("fill","black");
-		document.getElementById("year4Label").style.setProperty("fill","black");
-		document.getElementById("year5Label").style.setProperty("fill","white");
-        } 		
+		function showYN(year) {
+			// year and m not implemented
+				for(var i = 0; i < 12; i++){
+				document.getElementById(`m${i+1}`).style.setProperty("fill-opacity",0.1);
+				document.getElementById(`m${i+1}Label`).style.setProperty("fill","black");
+				}
+			if (orderActive == true){ 
+				showOrder()   // deactivate order if year is used
+			}				
 
+			for(var i = 0; i < 6; i++){
+				document.getElementById(`year${i}`).style.setProperty("fill-opacity",0.1);
+				document.getElementById(`year${i}Label`).style.setProperty("fill","black");
+			}
+			document.getElementById(`year${year}`).style.setProperty("fill-opacity",0.5);
+			document.getElementById(`year${year}Label`).style.setProperty("fill","white");
+
+			if (year == 0){ // show all
+				var el = document.getElementsByClassName("loc")
+            	for(var i = 0; i < el.length; i++){
+					el[i].style.display = "block";
+            	}
+			} else if (year == 5) {
+				var el = document.getElementsByClassName("loc")
+            	for(var i = 0; i < el.length; i++){
+					el[i].style.display = "none";
+            	}				
+            	var el = document.getElementsByClassName("y2023")
+            	for(var i = 0; i < el.length; i++){
+					el[i].style.display = "block";
+            	}
+            	var el = document.getElementsByClassName("y2022")
+            	for(var i = 0; i < el.length; i++){
+					el[i].style.display = "block";
+            	}
+			} else {
+				var el = document.getElementsByClassName("loc")
+            	for(var i = 0; i < el.length; i++){
+					el[i].style.display = "none";
+            	}
+				const y = ["y2012","y2015","y2017","y2019"]
+            	var el = document.getElementsByClassName(y[year-1])
+            	for(var i = 0; i < el.length; i++){
+					el[i].style.display = "block";
+            	}
+			}
+		}
 
         function provinceOn() {
             var el = document.getElementById("provinces")
             el.style.display = "block";
+			document.getElementById("provOn").style.setProperty("fill-opacity",0.5);
+			document.getElementById("provOnLabel").style.setProperty("fill","white");
+			document.getElementById("provOff").style.setProperty("fill-opacity",0.1);
+			document.getElementById("provOffLabel").style.setProperty("fill","black");
 		}
         function provinceOff() {
             var el = document.getElementById("provinces")
             el.style.display = "none";
+			document.getElementById("provOff").style.setProperty("fill-opacity",0.5);
+			document.getElementById("provOffLabel").style.setProperty("fill","white");
+			document.getElementById("provOn").style.setProperty("fill-opacity",0.1);
+			document.getElementById("provOnLabel").style.setProperty("fill","black");			
+		}	
+
+
+		function showM(number) {
+			// check if button is active, if so reset (i.e. show all points), else activate and show selected points
+			var el = document.getElementById(`m${ number }Label`)
+			if (el.style.fill == "white") {
+				document.getElementById(`m${ number }`).style.setProperty("fill-opacity",0.1);
+				document.getElementById(`m${ number }Label`).style.setProperty("fill","black");
+				var el = document.getElementsByClassName("loc")
+            	for(var i = 0; i < el.length; i++){
+					el[i].style.display = "block";
+            	}
+			} else {
+				showYN(0)  // year and m not implemented
+				if (orderActive == true){ 
+					showOrder()   // deactivate order if m is used
+				}
+				for(var i = 0; i < 12; i++){
+				document.getElementById(`m${i+1}`).style.setProperty("fill-opacity",0.1);
+				document.getElementById(`m${i+1}Label`).style.setProperty("fill","black");
+				}
+				document.getElementById(`m${ number }`).style.setProperty("fill-opacity",0.5);
+				document.getElementById(`m${ number }Label`).style.setProperty("fill","white");
+
+				var el = document.getElementsByClassName("loc")
+            	for(var i = 0; i < el.length; i++){
+					el[i].style.display = "none";
+            	}
+				var el = document.getElementsByClassName(`m${ number }`)
+            	for(var i = 0; i < el.length; i++){
+					el[i].style.display = "block";
+            	}								
+			}
 		}		
+
+
+
+
+
+	function showOrder(){
+		var el = document.getElementById("orderLabel")
+	if (el.style.fill == "white") {
+		orderActive = false
+		document.getElementById("order").style.setProperty("fill-opacity",0.1);  
+    	document.getElementById("orderLabel").style.setProperty("fill","black");
+		var el = document.getElementById("slider-knob")
+    	el.style.display = "none";
+    	var el = document.getElementById("slider-activeArea")
+    	el.style.display = "none";
+		var el = document.getElementsByClassName("loc")
+    	for(var i = 0; i < el.length; i++){
+			el[i].style.display = "block";
+    	}	
+	} else {
+		orderActive = true
+    	document.getElementById("order").style.setProperty("fill-opacity",0.5);  
+    	document.getElementById("orderLabel").style.setProperty("fill","white");
+
+		// year and m should not be active when O is used.
+			for(var i = 0; i < 12; i++){
+				document.getElementById(`m${i+1}`).style.setProperty("fill-opacity",0.1);
+				document.getElementById(`m${i+1}Label`).style.setProperty("fill","black");
+			}
+			for(var i = 0; i < 5; i++){
+				document.getElementById(`year${i+1}`).style.setProperty("fill-opacity",0.1);
+				document.getElementById(`year${i+1}Label`).style.setProperty("fill","black");
+			}
+			document.getElementById("year0").style.setProperty("fill-opacity",0.5);
+			document.getElementById("year0Label").style.setProperty("fill","white");		
+
+    	document.getElementById("slider-knob").setAttribute("transform", `translate(0 0)`);
+    	var el = document.getElementById("slider-knob")
+    	el.style.display = "block";
+    	var el = document.getElementById("slider-activeArea")
+    	el.style.display = "block";
+    	var el = document.getElementsByClassName("loc")
+    	for(var i = 0; i < el.length; i++){
+			el[i].style.display = "none";
+    	}
+	}
+  }
+
+
+  // functions to handle slider logic
+  const npoints = 207;
+  const divider = 560/npoints;
+    var down = false;
+    var translateX = 0;
+    // function to transform mouse input to SVG coordinates
+    const toSVGcoordinates = (svg, x, y) => {
+      let p = new DOMPoint(x, y);
+      return p.matrixTransform(svg.getScreenCTM().inverse());
+    };
+    document.getElementById("slider-activeArea").addEventListener("mousedown", e => {
+      down = true;
+      let p = toSVGcoordinates(document.getElementById("svg"), e.clientX, e.clientY);
+      let translateX = Math.ceil((p.x-10) / divider) * divider;
+      if(translateX < 0) translateX = 0;
+      if(translateX > 560) translateX = 560;
+      document.getElementById("slider-knob").setAttribute("transform", `translate(${translateX} 0)`);
+      showPoint(translateX);
+    });
+    document.getElementById("svg").addEventListener("mousemove", e => {
+      if(down) {
+        let p = toSVGcoordinates(document.getElementById("svg"), e.clientX, e.clientY);
+        let translateX = Math.ceil((p.x-10) / divider) * divider;
+        if(translateX < 0) translateX = 0;
+        if(translateX > 560) translateX = 560;
+        document.getElementById("slider-knob").setAttribute("transform", `translate(${translateX} 0)`);
+        showPoint(translateX);
+      }
+      
+    });
+    document.getElementById("svg").addEventListener("mouseup", e => {
+      down = false;
+    });
+      function showPoint(translateX){
+        let locnumber = Math.round(translateX/divider);
+        //console.log(locnumber)
+        var el = document.getElementsByClassName("loc")
+        for(var i = locnumber; i < el.length; i++){
+				el[i].style.display = "none";
+            }
+        for(var i = 0; i < locnumber; i++){
+				el[i].style.display = "block";
+            }
+    }
+
 ]]></script>
 </svg>
