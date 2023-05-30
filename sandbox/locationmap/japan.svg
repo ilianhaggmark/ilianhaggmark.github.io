@@ -6833,17 +6833,17 @@ display: block;
    <text id="year5Label" x="552.5" y="328" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">5</text>
    </g> 
 
-   <g onclick="markerSizeS()"> 
-   <rect id="sizeS" class="optionBox" x="540" y="330" width="5" height="5"/>
-   <text id="sizeSLabel" x="542.5" y="333" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">S</text>
+   <g onclick="markerSize(1)"> 
+   <rect id="size1" class="optionBox" x="540" y="330" width="5" height="5"/>
+   <text id="size1Label" x="542.5" y="333" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">S</text>
    </g>    
-   <g onclick="markerSizeM()"> 
-   <rect id="sizeM" class="optionBox" x="545" y="330" width="5" height="5" style="fill-opacity:0.5;"/>
-   <text id="sizeMLabel" x="547.5" y="333" style="font-size:4px;fill:white;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">M</text>
+   <g onclick="markerSize(2)"> 
+   <rect id="size2" class="optionBox" x="545" y="330" width="5" height="5" style="fill-opacity:0.5;"/>
+   <text id="size2Label" x="547.5" y="333" style="font-size:4px;fill:white;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">M</text>
    </g> 
-   <g onclick="markerSizeL()"> 
-   <rect id="sizeL" class="optionBox" x="550" y="330" width="5" height="5"/>
-   <text id="sizeLLabel" x="552.5" y="333" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">L</text>
+   <g onclick="markerSize(3)"> 
+   <rect id="size3" class="optionBox" x="550" y="330" width="5" height="5"/>
+   <text id="size3Label" x="552.5" y="333" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">L</text>
    </g>     
 
    <g onclick="provinceOn()"> 
@@ -7144,280 +7144,182 @@ display: block;
 <!-- JavaScript -->
 <script><![CDATA[
 let orderActive = false
+let activeYear = 0;
+let activeM = null;
+const npoints = 207; // NB! hardcoded number of points (used for slider logic)
 
-		function markerSizeL() {
-			var el = document.getElementsByClassName("loc")
-			for(var i = 0; i < el.length; i++){
-				el[i].setAttribute('r',2);
+
+		// all elements in class className is shown or hidden with block or none
+		function showHideAll(className,blockOrNone) {
+			var el = document.getElementsByClassName(className)
+            for(var i = 0; i < el.length; i++){
+				el[i].style.display = blockOrNone;
             }
-			document.getElementById("sizeS").style.setProperty("fill-opacity",0.1);
-			document.getElementById("sizeM").style.setProperty("fill-opacity",0.1);
-			document.getElementById("sizeL").style.setProperty("fill-opacity",0.5);
-			document.getElementById("sizeSLabel").style.setProperty("fill","black");
-			document.getElementById("sizeMLabel").style.setProperty("fill","black");
-			document.getElementById("sizeLLabel").style.setProperty("fill","white");			
 		}
-		function markerSizeM() {
-			var el = document.getElementsByClassName("loc")
-			for(var i = 0; i < el.length; i++){
-				el[i].setAttribute('r',1);
-            }
-			document.getElementById("sizeS").style.setProperty("fill-opacity",0.1);
-			document.getElementById("sizeM").style.setProperty("fill-opacity",0.5);
-			document.getElementById("sizeL").style.setProperty("fill-opacity",0.1);
-			document.getElementById("sizeSLabel").style.setProperty("fill","black");
-			document.getElementById("sizeMLabel").style.setProperty("fill","white");
-			document.getElementById("sizeLLabel").style.setProperty("fill","black");
+
+		// all elements in class className is given the color fillColor
+		function fillAll(className,fillColor) {
+            var el = document.getElementsByClassName(className)
+            for(var i = 0; i < el.length; i++){
+				el[i].style.fill = fillColor;
+            }	
+		}
+
+		// change button apperance when pressed to show activation
+		function buttonPressed(elementID,labelID) {
+			document.getElementById(elementID).style.setProperty("fill-opacity",0.5);
+			document.getElementById(labelID).style.setProperty("fill","white");
+		}		
+
+		// change button apperance when pressed (reset) to show deactivation
+		function buttonReset(elementID,labelID) {
+			document.getElementById(elementID).style.setProperty("fill-opacity",0.1);
+			document.getElementById(labelID).style.setProperty("fill","black");
 		}			
-		function markerSizeS() {
+
+		function markerSize(size) {
+			// change marker size
+			const sizes = [0.5,1,2]; // sizes of dots
 			var el = document.getElementsByClassName("loc")
 			for(var i = 0; i < el.length; i++){
-				el[i].setAttribute('r',0.5);
+				el[i].setAttribute('r',sizes[size-1]);
             }
-			document.getElementById("sizeS").style.setProperty("fill-opacity",0.5);
-			document.getElementById("sizeM").style.setProperty("fill-opacity",0.1);
-			document.getElementById("sizeL").style.setProperty("fill-opacity",0.1);
-			document.getElementById("sizeSLabel").style.setProperty("fill","white");
-			document.getElementById("sizeMLabel").style.setProperty("fill","black");
-			document.getElementById("sizeLLabel").style.setProperty("fill","black");
+			// fix appearance of buttons
+			for(var i = 1; i < 4; i++){
+				buttonReset(`size${i}`,`size${i}Label`)
+			}
+			buttonPressed(`size${size}`,`size${size}Label`)
 		}		
 
         function showType() {
-            var el = document.getElementsByClassName("city")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "red";
-            }
-            var el = document.getElementsByClassName("temple")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "blue";
-            }
-            var el = document.getElementsByClassName("other")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "green";
-            }					
-		document.getElementById("type").style.setProperty("fill-opacity",0.5);
-		document.getElementById("year").style.setProperty("fill-opacity",0.1);
-		document.getElementById("times").style.setProperty("fill-opacity",0.1);
-		document.getElementById("typeLabel").style.setProperty("fill","white");
-		document.getElementById("yearLabel").style.setProperty("fill","black");
-		document.getElementById("timesLabel").style.setProperty("fill","black");		
+			fillAll("city","red")
+			fillAll("temple","blue")
+			fillAll("other","green")	
+			buttonPressed("type","typeLabel")			
+			buttonReset("year","yearLabel")
+			buttonReset("times","timesLabel")		
         }
 
         function showYear() {
-            var el = document.getElementsByClassName("y2023")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "orange";
-            }	
-            var el = document.getElementsByClassName("y2022")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "orange";
-            }	           
-            var el = document.getElementsByClassName("y2019")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "violet";
-            }
-            var el = document.getElementsByClassName("y2017")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "green";
-            }					
-		    var el = document.getElementsByClassName("y2015")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "blue";
-            }										
-            var el = document.getElementsByClassName("y2012")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "red";
-            }			
-	    document.getElementById("type").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year").style.setProperty("fill-opacity",0.5);
-		document.getElementById("times").style.setProperty("fill-opacity",0.1);
-		document.getElementById("typeLabel").style.setProperty("fill","black");
-		document.getElementById("yearLabel").style.setProperty("fill","white");
-		document.getElementById("timesLabel").style.setProperty("fill","black");		
+			fillAll("y2023","orange")
+			fillAll("y2022","orange")
+			fillAll("y2019","violet")
+			fillAll("y2017","green")
+			fillAll("y2015","blue")
+			fillAll("y2012","red")
+			buttonReset("type","typeLabel")			
+			buttonPressed("year","yearLabel")
+			buttonReset("times","timesLabel")					
         }  
 
         function showTimes() {
-            var el = document.getElementsByClassName("t5")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "red";
-            }
-            var el = document.getElementsByClassName("t4")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "blue";
-            }
-            var el = document.getElementsByClassName("t3")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "green";
-            }	
-            var el = document.getElementsByClassName("t2")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "orange";
-            }							
-            var el = document.getElementsByClassName("t1")
-            for(var i = 0; i < el.length; i++){
-				el[i].style.fill = "gray";
-            }											
-	    document.getElementById("type").style.setProperty("fill-opacity",0.1);
-		document.getElementById("year").style.setProperty("fill-opacity",0.1);
-		document.getElementById("times").style.setProperty("fill-opacity",0.5);
-		document.getElementById("typeLabel").style.setProperty("fill","black");
-		document.getElementById("yearLabel").style.setProperty("fill","black");
-		document.getElementById("timesLabel").style.setProperty("fill","white");	
-
+			fillAll("t5","red")
+			fillAll("t4","blue")
+			fillAll("t3","green")
+			fillAll("t2","orange")
+			fillAll("t1","gray")
+			buttonReset("type","typeLabel")			
+			buttonReset("year","yearLabel")
+			buttonPressed("times","timesLabel")											
         } 
-
-
 
         // Year
 		function showYN(year) {
-			// year and m not implemented
-				for(var i = 0; i < 12; i++){
-				document.getElementById(`m${i+1}`).style.setProperty("fill-opacity",0.1);
-				document.getElementById(`m${i+1}Label`).style.setProperty("fill","black");
-				}
+			activeYear = year;
+			//year and m not implemented
+			for(var i = 0; i < 12; i++){
+				buttonReset(`m${i+1}`,`m${i+1}Label`)
+			}
 			if (orderActive == true){ 
 				showOrder()   // deactivate order if year is used
 			}				
-
 			for(var i = 0; i < 6; i++){
-				document.getElementById(`year${i}`).style.setProperty("fill-opacity",0.1);
-				document.getElementById(`year${i}Label`).style.setProperty("fill","black");
+				buttonReset(`year${i}`,`year${i}Label`)
 			}
-			document.getElementById(`year${year}`).style.setProperty("fill-opacity",0.5);
-			document.getElementById(`year${year}Label`).style.setProperty("fill","white");
+			buttonPressed(`year${year}`,`year${year}Label`)	
 
 			if (year == 0){ // show all
-				var el = document.getElementsByClassName("loc")
-            	for(var i = 0; i < el.length; i++){
-					el[i].style.display = "block";
-            	}
-			} else if (year == 5) {
-				var el = document.getElementsByClassName("loc")
-            	for(var i = 0; i < el.length; i++){
-					el[i].style.display = "none";
-            	}				
-            	var el = document.getElementsByClassName("y2023")
-            	for(var i = 0; i < el.length; i++){
-					el[i].style.display = "block";
-            	}
-            	var el = document.getElementsByClassName("y2022")
-            	for(var i = 0; i < el.length; i++){
-					el[i].style.display = "block";
-            	}
-			} else {
-				var el = document.getElementsByClassName("loc")
-            	for(var i = 0; i < el.length; i++){
-					el[i].style.display = "none";
-            	}
+				showHideAll("loc","block")
+			} else if (year == 5) { // show 2022 and 2023
+				showHideAll("loc","none")			
+            	showHideAll("y2023","block")
+				showHideAll("y2022","block")
+			} else { // show other year
+				showHideAll("loc","none")
 				const y = ["y2012","y2015","y2017","y2019"]
-            	var el = document.getElementsByClassName(y[year-1])
-            	for(var i = 0; i < el.length; i++){
-					el[i].style.display = "block";
-            	}
+            	showHideAll(y[year-1],"block")
 			}
 		}
 
         function provinceOn() {
             var el = document.getElementById("provinces")
             el.style.display = "block";
-			document.getElementById("provOn").style.setProperty("fill-opacity",0.5);
-			document.getElementById("provOnLabel").style.setProperty("fill","white");
-			document.getElementById("provOff").style.setProperty("fill-opacity",0.1);
-			document.getElementById("provOffLabel").style.setProperty("fill","black");
+			buttonPressed("provOn","provOnLabel")	
+			buttonReset("provOff","provOffLabel")	
 		}
         function provinceOff() {
             var el = document.getElementById("provinces")
             el.style.display = "none";
-			document.getElementById("provOff").style.setProperty("fill-opacity",0.5);
-			document.getElementById("provOffLabel").style.setProperty("fill","white");
-			document.getElementById("provOn").style.setProperty("fill-opacity",0.1);
-			document.getElementById("provOnLabel").style.setProperty("fill","black");			
+			buttonReset("provOn","provOnLabel")	
+			buttonPressed("provOff","provOffLabel")				
 		}	
 
 
 		function showM(number) {
-			// check if button is active, if so reset (i.e. show all points), else activate and show selected points
-			var el = document.getElementById(`m${ number }Label`)
-			if (el.style.fill == "white") {
-				document.getElementById(`m${ number }`).style.setProperty("fill-opacity",0.1);
-				document.getElementById(`m${ number }Label`).style.setProperty("fill","black");
-				var el = document.getElementsByClassName("loc")
-            	for(var i = 0; i < el.length; i++){
-					el[i].style.display = "block";
-            	}
+			// if active, reset (i.e. show all points), else activate & show selected points
+			if (activeM == number) {
+				activeM = null;				
+				buttonReset(`m${ number }`,`m${ number }Label`)	
+				showYN(activeYear)
 			} else {
+				activeM = number;
 				showYN(0)  // year and m not implemented
 				if (orderActive == true){ 
 					showOrder()   // deactivate order if m is used
 				}
 				for(var i = 0; i < 12; i++){
-				document.getElementById(`m${i+1}`).style.setProperty("fill-opacity",0.1);
-				document.getElementById(`m${i+1}Label`).style.setProperty("fill","black");
+				buttonReset(`m${i+1}`,`m${i+1}Label`)	
 				}
-				document.getElementById(`m${ number }`).style.setProperty("fill-opacity",0.5);
-				document.getElementById(`m${ number }Label`).style.setProperty("fill","white");
+				buttonPressed(`m${ number }`,`m${ number }Label`)	
 
-				var el = document.getElementsByClassName("loc")
-            	for(var i = 0; i < el.length; i++){
-					el[i].style.display = "none";
-            	}
-				var el = document.getElementsByClassName(`m${ number }`)
-            	for(var i = 0; i < el.length; i++){
-					el[i].style.display = "block";
-            	}								
+				showHideAll("loc","none")
+				showHideAll(`m${ number }`,"block")							
 			}
 		}		
 
 
-
-
-
 	function showOrder(){
 		var el = document.getElementById("orderLabel")
-	if (el.style.fill == "white") {
+	if (orderActive == true) {
 		orderActive = false
-		document.getElementById("order").style.setProperty("fill-opacity",0.1);  
-    	document.getElementById("orderLabel").style.setProperty("fill","black");
+		buttonReset("order","orderLabel")	
 		var el = document.getElementById("slider-knob")
     	el.style.display = "none";
     	var el = document.getElementById("slider-activeArea")
     	el.style.display = "none";
-		var el = document.getElementsByClassName("loc")
-    	for(var i = 0; i < el.length; i++){
-			el[i].style.display = "block";
-    	}	
+		showHideAll("loc","block") // show all dots when slider is deactivated
 	} else {
 		orderActive = true
-    	document.getElementById("order").style.setProperty("fill-opacity",0.5);  
-    	document.getElementById("orderLabel").style.setProperty("fill","white");
-
-		// year and m should not be active when O is used.
+		buttonPressed("order","orderLabel")	
+		// year and m should not be active when Order is used.
 			for(var i = 0; i < 12; i++){
-				document.getElementById(`m${i+1}`).style.setProperty("fill-opacity",0.1);
-				document.getElementById(`m${i+1}Label`).style.setProperty("fill","black");
+				buttonReset(`m${i+1}`,`m${i+1}Label`)
 			}
 			for(var i = 0; i < 5; i++){
-				document.getElementById(`year${i+1}`).style.setProperty("fill-opacity",0.1);
-				document.getElementById(`year${i+1}Label`).style.setProperty("fill","black");
-			}
-			document.getElementById("year0").style.setProperty("fill-opacity",0.5);
-			document.getElementById("year0Label").style.setProperty("fill","white");		
-
+				buttonReset(`year${i+1}`,`year${i+1}Label`)	
+			}	
+			buttonPressed("year0","year0Label")	
     	document.getElementById("slider-knob").setAttribute("transform", `translate(0 0)`);
     	var el = document.getElementById("slider-knob")
     	el.style.display = "block";
     	var el = document.getElementById("slider-activeArea")
     	el.style.display = "block";
-    	var el = document.getElementsByClassName("loc")
-    	for(var i = 0; i < el.length; i++){
-			el[i].style.display = "none";
-    	}
+		showHideAll("loc","none") // hide all dots when slider is activated
 	}
-  }
+  	}
 
 
   // functions to handle slider logic
-  const npoints = 207;
   const divider = 560/npoints;
     var down = false;
     var translateX = 0;
