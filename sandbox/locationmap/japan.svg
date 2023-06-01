@@ -7289,15 +7289,13 @@ const npoints = 207; // NB! hardcoded number of points (used for slider logic)
 				activeM = number;
 
 				const y = ["2012","2015","2017","2019"]
+				showHideAll("loc","none")
 				if (activeYear == 0){
-					showHideAll("loc","none")
 					showHideAll(`m${ number }`,"block")							
 				} else if (activeYear == 5){
-					showHideAll("loc","none")
 					showHideAll(`d2022${ String(number).padStart(2, '0') }`,"block")	
 					showHideAll(`d2023${ String(number).padStart(2, '0') }`,"block")	
 				} else {
-					showHideAll("loc","none")
 					showHideAll(`d${ y[activeYear-1] }${ String(number).padStart(2, '0') }`,"block")	
 				}
 			} 
