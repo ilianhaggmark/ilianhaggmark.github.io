@@ -225,15 +225,16 @@ places = [(44.02093351177296, 144.25424520518152,  'Abashiri',1,2019,8,1),
 
 for i in range(len(places)):
     if type(places[i][4]) is tuple:
-        temp = ''
-        temp2 = ''
-        for j in places[i][4]:
-            temp += 'y' + str(j) + ' '
-        for j in places[i][5]:
-            temp2 += 'm' + str(j) + ' '
-        print('<circle id=\'loc{}\' class=\'loc {} {}{}t{}\' r=\'1\' cx=\'{}\' cy=\'{}\'><title>{}</title></circle>'
-             .format(i,typeOfLocation[places[i][3]-1],temp,temp2,places[i][6],coordX(places[i][1]),coordY(places[i][0]),places[i][2]))
+        yClass = ''
+        mClass = ''
+        dClass = ''
+        for j in range(0,len(places[i][4])):
+            yClass += 'y' + str(places[i][4][j]) + ' '
+            mClass += 'm' + str(places[i][5][j]) + ' '
+            dClass += 'd' + str(places[i][4][j]) + "{:02d}".format(places[i][5][j]) + ' '
+        print('<circle id=\'loc{}\' class=\'loc {} {}{}{}t{}\' r=\'1\' cx=\'{}\' cy=\'{}\'><title>{}</title></circle>'
+             .format(i,typeOfLocation[places[i][3]-1],yClass,mClass,dClass,places[i][6],coordX(places[i][1]),coordY(places[i][0]),places[i][2]))
         continue
-    print('<circle id=\'loc{}\' class=\'loc {} y{} m{} t{}\' r=\'1\' cx=\'{}\' cy=\'{}\'><title>{}</title></circle>'
-          .format(i,typeOfLocation[places[i][3]-1],places[i][4],places[i][5],places[i][6],coordX(places[i][1]),coordY(places[i][0]),places[i][2]))
+    print('<circle id=\'loc{}\' class=\'loc {} y{} m{} d{}{:02d} t{}\' r=\'1\' cx=\'{}\' cy=\'{}\'><title>{}</title></circle>'
+          .format(i,typeOfLocation[places[i][3]-1],places[i][4],places[i][5],places[i][4],places[i][5],places[i][6],coordX(places[i][1]),coordY(places[i][0]),places[i][2]))
     
