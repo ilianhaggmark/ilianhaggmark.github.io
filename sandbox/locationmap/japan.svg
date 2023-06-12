@@ -6850,20 +6850,14 @@ display: none;
    </g>     
 
    <g onclick="provinceOn()"> 
-   <rect id="provOn" class="optionBox" x="540" y="335" width="7.5" height="5"/>
-   <text id="provOnLabel" x="543.75" y="338" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">&#x20D8;</text>
+   <rect id="provOn" class="optionBox" x="555" y="330" width="5" height="5"/>
+   <text id="provOnLabel" x="557.5" y="333" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">&#x20D8;</text>
    </g>   
 
    <g onclick="provinceOff()"> 
-   <rect id="provOff" class="optionBox" x="547.5" y="335" width="7.5" height="5" style="fill-opacity:0.5;"/>
-   <text id="provOffLabel" x="551.25" y="338" style="font-size:4px;fill:white;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">&#x2715;</text>
+   <rect id="provOff" class="optionBox" x="560" y="330" width="5" height="5" style="fill-opacity:0.5;"/>
+   <text id="provOffLabel" x="562.5" y="333" style="font-size:4px;fill:white;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">&#x2715;</text>
    </g>   
-
-   <g onclick="showOrder(0)"> 
-   <rect id="order" class="optionBox" x="555" y="330" width="10" height="10" />
-   <text id="orderLabel" x="560" y="335" style="font-size:7px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">O</text>
-   </g>                      
-
 
    <g onclick="showM(1)"> 
    <rect id="m1" class="optionBox" x="555" y="300" width="5" height="5"/>
@@ -6926,34 +6920,34 @@ display: none;
    </g>  
 
    <g onclick="showA()"> 
-   <rect id="a" class="optionBox" x="540" y="340" width="5" height="5"/>
-   <text id="aLabel" x="542.5" y="343" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">A</text>
+   <rect id="a" class="optionBox" x="540" y="335" width="5" height="5"/>
+   <text id="aLabel" x="542.5" y="338" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">A</text>
    </g>   
 
    <g onclick="showOrder(1)"> 
-   <rect id="o1" class="optionBox" x="545" y="340" width="5" height="5"/>
-   <text id="o1Label" x="547.5" y="343" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">1</text>
+   <rect id="o1" class="optionBox" x="545" y="335" width="5" height="5"/>
+   <text id="o1Label" x="547.5" y="338" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">1</text>
    </g> 
 
    <g onclick="showOrder(2)"> 
-   <rect id="o2" class="optionBox" x="550" y="340" width="5" height="5"/>
-   <text id="o2Label" x="552.5" y="343" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">2</text>
+   <rect id="o2" class="optionBox" x="550" y="335" width="5" height="5"/>
+   <text id="o2Label" x="552.5" y="338" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">2</text>
    </g> 
 
    <g onclick="showOrder(3)"> 
-   <rect id="o3" class="optionBox" x="555" y="340" width="5" height="5"/>
-   <text id="o3Label" x="557.5" y="343" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">3</text>
+   <rect id="o3" class="optionBox" x="555" y="335" width="5" height="5"/>
+   <text id="o3Label" x="557.5" y="338" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">3</text>
    </g> 
 
    <g onclick="showOrder(4)"> 
-   <rect id="o4" class="optionBox" x="560" y="340" width="5" height="5"/>
-   <text id="o4Label" x="562.5" y="343" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">4</text>
+   <rect id="o4" class="optionBox" x="560" y="335" width="5" height="5"/>
+   <text id="o4Label" x="562.5" y="338" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">4</text>
    </g>       
 
 	<g id="slider-knob" transform="translate(0 0)">
 	<circle cx="10" cy="10" r="1" fill="#000000"/>
 	</g>                  
-<polygon id="slider-activeArea" style="opacity:0;fill:red;cursor:pointer;" points="2,2 2,575 578,575 578,347 538,347 538,298 578,298 578,2"/>
+<polygon id="slider-activeArea" style="opacity:0;fill:red;cursor:pointer;" points="2,2 2,575 578,575 578,342 538,342 538,298 578,298 578,2"/>
 
 <g class="locgroup">
 
@@ -7191,11 +7185,10 @@ display: none;
 
 <!-- JavaScript -->
 <script><![CDATA[
-let orderActive = false
 let activeYear = 0;
 let activeM = null;
 let activeA = false;
-let activeO = 1;
+let activeO = 0;
 const npoints = 212; // NB! hardcoded number of points (used for slider logic)
 
 
@@ -7281,8 +7274,8 @@ const npoints = 212; // NB! hardcoded number of points (used for slider logic)
 			buttonReset(`year${activeYear}`,`year${activeYear}Label`)
 			buttonPressed(`year${year}`,`year${year}Label`)
 			activeYear = year;
-			if (orderActive == true){ 
-				showOrder()   // deactivate order if year is used
+			if (activeO != 0){ 
+				showOrder(activeO)   // deactivate order if year is used
 			}				
 
 			showHideAll("loc","none")
@@ -7303,7 +7296,6 @@ const npoints = 212; // NB! hardcoded number of points (used for slider logic)
 			} else { // show other year
 				const y = ["2012","2015","2017","2019"]
 				if (activeM == null){
-					//const y = ["y2012","y2015","y2017","y2019"]
             		showHideAll(`y${y[year-1]}`,"block")
 				} else {
 					showHideAll(`d${ y[year-1] }${ String(activeM).padStart(2, '0') }`,"block")	
@@ -7332,8 +7324,8 @@ const npoints = 212; // NB! hardcoded number of points (used for slider logic)
 				buttonReset(`m${ number }`,`m${ number }Label`)	
 				showYN(activeYear)
 			} else {
-				if (orderActive == true){ 
-					showOrder()   // deactivate order if m is used
+				if (activeO != 0){ 
+					showOrder(activeO)   // deactivate order if m is used
 				}
 				if (activeM != null) {
 					buttonReset(`m${activeM}`,`m${activeM}Label`)
@@ -7371,7 +7363,6 @@ const npoints = 212; // NB! hardcoded number of points (used for slider logic)
 			showHideAll("air","none")
 			buttonReset("a","aLabel")
 			// When slider is deactivated, show old configuration of Y and M.
-			//buttonReset("year0","year0Label")
 			if (activeM != null){
 				let temp = activeM
 				showM(activeM)
@@ -7389,10 +7380,8 @@ const npoints = 212; // NB! hardcoded number of points (used for slider logic)
 
 
 	function showOrder(sortOption){
-		activeO = sortOption;
-	if (orderActive == true && sortOption == 0) {
-		orderActive = false
-		buttonReset("order","orderLabel")
+	if (activeO == sortOption) {
+		activeO = 0;
 		for(var i = 1; i < 5; i++){
 			buttonReset(`o${i}`,`o${i}Label`)	
 		}				
@@ -7411,17 +7400,12 @@ const npoints = 212; // NB! hardcoded number of points (used for slider logic)
 		}
 		
 	} else {
-		orderActive = true
-		buttonPressed("order","orderLabel")
 		for(var i = 1; i < 5; i++){
 			buttonReset(`o${i}`,`o${i}Label`)	
 		}			
-		if (activeO == 0){
-			buttonPressed("o1","o1Label")
-			activeO = 1;
-		} else {
-			buttonPressed(`o${ activeO }`,`o${ activeO }Label`)
-		}
+		activeO = sortOption;
+		buttonPressed(`o${ activeO }`,`o${ activeO }Label`)
+		
 		// year and m should not be active when Order is used.
 			for(var i = 0; i < 12; i++){
 				buttonReset(`m${i+1}`,`m${i+1}Label`)
