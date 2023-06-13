@@ -238,6 +238,7 @@ airports = [
         (35.76617124029606, 140.38631898928807, 'NRT'),
         (26.197481983335283, 127.64592613075293,'OKA')]
 
+# Coordinate values are rounded to four decimal places to remove redundant precision.
 for i in range(len(places)):      
     if type(places[i][4]) is tuple:
         yClass = ''
@@ -250,12 +251,12 @@ for i in range(len(places)):
             dClass += 'd' + str(places[i][4][j]) + "{:02d}".format(places[i][5][j]) + ' '
             oClass += 'o' + str(places[i][4][j]) + "{:02d}".format(places[i][5][j]) + "{:02d}".format(places[i][6][j]) + str(places[i][7][j]) + ' '
         print('<circle id=\'loc{}\' class=\'loc {} {}{}{}{}t{}\' o=\'{}\' r=\'1\' cx=\'{}\' cy=\'{}\'><title>{}</title></circle>'
-             .format(i,typeOfLocation[places[i][3]-1],yClass,mClass,dClass,oClass,places[i][8],oClass[1:10],coordX(places[i][1]),coordY(places[i][0]),places[i][2]))
+             .format(i,typeOfLocation[places[i][3]-1],yClass,mClass,dClass,oClass,places[i][8],oClass[1:10],round(coordX(places[i][1]),4),round(coordY(places[i][0]),4),places[i][2]))
         continue
     oClass = str(places[i][4]) + "{:02d}".format(places[i][5]) + "{:02d}".format(places[i][6]) + str(places[i][7])
     print('<circle id=\'loc{}\' class=\'loc {} y{} m{} d{}{:02d} o{} t{}\' o=\'{}\' r=\'1\' cx=\'{}\' cy=\'{}\'><title>{}</title></circle>'
-          .format(i,typeOfLocation[places[i][3]-1],places[i][4],places[i][5],places[i][4],places[i][5],oClass,places[i][8],oClass,coordX(places[i][1]),coordY(places[i][0]),places[i][2]))
-    
+          .format(i,typeOfLocation[places[i][3]-1],places[i][4],places[i][5],places[i][4],places[i][5],oClass,places[i][8],oClass,round(coordX(places[i][1]),4),round(coordY(places[i][0]),4),places[i][2]))
+  
 for i in range(len(airports)):
-    print('<circle id=\'air{}\' class=\'air\' r=\'1\' cx=\'{}\' cy=\'{}\'><title>{}</title></circle>'
-          .format(i,coordX(airports[i][1]),coordY(airports[i][0]),airports[i][2]))
+    print('<use id=\'air{}\' class=\'air\' href=\'#air-tri\' transform=\'translate(-1 -0.8)\' width=\'2\' height=\'2\' x=\'{}\' y=\'{}\'><title>{}</title></use>'
+          .format(i,round(coordX(airports[i][1]),4),round(coordY(airports[i][0]),4),airports[i][2]))
