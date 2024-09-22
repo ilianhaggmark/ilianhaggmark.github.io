@@ -100,6 +100,15 @@ a {
   color: white;
 }
 
+.plain {
+  color: white;
+  text-decoration: none;
+}
+.contrast-mode .plain{
+  color: #232323;
+  text-decoration: none;
+}
+
 dl {
   margin-top: 10px;
   margin-bottom: 20px;
