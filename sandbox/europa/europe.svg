@@ -1409,12 +1409,12 @@
 <circle id='loc0' class='loc stad y2024 t1' r='5' cx='409.8179371228656' cy='644.7416170846661'><title>Amsterdam</title></circle>
 <circle id='loc1' class='loc stad y2024 t1' r='5' cx='320.43900136715814' cy='991.0545638191352'><title>Barcelona</title></circle>
 <circle id='loc2' class='loc stad y2024 t1' r='5' cx='457.5437251252807' cy='802.5449374647036'><title>Basel</title></circle>
-<circle id='loc3' class='loc stad y0 t1' r='5' cx='757.112139030008' cy='363.35982612368196'><title>Borgå</title></circle>
+<circle id='loc3' class='loc stad y2017 t1' r='5' cx='757.112139030008' cy='363.35982612368196'><title>Borgå</title></circle>
 <circle id='loc4' class='loc stad y2024 t1' r='5' cx='486.85913181962826' cy='625.6554060316234'><title>Bremen</title></circle>
 <circle id='loc5' class='loc stad y2006 t1' r='5' cx='535.16650025574' cy='691.6979539227169'><title>Buchenwald</title></circle>
 <circle id='loc6' class='loc stad y2006 t1' r='5' cx='558.8699221555661' cy='721.3178961531028'><title>Cheb</title></circle>
 <circle id='loc7' class='loc stad y2024 t1' r='5' cx='499.6712552808366' cy='825.8445141917616'><title>Chur</title></circle>
-<circle id='loc8' class='loc stad y0 t1' r='5' cx='59.70249106504878' cy='983.475721938557'><title>Coimbra</title></circle>
+<circle id='loc8' class='loc stad y2019 t1' r='5' cx='59.70249106504878' cy='983.475721938557'><title>Coimbra</title></circle>
 <circle id='loc9' class='loc stad y2012 t1' r='5' cx='453.1006260427487' cy='785.3808283948161'><title>Colmar</title></circle>
 <circle id='loc10' class='loc stad y2008 t1' r='5' cx='273.6866703026582' cy='511.68272193498944'><title>Edinburgh</title></circle>
 <circle id='loc11' class='loc stad y2008 t1' r='5' cx='236.04371717237208' cy='675.9947790951456'><title>Exeter</title></circle>
@@ -1425,8 +1425,8 @@
 <circle id='loc16' class='loc stad y2021 t1' r='5' cx='508.6217570022529' cy='675.4167143057966'><title>Göttingen</title></circle>
 <circle id='loc17' class='loc stad y2021 t1' r='5' cx='509.61300524066723' cy='610.886921817741'><title>Hamburg</title></circle>
 <circle id='loc18' class='loc stad y2012 t1' r='5' cx='482.9838471172674' cy='743.3538662524426'><title>Heidelberg</title></circle>
-<circle id='loc19' class='loc stad y0 t1' r='5' cx='747.8470916382008' cy='372.9684982017272'><title>Helsingfors</title></circle>
-<circle id='loc20' class='loc stad y0 t1' r='5' cx='540.4117607300498' cy='812.0812478643086'><title>Innsbruck</title></circle>
+<circle id='loc19' class='loc stad y2017 t1' r='5' cx='747.8470916382008' cy='372.9684982017272'><title>Helsingfors</title></circle>
+<circle id='loc20' class='loc stad y2018 t1' r='5' cx='540.4117607300498' cy='812.0812478643086'><title>Innsbruck</title></circle>
 <circle id='loc21' class='loc stad y2008 t1' r='5' cx='265.4603989747856' cy='459.9776265029228'><title>Inverness</title></circle>
 <circle id='loc22' class='loc stad y2008 t1' r='5' cx='295.9995322709458' cy='416.67826970185354'><title>Kirkwall</title></circle>
 <circle id='loc23' class='loc stad y2008 t1' r='5' cx='238.8575116684565' cy='460.8437244283305'><title>Kyle of Lochals</title></circle>
@@ -1434,7 +1434,7 @@
 <circle id='loc25' class='loc stad y2024 t1' r='5' cx='401.3056239421153' cy='651.187035260077'><title>Leiden</title></circle>
 <circle id='loc26' class='loc stad y2009 t1' r='5' cx='503.02950904029996' cy='803.5053082738802'><title>Lindau</title></circle>
 <circle id='loc27' class='loc stad y2008 t1' r='5' cx='31.81514034993208' cy='1025.9966092683203'><title>Lisabon</title></circle>
-<circle id='loc28' class='loc stad y0 t1' r='5' cx='308.83887093612805' cy='662.3687623335281'><title>London</title></circle>
+<circle id='loc28' class='loc stad y1994 t1' r='5' cx='308.83887093612805' cy='662.3687623335281'><title>London</title></circle>
 <circle id='loc29' class='loc natur y2009 t1' r='5' cx='492.4913925380355' cy='798.2589209126057'><title>Mainau</title></circle>
 <circle id='loc30' class='loc stad y2009 t1' r='5' cx='543.887899006022' cy='783.6887083111458'><title>München</title></circle>
 <circle id='loc31' class='loc stad y2012 t1' r='5' cx='598.4677367143549' cy='129.31514252063087'><title>Narvik</title></circle>
@@ -1445,12 +1445,12 @@
 <circle id='loc36' class='loc natur y2017 t1' r='5' cx='471.5876823708187' cy='821.1968344897919'><title>Pilatus</title></circle>
 <circle id='loc37' class='loc stad y2006 t1' r='5' cx='600.9615222988131' cy='719.1383537062711'><title>Prag</title></circle>
 <circle id='loc38' class='loc natur y2024 t1' r='5' cx='479.9309111452589' cy='798.9886557925516'><title>Rheinfall</title></circle>
-<circle id='loc39' class='loc stad y0 t1' r='5' cx='755.9104552724998' cy='477.1532082019128'><title>Riga</title></circle>
-<circle id='loc40' class='loc stad y0 t1' r='5' cx='569.4468867068543' cy='983.1541368963956'><title>Rom</title></circle>
+<circle id='loc39' class='loc stad y2017 t1' r='5' cx='755.9104552724998' cy='477.1532082019128'><title>Riga</title></circle>
+<circle id='loc40' class='loc stad y2017 t1' r='5' cx='569.4468867068543' cy='983.1541368963956'><title>Rom</title></circle>
 <circle id='loc41' class='loc stad y2012 t1' r='5' cx='462.0096630218986' cy='769.4804854204297'><title>Strasbourg</title></circle>
 <circle id='loc42' class='loc stad y2016 t1' r='5' cx='749.5905470956337' cy='396.6316965904636'><title>Tallin</title></circle>
 <circle id='loc43' class='loc stad y2024 t1' r='5' cx='513.644736636332' cy='846.1537086786293'><title>Tirano</title></circle>
-<circle id='loc44' class='loc stad y0 t1' r='5' cx='258.4716596383119' cy='309.07195316882814'><title>Torshavn</title></circle>
+<circle id='loc44' class='loc stad y2018 t1' r='5' cx='258.4716596383119' cy='309.07195316882814'><title>Torshavn</title></circle>
 <circle id='loc45' class='loc stad y2024 t1' r='5' cx='499.45591648396' cy='816.5629559519398'><title>Vaduz</title></circle>
 <circle id='loc46' class='loc stad y2008 t1' r='5' cx='312.2531519969427' cy='566.0083781558525'><title>Whitby</title></circle>
 <circle id='loc47' class='loc stad y2008 t1' r='5' cx='290.4876356663432' cy='433.31422339398944'><title>Wick</title></circle>
