@@ -7630,14 +7630,15 @@ E 24.6
    style="fill:none;stroke:#646464;stroke-width:0.85000002" />
 
 
-<circle id='loc0' class='loc inprog y1599 t1' r='8' cx='365.1211293473142' cy='1414.2322321277377'><title>Linköping</title></circle>
-<circle id='loc1' class='loc inprog y1680 t1' r='8' cx='258.66035426397144' cy='1375.8337898338762'><title>Mariestad</title></circle>
-<circle id='loc2' class='loc inprog y1636 t1' r='8' cx='289.82614277981327' cy='1459.6237053030184'><title>Braheskolan (kumlaby, Visingsö)</title></circle>
-<circle id='loc3' class='loc prep y1646 t1' r='8' cx='406.9031864432493' cy='1405.3690718685261'><title>Söderköping</title></circle>
-<circle id='loc4' class='loc inprog y1650 t1' r='8' cx='510.1567646523393' cy='1297.725597076982'><title>Stockholms Gymnasium, Stockholms Trivialskola, Vasa Real (Jakob), Östra Real (Ladugårdslands skola)</title></circle>
-<circle id='loc5' class='loc inprog y1651 t1' r='8' cx='317.2983233511736' cy='1609.8614178231644'><title>Växjö</title></circle>
-<circle id='loc6' class='loc prep y1655 t1' r='8' cx='409.45870975694686' cy='1637.0693943586707'><title>Kalmar</title></circle>
-<circle id='loc7' class='loc prep y1666 t1' r='8' cx='278.97393496769' cy='1494.5941781098672'><title>Jönköping</title></circle>
-<circle id='loc8' class='loc prep y1721 t1' r='8' cx='379.1617059577598' cy='1509.27529527512'><title>Vimmerby</title></circle>
+<circle id='loc0' class='loc arkiv' r='12' cx='149.22726404038218' cy='1505.3502851454823'><title>GLA</title></circle>
+<circle id='loc1' class='loc arkiv' r='12' cx='503.65086709785083' cy='876.3668330344469'><title>HLA</title></circle>
+<circle id='loc2' class='loc arkiv' r='12' cx='222.81159288232854' cy='1761.2861674448338'><title>LLA</title></circle>
+<circle id='loc3' class='loc arkiv' r='12' cx='210.4038956570302' cy='1773.5702815008763'><title>MSA</title></circle>
+<circle id='loc4' class='loc arkiv' r='12' cx='509.28064315631764' cy='1296.9621519567745'><title>SSA</title></circle>
+<circle id='loc5' class='loc arkiv' r='12' cx='484.63533601360064' cy='1230.8103600691836'><title>ULA</title></circle>
+<circle id='loc6' class='loc arkiv' r='12' cx='238.473416893239' cy='1291.441463579167'><title>VA</title></circle>
+<circle id='loc7' class='loc arkiv' r='12' cx='321.6019786126226' cy='1409.7231520180744'><title>VALA</title></circle>
+<circle id='loc8' class='loc arkiv' r='12' cx='525.2876481017746' cy='1511.8085577488669'><title>ViLA</title></circle>
+<circle id='loc9' class='loc arkiv' r='12' cx='306.88209319526965' cy='805.028120143196'><title>ÖLA</title></circle>
 </g>
 </svg>
