@@ -7633,57 +7633,73 @@ E 24.6
 <circle id='loc1' class='loc stad y2012 t1' r='5' cx='726.1545357286446' cy='467.95233287727297'><title>Boden</title></circle>
 <circle id='loc2' class='loc stad y0 t1' r='5' cx='426.6764036136713' cy='1609.5155328247515'><title>Borgholm</title></circle>
 <circle id='loc3' class='loc stad y2021 t1' r='5' cx='530.3696066521525' cy='1322.5587436324115'><title>Dalarö</title></circle>
-<circle id='loc4' class='loc stad y0 t1' r='5' cx='326.7642144673729' cy='1509.127066030566'><title>Eksjö</title></circle>
-<circle id='loc5' class='loc stad y0 t1' r='5' cx='418.35988453313' cy='1291.4349528769114'><title>Eskilstuna</title></circle>
-<circle id='loc6' class='loc stad y2004 t1' r='5' cx='365.88173926657544' cy='1133.997145738919'><title>Falun</title></circle>
-<circle id='loc7' class='loc stad y2020 t1' r='5' cx='453.53608284514485' cy='1384.0698319080414'><title>Femörefortet (Oxelösund)</title></circle>
-<circle id='loc8' class='loc stad y0 t1' r='5' cx='516.7769257033946' cy='1160.168618379865'><title>Forsmark</title></circle>
-<circle id='loc9' class='loc stad y0 t1' r='5' cx='466.80295870686757' cy='1128.3920579371063'><title>Furuvik</title></circle>
-<circle id='loc10' class='loc stad y2021 t1' r='5' cx='576.3383157833352' cy='1467.0480711372952'><title>Fårö</title></circle>
-<circle id='loc11' class='loc stad y0 t1' r='5' cx='297.05592558280694' cy='1463.4723798968137'><title>Gränna</title></circle>
-<circle id='loc12' class='loc stad y0 t1' r='5' cx='456.02140937141854' cy='1125.2713117345518'><title>Gävle</title></circle>
-<circle id='loc13' class='loc stad y0 t1' r='5' cx='149.00236341318575' cy='1503.9000619777719'><title>Göteborg</title></circle>
-<circle id='loc14' class='loc stad y0 t1' r='5' cx='191.80226716133373' cy='1716.2174241210766'><title>Helsingborg</title></circle>
-<circle id='loc15' class='loc stad y2024 t1' r='5' cx='453.46964160481195' cy='991.5107455885283'><title>Hudiksvall</title></circle>
-<circle id='loc16' class='loc stad y0 t1' r='5' cx='378.6681982244638' cy='1532.1410168329217'><title>Hultsfred</title></circle>
-<circle id='loc17' class='loc stad y0 t1' r='5' cx='502.1221187501668' cy='875.3457146797113'><title>Härnösand</title></circle>
-<circle id='loc18' class='loc stad y0 t1' r='5' cx='661.7552656169364' cy='210.53913130255114'><title>Jukkasjärvi</title></circle>
-<circle id='loc19' class='loc stad y0 t1' r='5' cx='278.84466316200485' cy='1494.1683240400394'><title>Jönköping</title></circle>
-<circle id='loc20' class='loc stad y0 t1' r='5' cx='409.4452923252011' cy='1637.0519982250696'><title>Kalmar</title></circle>
-<circle id='loc21' class='loc stad y2021 t1' r='5' cx='363.29048867939406' cy='1701.2382217786849'><title>Karlskrona</title></circle>
-<circle id='loc22' class='loc stad y2004 t1' r='5' cx='239.91902527964882' cy='1290.4225953465213'><title>Karlstad</title></circle>
-<circle id='loc23' class='loc stad y2012 t1' r='5' cx='636.7578410915436' cy='207.75664683848026'><title>Kiruna</title></circle>
-<circle id='loc24' class='loc stad y2012 t1' r='5' cx='414.638532905963' cy='1382.086989503627'><title>Kolmården</title></circle>
-<circle id='loc25' class='loc stad y2023 t1' r='5' cx='155.29872512145596' cy='1529.8904075274706'><title>Kungsbacka</title></circle>
-<circle id='loc26' class='loc stad y0 t1' r='5' cx='417.2732106048213' cy='1114.6544910441874'><title>Kungsberget</title></circle>
-<circle id='loc27' class='loc stad y0 t1' r='5' cx='498.3880137796655' cy='1372.3099111013137'><title>Landsort</title></circle>
-<circle id='loc28' class='loc stad y0 t1' r='5' cx='365.5752667448651' cy='1413.5970991078188'><title>Linköping</title></circle>
-<circle id='loc29' class='loc stad y0 t1' r='5' cx='220.9707962295793' cy='1759.2080849228987'><title>Lund</title></circle>
-<circle id='loc30' class='loc stad y0 t1' r='5' cx='414.18519358481313' cy='1503.5738917785316'><title>Lunds by (Gladhammar)</title></circle>
-<circle id='loc31' class='loc stad y2010 t1' r='5' cx='117.04162859346971' cy='1431.98069355088'><title>Lysekil</title></circle>
-<circle id='loc32' class='loc stad y2020 t1' r='5' cx='452.8154313201675' cy='1547.409903420855'><title>Långe Erik</title></circle>
-<circle id='loc33' class='loc stad y2016 t1' r='5' cx='411.3977712699952' cy='1696.7911770227568'><title>Långe Jan</title></circle>
-<circle id='loc34' class='loc stad y0 t1' r='5' cx='460.0999088719689' cy='1306.4549238034144'><title>Mariefred</title></circle>
-<circle id='loc35' class='loc stad y2021 t1' r='5' cx='258.67053307879274' cy='1375.7750520643913'><title>Mariestad</title></circle>
-<circle id='loc36' class='loc natur y0 t1' r='5' cx='540.2781699286372' cy='1323.5091462553332'><title>Mörtö-Bunsö</title></circle>
-<circle id='loc37' class='loc stad y0 t1' r='5' cx='330.8814632429384' cy='1272.8167921524803'><title>Nora</title></circle>
-<circle id='loc38' class='loc stad y2004 t1' r='5' cx='334.18812110647207' cy='1097.8544463031055'><title>Rättvik</title></circle>
-<circle id='loc39' class='loc stad y0 t1' r='5' cx='489.84944041347916' cy='1260.4022578700308'><title>Sigtuna</title></circle>
-<circle id='loc40' class='loc natur y0 t1' r='5' cx='333.6728282070332' cy='1504.7752361858677'><title>Skurugata</title></circle>
-<circle id='loc41' class='loc stad y0 t1' r='5' cx='510.5527119111469' cy='1297.624912263938'><title>Stockholm</title></circle>
-<circle id='loc42' class='loc stad y2021 t1' r='5' cx='449.086249121083' cy='1291.1775696591444'><title>Strängnäs</title></circle>
-<circle id='loc43' class='loc stad y0 t1' r='5' cx='465.25695087621915' cy='906.5321121942137'><title>Sundsvall</title></circle>
-<circle id='loc44' class='loc stad y2020 t1' r='5' cx='407.06645857655883' cy='1405.1408785582805'><title>Söderköping</title></circle>
-<circle id='loc45' class='loc stad y0 t1' r='5' cx='274.0501613080762' cy='1507.625444563678'><title>Taberg</title></circle>
-<circle id='loc46' class='loc stad y2020 t1' r='5' cx='481.7253178275498' cy='1345.4606591429263'><title>Tullgarn</title></circle>
-<circle id='loc47' class='loc stad y0 t1' r='5' cx='484.5383544001761' cy='1229.9678562347601'><title>Uppsala</title></circle>
-<circle id='loc48' class='loc stad y2021 t1' r='5' cx='150.73541825772676' cy='1533.0822079249344'><title>Valda</title></circle>
-<circle id='loc49' class='loc stad y0 t1' r='5' cx='527.4195378784835' cy='1287.816380535816'><title>Vaxholm</title></circle>
-<circle id='loc50' class='loc stad y2021 t1' r='5' cx='524.0189285538801' cy='1512.3541809291748'><title>Visby</title></circle>
-<circle id='loc51' class='loc stad y0 t1' r='5' cx='289.8158933179375' cy='1459.6296085608797'><title>Visingsö</title></circle>
-<circle id='loc52' class='loc stad y2024 t1' r='5' cx='192.6708038334794' cy='1332.298102452907'><title>Åmål</title></circle>
-<circle id='loc53' class='loc stad y0 t1' r='5' cx='214.71304414450213' cy='777.9385319669484'><title>Åre</title></circle>
-<circle id='loc54' class='loc stad y0 t1' r='5' cx='341.24712642489004' cy='1304.1451487236961'><title>Örebro</title></circle>
+<circle id='loc4' class='loc stad y2025 t1' r='5' cx='418.6599871795418' cy='822.1334698368506'><title>Döda fallet</title></circle>
+<circle id='loc5' class='loc stad y0 t1' r='5' cx='326.7642144673729' cy='1509.127066030566'><title>Eksjö</title></circle>
+<circle id='loc6' class='loc stad y0 t1' r='5' cx='418.35988453313' cy='1291.4349528769114'><title>Eskilstuna</title></circle>
+<circle id='loc7' class='loc stad y2004 t1' r='5' cx='365.88173926657544' cy='1133.997145738919'><title>Falun</title></circle>
+<circle id='loc8' class='loc stad y2020 t1' r='5' cx='453.53608284514485' cy='1384.0698319080414'><title>Femörefortet (Oxelösund)</title></circle>
+<circle id='loc9' class='loc stad y0 t1' r='5' cx='516.7769257033946' cy='1160.168618379865'><title>Forsmark</title></circle>
+<circle id='loc10' class='loc stad y0 t1' r='5' cx='466.80295870686757' cy='1128.3920579371063'><title>Furuvik</title></circle>
+<circle id='loc11' class='loc stad y2021 t1' r='5' cx='576.3383157833352' cy='1467.0480711372952'><title>Fårö</title></circle>
+<circle id='loc12' class='loc stad y2025 t1' r='5' cx='539.4490556549893' cy='1286.3372933044334'><title>Grinda</title></circle>
+<circle id='loc13' class='loc stad y0 t1' r='5' cx='297.05592558280694' cy='1463.4723798968137'><title>Gränna</title></circle>
+<circle id='loc14' class='loc stad y0 t1' r='5' cx='456.02140937141854' cy='1125.2713117345518'><title>Gävle</title></circle>
+<circle id='loc15' class='loc stad y0 t1' r='5' cx='149.00236341318575' cy='1503.9000619777719'><title>Göteborg</title></circle>
+<circle id='loc16' class='loc stad y0 t1' r='5' cx='191.80226716133373' cy='1716.2174241210766'><title>Helsingborg</title></circle>
+<circle id='loc17' class='loc stad y2024 t1' r='5' cx='453.46964160481195' cy='991.5107455885283'><title>Hudiksvall</title></circle>
+<circle id='loc18' class='loc stad y0 t1' r='5' cx='378.6681982244638' cy='1532.1410168329217'><title>Hultsfred</title></circle>
+<circle id='loc19' class='loc stad y2025 t1' r='5' cx='323.271872491088' cy='778.3848996118381'><title>Häggenås</title></circle>
+<circle id='loc20' class='loc stad y0 t1' r='5' cx='502.1221187501668' cy='875.3457146797113'><title>Härnösand</title></circle>
+<circle id='loc21' class='loc stad y0 t1' r='5' cx='661.7552656169364' cy='210.53913130255114'><title>Jukkasjärvi</title></circle>
+<circle id='loc22' class='loc stad y0 t1' r='5' cx='278.84466316200485' cy='1494.1683240400394'><title>Jönköping</title></circle>
+<circle id='loc23' class='loc stad y0 t1' r='5' cx='409.4452923252011' cy='1637.0519982250696'><title>Kalmar</title></circle>
+<circle id='loc24' class='loc stad y2025 t1' r='5' cx='300.4382796815932' cy='1399.1785717247276'><title>Karlsborg</title></circle>
+<circle id='loc25' class='loc stad y2021 t1' r='5' cx='363.29048867939406' cy='1701.2382217786849'><title>Karlskrona</title></circle>
+<circle id='loc26' class='loc stad y2004 t1' r='5' cx='239.91902527964882' cy='1290.4225953465213'><title>Karlstad</title></circle>
+<circle id='loc27' class='loc stad y2012 t1' r='5' cx='636.7578410915436' cy='207.75664683848026'><title>Kiruna</title></circle>
+<circle id='loc28' class='loc stad y2012 t1' r='5' cx='414.638532905963' cy='1382.086989503627'><title>Kolmården</title></circle>
+<circle id='loc29' class='loc stad y2023 t1' r='5' cx='155.29872512145596' cy='1529.8904075274706'><title>Kungsbacka</title></circle>
+<circle id='loc30' class='loc stad y0 t1' r='5' cx='417.2732106048213' cy='1114.6544910441874'><title>Kungsberget</title></circle>
+<circle id='loc31' class='loc stad y0 t1' r='5' cx='498.3880137796655' cy='1372.3099111013137'><title>Landsort</title></circle>
+<circle id='loc32' class='loc stad y0 t1' r='5' cx='365.5752667448651' cy='1413.5970991078188'><title>Linköping</title></circle>
+<circle id='loc33' class='loc stad y2025 t1' r='5' cx='317.50609417775615' cy='788.3693470332098'><title>Lit</title></circle>
+<circle id='loc34' class='loc stad y0 t1' r='5' cx='220.9707962295793' cy='1759.2080849228987'><title>Lund</title></circle>
+<circle id='loc35' class='loc stad y0 t1' r='5' cx='414.18519358481313' cy='1503.5738917785316'><title>Lunds by (Gladhammar)</title></circle>
+<circle id='loc36' class='loc stad y2010 t1' r='5' cx='117.04162859346971' cy='1431.98069355088'><title>Lysekil</title></circle>
+<circle id='loc37' class='loc stad y2020 t1' r='5' cx='452.8154313201675' cy='1547.409903420855'><title>Långe Erik</title></circle>
+<circle id='loc38' class='loc stad y2016 t1' r='5' cx='411.3977712699952' cy='1696.7911770227568'><title>Långe Jan</title></circle>
+<circle id='loc39' class='loc stad y2024 t1' r='5' cx='209.9064054417029' cy='1772.0420202292903'><title>Malmö</title></circle>
+<circle id='loc40' class='loc stad y0 t1' r='5' cx='460.0999088719689' cy='1306.4549238034144'><title>Mariefred</title></circle>
+<circle id='loc41' class='loc stad y2021 t1' r='5' cx='258.67053307879274' cy='1375.7750520643913'><title>Mariestad</title></circle>
+<circle id='loc42' class='loc natur y0 t1' r='5' cx='540.2781699286372' cy='1323.5091462553332'><title>Mörtö-Bunsö</title></circle>
+<circle id='loc43' class='loc stad y0 t1' r='5' cx='330.8814632429384' cy='1272.8167921524803'><title>Nora</title></circle>
+<circle id='loc44' class='loc stad y2004 t1' r='5' cx='334.18812110647207' cy='1097.8544463031055'><title>Rättvik</title></circle>
+<circle id='loc45' class='loc stad y0 t1' r='5' cx='489.84944041347916' cy='1260.4022578700308'><title>Sigtuna</title></circle>
+<circle id='loc46' class='loc stad y2025 t1' r='5' cx='425.38920296341894' cy='1282.7989363126424'><title>Sigurdsristningen</title></circle>
+<circle id='loc47' class='loc stad y2025 t1' r='5' cx='483.8978078585696' cy='1249.4032483029882'><title>Skokloster</title></circle>
+<circle id='loc48' class='loc natur y0 t1' r='5' cx='333.6728282070332' cy='1504.7752361858677'><title>Skurugata</title></circle>
+<circle id='loc49' class='loc stad y0 t1' r='5' cx='510.5527119111469' cy='1297.624912263938'><title>Stockholm</title></circle>
+<circle id='loc50' class='loc stad y2025 t1' r='5' cx='307.11007688453464' cy='1429.0768837945932'><title>Strand (Omberg)</title></circle>
+<circle id='loc51' class='loc stad y2021 t1' r='5' cx='449.086249121083' cy='1291.1775696591444'><title>Strängnäs</title></circle>
+<circle id='loc52' class='loc stad y0 t1' r='5' cx='465.25695087621915' cy='906.5321121942137'><title>Sundsvall</title></circle>
+<circle id='loc53' class='loc stad y2020 t1' r='5' cx='407.06645857655883' cy='1405.1408785582805'><title>Söderköping</title></circle>
+<circle id='loc54' class='loc stad y0 t1' r='5' cx='274.0501613080762' cy='1507.625444563678'><title>Taberg</title></circle>
+<circle id='loc55' class='loc stad y2025 t1' r='5' cx='427.80603637460155' cy='834.5025696327558'><title>Thailändska paviljongen</title></circle>
+<circle id='loc56' class='loc stad y2020 t1' r='5' cx='481.7253178275498' cy='1345.4606591429263'><title>Tullgarn</title></circle>
+<circle id='loc57' class='loc stad y0 t1' r='5' cx='484.5383544001761' cy='1229.9678562347601'><title>Uppsala</title></circle>
+<circle id='loc58' class='loc stad y2025 t1' r='5' cx='321.57066919119836' cy='1409.7505048284552'><title>Vadstena</title></circle>
+<circle id='loc59' class='loc stad y2021 t1' r='5' cx='150.73541825772676' cy='1533.0822079249344'><title>Valda</title></circle>
+<circle id='loc60' class='loc stad y2025 t1' r='5' cx='248.72992042440163' cy='1417.610796749844'><title>Varnhem</title></circle>
+<circle id='loc61' class='loc stad y0 t1' r='5' cx='527.4195378784835' cy='1287.816380535816'><title>Vaxholm</title></circle>
+<circle id='loc62' class='loc stad y2021 t1' r='5' cx='524.0189285538801' cy='1512.3541809291748'><title>Visby</title></circle>
+<circle id='loc63' class='loc stad y0 t1' r='5' cx='289.8158933179375' cy='1459.6296085608797'><title>Visingsö</title></circle>
+<circle id='loc64' class='loc stad y2025 t1' r='5' cx='420.45684413404433' cy='1261.5312084832296'><title>Västerås</title></circle>
+<circle id='loc65' class='loc stad y2025 t1' r='5' cx='317.2868590622163' cy='1609.8599643924683'><title>Växjö</title></circle>
+<circle id='loc66' class='loc stad y2024 t1' r='5' cx='192.6708038334794' cy='1332.298102452907'><title>Åmål</title></circle>
+<circle id='loc67' class='loc stad y0 t1' r='5' cx='214.71304414450213' cy='777.9385319669484'><title>Åre</title></circle>
+<circle id='loc68' class='loc stad y0 t1' r='5' cx='341.24712642489004' cy='1304.1451487236961'><title>Örebro</title></circle>
+<circle id='loc69' class='loc stad y2025 t1' r='5' cx='307.0376188492097' cy='806.0345523197968'><title>Östersund</title></circle>
+<circle id='loc70' class='loc stad y2025 t1' r='5' cx='325.16183697956353' cy='1389.164537862746'><title>Övralid</title></circle>
 
 </g>
 </svg>
