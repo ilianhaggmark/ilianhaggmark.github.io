@@ -285,6 +285,20 @@ airports = [
         (35.76617124029606, 140.38631898928807, 'NRT'),
         (26.197481983335283, 127.64592613075293,'OKA')]
 
+castles = [
+        (34.809078, 133.622303,'Bitchū Matsuyama'),
+        (35.276389, 136.251667,'Hikone'),
+        (34.839444, 134.693889,'Himeji'),
+        (40.606944, 140.464444,'Hirosaki'),
+        (35.388333, 136.939167,'Inuyama'),
+        (33.561111, 133.531389,'Kōchi'),
+        (34.286286, 133.800097,'Marugame'),
+        (36.152347, 136.272097,'Maruoka'),
+        (35.474977, 133.050556,'Matsue'),
+        (36.238889, 137.969167,'Matsumoto'),
+        (33.845539, 132.765722,'Matsuyama (Iyo)'),
+        (33.219478, 132.565236,'Uwajima')]        
+
 # Coordinate values are rounded to four decimal places to remove redundant precision.
 for i in range(len(places)):      
     if type(places[i][4]) is tuple:
@@ -307,3 +321,7 @@ for i in range(len(places)):
 for i in range(len(airports)):
     print('<use id=\'air{}\' class=\'air\' href=\'#air-tri\' transform=\'translate(-1 -0.8)\' width=\'2\' height=\'2\' x=\'{}\' y=\'{}\'><title>{}</title></use>'
           .format(i,round(coordX(airports[i][1]),4),round(coordY(airports[i][0]),4),airports[i][2]))
+
+for i in range(len(castles)):
+    print('<use id=\'castle{}\' class=\'castle\' href=\'#castle-square\' transform=\'translate(-1 -1)\' width=\'2\' height=\'2\' x=\'{}\' y=\'{}\'><title>{}</title></use>'
+          .format(i,round(coordX(castles[i][1]),4),round(coordY(castles[i][0]),4),castles[i][2]))          

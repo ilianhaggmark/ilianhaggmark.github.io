@@ -15,12 +15,18 @@ Equirectangular projection. Geographic limits of the map:
 	<symbol id="air-tri" viewBox="0 0 2 2">
     	<polygon points="0,0 1,2 2,0"/>
 	</symbol>
+	<symbol id="castle-square" viewBox="0 0 2 2">
+    	<polygon points="0,0 0,2 2,2 2,0"/>
+	</symbol>	
 </defs>	 
 <style>
 .loc{
 display: block;
 }
 .air{
+display: none;
+}
+.castle{
 display: none;
 }
 #slider-knob{
@@ -6933,6 +6939,11 @@ display: none;
    <text id="aLabel" x="542.5" y="338" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">A</text>
    </g>   
 
+   <g onclick="showC()"> 
+   <rect id="c" class="optionBox" x="540" y="340" width="5" height="5"/>
+   <text id="cLabel" x="542.5" y="343" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">C</text>
+   </g>     
+
    <g onclick="showOrder(1)"> 
    <rect id="o1" class="optionBox" x="545" y="335" width="5" height="5"/>
    <text id="o1Label" x="547.5" y="338" style="font-size:4px;" dominant-baseline="middle" text-anchor="middle" class="non-selectable">1</text>
@@ -7236,6 +7247,21 @@ display: none;
 
 
 
+<use id='castle0' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='229.1438' y='300.4612'><title>Bitchū Matsuyama</title></use>
+<use id='castle1' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='280.8062' y='289.4495'><title>Hikone</title></use>
+<use id='castle2' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='250.1986' y='299.7456'><title>Himeji</title></use>
+<use id='castle3' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='363.5798' y='163.841'><title>Hirosaki</title></use>
+<use id='castle4' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='294.3143' y='286.8117'><title>Inuyama</title></use>
+<use id='castle5' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='227.3575' y='329.8681'><title>Kōchi</title></use>
+<use id='castle6' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='232.6371' y='312.7802'><title>Marugame</title></use>
+<use id='castle7' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='281.2076' y='268.8085'><title>Maruoka</title></use>
+<use id='castle8' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='217.91' y='284.77'><title>Matsue</title></use>
+<use id='castle9' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='314.552' y='266.7693'><title>Matsumoto</title></use>
+<use id='castle10' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='212.3135' y='323.1659'><title>Matsuyama (Iyo)</title></use>
+<use id='castle11' class='castle' href='#castle-square' transform='translate(-1 -1)' width='2' height='2' x='208.3743' y='337.9183'><title>Uwajima</title></use>
+
+
+
 	</g>
 </g>
 
@@ -7244,6 +7270,7 @@ display: none;
 let activeYear = 0;
 let activeM = null;
 let activeA = false;
+let activeC = false;
 let activeO = 0;
 const npoints = 258; // NB! hardcoded number of points (used for slider logic)
 
@@ -7299,7 +7326,13 @@ const npoints = 258; // NB! hardcoded number of points (used for slider logic)
 				el[i].setAttribute('height',2*sizes[size-1]);
 				//console.log(2*sizes[size-1])
 				//console.log(`translate(${-sizes[size-1]},${-0.8*sizes[size-1]})`)
-            }			
+            }		
+			var el = document.getElementsByClassName("castle")
+			for(var i = 0; i < el.length; i++){
+				el[i].setAttribute('transform',`translate(${-sizes[size-1]},${-0.8*sizes[size-1]})`);
+				el[i].setAttribute('width',2*sizes[size-1]);
+				el[i].setAttribute('height',2*sizes[size-1]);
+            }				
 			// fix appearance of buttons
 			for(var i = 1; i < 4; i++){
 				buttonReset(`size${i}`,`size${i}Label`)
@@ -7446,6 +7479,33 @@ const npoints = 258; // NB! hardcoded number of points (used for slider logic)
 		}
 	}
 
+
+	function showC(){
+		if (activeC ==false){
+			for(var i = 0; i < 12; i++){
+				buttonReset(`m${i+1}`,`m${i+1}Label`)
+			}
+			for(var i = 0; i < 6; i++){
+				buttonReset(`year${i+1}`,`year${i+1}Label`)	
+			}	
+			buttonPressed("c","cLabel")		
+			showHideAll("loc","none")
+			showHideAll("castle","block")
+			activeC = true;
+		} else {
+			showHideAll("castle","none")
+			buttonReset("c","cLabel")
+			// When slider is deactivated, show old configuration of Y and M.
+			if (activeM != null){
+				let temp = activeM
+				showM(activeM)
+				showM(temp)
+			} else {
+				showYN(activeYear)
+			}	
+			activeC = false;				
+		}
+	}
 
 
 
